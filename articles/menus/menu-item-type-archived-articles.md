@@ -1,6 +1,6 @@
 <!-- Filename: J4.x:How_to_Create_a_Menu_Item_to_View_Archived_Articles / Display title: How to Create a Menu Item to View Archived Articles -->
 
-Joomla!  4.x <span id="main-portal-heading">**Tutorial**  
+Joomla!  4.x <span id="main-portal-heading">**Tutorial**
 Create a Menu Item to View Archived Articles</span>
 
 ## Introduction
@@ -127,7 +127,7 @@ relevant buttons. You can also control the number of results. Pagination
 is used on the bottom of the page dependent on the amount of articles
 and these settings. Click the **Filter** button to apply the filter.
 
-## Quick Tips
+## Tips
 
 Remember, use the Menu Item **Options** tab to tailor the output to your
 needs.

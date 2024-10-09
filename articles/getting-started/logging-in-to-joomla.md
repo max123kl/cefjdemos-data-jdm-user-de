@@ -1,6 +1,6 @@
 <!-- Filename: J4.x:Logging_in_to_Joomla / Display title: Einloggen in Joomla -->
 
-<span id="main-portal-heading">**Tutorial**  
+<span id="main-portal-heading">**Tutorial**
 An- und Abmelden bei Joomla!</span> Joomla!  4.0
 
 ## Einführung
@@ -116,7 +116,7 @@ alt="J4x front end logout en.png" />
 To logout go to the position you logged in then click the **Log out**
 button.
 
-## Quick Tips
+## Tips
 
 - Some Joomla website administrators install extensions that hide or
   restrict access to the backend Administrator Dashboard. You may have
