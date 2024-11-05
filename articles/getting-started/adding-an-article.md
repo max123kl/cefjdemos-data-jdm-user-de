@@ -1,101 +1,66 @@
-<!-- Filename: J4.x:Getting_Started:_Adding_an_Article / Display title: Erste Schritte: Einen Beitrag hinzufügen -->
+<!-- Filename: J4.x:Getting_Started:_Adding_an_Article / Display title: Einen Beitrag hinzufügen -->
 
 ## Einführung
 
-You have installed Joomla! but don't have a clue what to do next! Let us
-assume you are looking at the Home Dashboard. Select the **Home
-Dashboard** item in the **Administrator** menu just to be sure.
+Nach dem Login, ausgehend vom Start-Dashboard, gibt es mehrere Möglichkeiten, einen neuen Beitrag zu erstellen:
 
-There are several ways to create a new article:
+- Wählen Sie das **+**-Symbol neben der *Beiträge*-Schaltfläche im *Site*-Panel des Start-Dashboards aus.
+- Erweitern Sie das *Inhalt*-Menü und wählen Sie dort die **+**-Schaltfläche neben *Beiträge*.
+- Wählen Sie an beiden Stellen den **Beiträge**-Eintrag aus und klicken Sie auf der Beitragsliste-Seite auf die **Neu**-Schaltfläche in der Symbolleiste.
 
-- Select the **+** icon adjacent to Articles in the Home Dashboard Site
-  panel.
-- Expand the Content menu and select the **+** button adjacent to
-  Articles there.
-- In either location select the **Articles** item and in the Articles
-  list screen select the **New** button the Toolbar.
+Bis ein Beitrag erstellt wurde, zeigt die Beitragsseite eine Platzhalterseite an, die besagt: *Es wurden noch keine Beiträge erstellt.*
 
-## The Toolbar
+## Die Symbolleiste
 
-On almost every page, immediately beneath the title bar, is a bar
-containing action buttons. This is known as the Toolbar. The buttons
-differ from page to page and sometimes are inactive, appearing grey,
-until an item is selected in the list of items. Example, containing New,
-Action, Options and Help buttons:
+Auf fast jeder Seite befindet sich direkt unter der Titelleiste eine Leiste mit Aktionsschaltflächen. Diese wird als Symbolleiste bezeichnet. Die Schaltflächen unterscheiden sich von Seite zu Seite und sind manchmal inaktiv, erscheinen grau, bis ein Element in der Liste der Elemente ausgewählt wird. Der folgende Screenshot zeigt die Beitragsliste mit einem ausgewählten Beitrags-Checkbox. Die *Aktion*-Schaltfläche ist eine Dropdown-Liste, die ausgewählt wurde, um die verfügbaren Optionen anzuzeigen.
 
-<img
-src="https://docs.joomla.org/images/thumb/9/9c/J4.x-getting-started-toolbar-screenshot-en.png/800px-J4.x-getting-started-toolbar-screenshot-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/9/9c/J4.x-getting-started-toolbar-screenshot-en.png/1200px-J4.x-getting-started-toolbar-screenshot-en.png 1.5x, https://docs.joomla.org/images/9/9c/J4.x-getting-started-toolbar-screenshot-en.png 2x"
-data-file-width="1440" data-file-height="356" width="800" height="198"
-alt="J4.x-getting-started-toolbar-screenshot-en.png" />
+![Beitragsliste mit aktivierter Aktion-Schaltfläche](../../../en/images/getting-started/articles-list.png)
 
-## The Articles Edit Page
+Wählen Sie die Schaltfläche *Neu* in der *Symbolleiste* der *Beiträge*-Seite, um ein Beitragsbearbeitungsformular zu öffnen.
 
-There are a bewildering number of form fields in the Edit page but all
-but except two have sensible defaults that you can forget about for now.
-The fields to fill in:
+## Die Beiträge: Bearbeiten-Seite
 
-- **Title.** This is compulsory and should be something short and
-  simple.
-- **Content** The article text. This is optional but it would not make
-  much sense to have an article with no content. So start typing. If you
-  just want something to try out copy the following paragraph:
+Bis ein Beitrag gespeichert wurde, lautet die Bezeichnung der *Titel-Leiste* *Beiträge: Neu* und es gibt nur wenige Symbolleisten-Schaltflächen. Die *Abbrechen*-Schaltfläche kann verwendet werden, um die Erstellung eines Beitrags abzubrechen. Es gibt keine Warnmeldung. Jegliche eingegebene Inhalte werden verworfen. Nach dem Speichern lautet die Bezeichnung der Titel-Leiste *Beiträge: Bearbeiten* und die Symbolleiste verfügt über viele weitere Schaltflächen.
 
-*Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus
-eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
-vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit
-amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
-sit amet nibh.*
+![Beitrag Bearbeitungsformular](../../../en/images/getting-started/article-edit-form.png)
 
-- **Featured.** To the right of the edit box (on laptop or bigger
-  screens and below on smaller screens) there is a field to select to
-  make this a Featured article. Select it and then select the **Save**
-  button in the Toolbar.
+Auf der Bearbeiten-Seite gibt es eine verwirrende Anzahl von Formularfeldern, aber alle außer zwei haben sinnvolle Standardwerte. Die Felder, die ausgefüllt werden sollen:
 
-## Site View
+- **Titel** Dies ist **erforderlich** und sollte etwas Kurzes und Einfaches sein. In Joomla muss jedes Formularfeld, das als erforderlich markiert ist, ausgefüllt werden, sonst können die Inhalte des Formulars nicht gespeichert werden. Sie könnten *Mein Erster Beitrag* verwenden, um zu beginnen. In den folgenden Beispielen wurde das Wort *Beitrag* gefolgt vom Sprachcode zu Demonstrationszwecken in verschiedenen Sprachen verwendet.
+- **Inhalt** Der Beitragstext. Dies ist optional, aber es würde wenig Sinn machen, einen Beitrag ohne Inhalt zu haben. Also beginnen Sie zu tippen. Wenn Sie nur etwas ausprobieren möchten, kopieren Sie folgenden Absatz:
 
-To see what it looks like you can select the Site view icon in the Title
-bar. If the site view is already open just reload it.
+  >Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senseritdefiniebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latineequidem dolores. Quo no falli viris intellegam, ut fugit veritus placeratper. Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eosdebet libris consulatu.
+- **Hervorgehoben** Rechts neben dem Bearbeitungsfeld (auf Laptops oder größeren Bildschirmen und darunter auf kleineren Bildschirmen) gibt es ein Feld, um diesen Beitrag als *Hervorgehoben* zu markieren. Wählen Sie es aus und dann die **Speichern**-Schaltfläche in der Symbolleiste. Hervorgehobene Beiträge können auf Webseitenlayouts Vorrang gegeben werden und mehrere können zusammen in einem *Hervorgehobenen* Blog-Layout erscheinen.
 
-<img
-src="https://docs.joomla.org/images/thumb/e/ea/J4.x-getting-started-my-first-article-screenshot-en.png/800px-J4.x-getting-started-my-first-article-screenshot-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/e/ea/J4.x-getting-started-my-first-article-screenshot-en.png 1.5x"
-data-file-width="854" data-file-height="480" width="800" height="450"
-alt="J4.x-getting-started-my-first-article-screenshot-en.png" />
+## Vorschau
 
-Note the article metadata: the information between the Title and the
-Content. You can configure what information appears and where it appears
-with those other article form fields. Later...
+Um zu sehen, wie es aussieht, können Sie die *Vorschau*-Schaltfläche in der Symbolleiste auswählen.
 
-## The Read More Break
+![Beitragsliste mit aktivierter Aktionsschaltfläche](../../../en/images/getting-started/article-edit-preview.png)
 
-If your article is several paragraphs long and you wish to show a number
-of featured articles on the Home page of your website, you should insert
-a Read More break after the first paragraph. If you click the Editor CMS
-Content button you will find it at the bottom of the list. The break
-appears as a horizontal dashed red line. Here is another paragraph of
-test text to insert below the page break:
+Beachten Sie die Metadaten des Beitrags: die Informationen zwischen dem Titel und dem Inhalt. Sie können konfigurieren, welche Informationen angezeigt werden und wo sie erscheinen, mit diesen anderen Formularfeldern für Beiträge. Später...
 
-*Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales,
-augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate
-eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed,
-nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu
-turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus
-orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi
-consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor,
-suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam
-ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget,
-posuere ut, mauris.*
+## Der Weiterlesen-Break
 
-The result is that only the text before the page break appears on the
-Home page. Click the Article Title or the Read More button to see the
-full article on its own.
+Wenn Ihr Beitrag mehrere Absätze lang ist und Sie wünschen, dass auf der Startseite Ihrer Website eine Anzahl von hervorgehobenen Beiträgen angezeigt wird, sollten Sie nach dem ersten Absatz einen *Weiterlesen...*-Break einfügen. Wenn Sie die Editor-Schaltfläche *CMS-Inhalt* auswählen, finden Sie ihn am Ende der Liste. Der Break erscheint als horizontale gestrichelte rote Linie. Hier ist ein weiterer Absatz mit Testtext, der unter dem Seitenumbruch eingefügt werden soll:
 
-And notice the Breadcrumbs!
+>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
+
+Das Ergebnis ist, dass nur der Text vor dem Seitenumbruch auf einer Kategorie-Blog- oder Hervorgehobenen Beiträge-Seite (der Startseite) angezeigt wird. Wählen Sie den Beitragstitel oder die Weiterlesen-Schaltfläche, um den vollständigen Beitrag allein zu sehen.
+
+- Wählen Sie **Speichern & Schließen**, um das Bearbeitungsformular zu schließen und zur Beitragsliste zurückzukehren.
+
+Eine neue Joomla-Installation hat ein Site-Menü mit einem einzelnen Menüpunkt namens *Startseite*. Es verwendet ein *Hervorgehobene Beiträge*-Blog-Layout. Wählen Sie den Link *Site-Name* oben rechts auf der Joomla-Administratorseite, um einen neuen Tab zu öffnen, der die Startseite der Website mit Ihrem neuen Beitrag anzeigt.
+
+## Seitenansicht
+
+Der folgende Screenshot zeigt eine Seitenansicht des ersten Teils der oben beschriebenen Beiträge. Ihre neue Joomla!-Seite wird lediglich das *Hauptmenü*, das *Anmeldeformular* und Ihre Beiträge enthalten. Dieser Screenshot zeigt eine mehrsprachige Seite, die die gleiche Seite in vielen verschiedenen Sprachen anzeigt und über weiteren Inhalt verfügt, der in späteren Tutorials verwendet wird.
+
+![Seitenansicht mit Kategorieblog-Layout](../../../en/images/getting-started/article-site-view.png)
+
+### Breadcrumbs
+
+Die hellgraue Zeile, die *Sie sind hier: Startseite* besagt, ist ein konfigurierbares Modul, das anzeigt, wo Sie sich im Kategoriezweig befinden.
+
+*Übersetzt von openai.com*
+

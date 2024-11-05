@@ -1,157 +1,109 @@
-<!-- Filename: J4.x:Managing_Media / Display title: Medien verwalten -->
+<!-- Filename: J4.x:Managing_Media / Display title: Medienverwaltung -->
 
 ## Einführung
 
-In Joomla, media are images and files that appear as illustrations or
-links in articles, modules, templates and so on. An important feature of
-media is that they are delivered directly by the web server without
-being processed by Joomla code. This is fast and efficient. Also, be
-aware that media are usually stored in the **images** folder of your
-Joomla web site. Do not confuse this with the **media** folder, which
-contains javascript and style sheet files.
+In Joomla sind Medien Bilder und Dateien, die als Illustrationen oder Links in Beiträgen, Modulen, Templates usw. erscheinen. Ein wichtiges Merkmal von Medien ist, dass sie direkt vom Webserver bereitgestellt werden, ohne von Joomla-Code verarbeitet zu werden. Dies ist schnell und effizient. Beachten Sie auch, dass Medien in der Regel im **images**-Ordner Ihrer Joomla-Website gespeichert werden. Verwechseln Sie dies nicht mit dem **media**-Ordner, der Javascript- und Stylesheet-Dateien enthält.
 
-Image and file media are managed with the Media component of Joomla. It
-allows you to organise media content in a folder tree, upload individual
-items, perform some elementary image editing functions, and place images
-and links directly into articles.
+Bild- und Dateimedien werden mit der Medienkomponente von Joomla verwaltet. Sie ermöglicht es Ihnen, Medieninhalte in einer Ordnerstruktur zu organisieren, einzelne Elemente hochzuladen, einige grundlegende Bildbearbeitungsfunktionen durchzuführen und Bilder sowie Links direkt in Beiträge einzufügen.
 
-## How to Access
+## Zugriffsmöglichkeiten
 
-From the Joomla Administrator interface there are several routes to open
-the Media component:
+Vom Joomla-Administrator-Bereich aus gibt es mehrere Möglichkeiten, die Medien-Komponente zu öffnen:
 
-- Select **Content **→** Media** from the Administrator menu.
-- Select **Site panel **→** Media** from the Home Dashboard.
-- Select **CMS Content **→** Media** from an article edit screen.
+- Wählen Sie **Inhalt → Medien** aus dem Administrator-Menü.
+- Wählen Sie **Site-Panel → Medien** vom Home-Dashboard.
+- Wählen Sie **CMS-Inhalt → Medien** von einem Beitrags-Bearbeitungsfenster.
 
-In the first two cases the Media component appears in a normal component
-screen. In the last it appears in a modal dialog.
+In den ersten beiden Fällen erscheint die Medien-Komponente in einem normalen Komponentenfenster. Im letzten Fall erscheint sie in einem modalen Dialog.
 
-## Screenshot
+## Bildschirmfoto
 
-The following image shows the Media page just after Joomla installation
-but with the cassiopeia/sampledata folder selected:
+Das folgende Bild zeigt die Medienseite direkt nach der Joomla-Installation, jedoch mit dem ausgewählten Ordner cassiopeia/sampledata. Ein *files*-Ordner wurde hinzugefügt, um Nicht-Bild-Dateien zu speichern, und ein zusätzlicher Ordner namens *garbage* wurde hinzugefügt, um das Löschen von Ordnern zu veranschaulichen:
 
-<img alt="J4.x-media-cassiopeia-sampledata-en.jpg" src="/images/0/0a/J4.x-media-cassiopeia-sampledata-en.jpg" decoding="async" data-file-width="800" data-file-height="406" width="800" height="406">
+![Medienseite mit Beispieldaten cassiopeia](../../../en/images/media/media-sample-data-cassiopeia.png)
 
-## Managing Folders
+## Verwalten von Ordnern
 
-The sub-folder names in your images folder tree become part of the image
-url so it is important for linking and search engine optimisation
-purposes that the names conform to a convention:
+Die Unterordnernamen in Ihrem Bilderordnerbaum werden Teil der Bild-URL. Daher ist es wichtig, dass die Namen aus Gründen der Verlinkung und der Suchmaschinenoptimierung einer Konvention entsprechen:
 
-- all lower case
-- no spaces or punctuation
-- if necessary, use a minus sign to create human readable words, for
-  example deciduous-trees rather than deciduous_trees.
+- alles klein geschrieben
+- keine Leerzeichen oder Satzzeichen
+- falls notwendig, verwenden Sie ein Minuszeichen, um für Menschen lesbare Wörter zu erstellen, zum Beispiel Laubbäume anstelle von laubbäume.
 
-Before creating much content for your site it may pay to think ahead to
-how you might categorise your content and perhaps create an images
-folder tree that is similar to your category tree. Otherwise you may end
-up with a very large number of images and files in the root of your
-images tree and that will become difficult to manage. If you decide to
-move images into a better structure later you will have to find the
-links to those images in your articles and change them. That could be a
-time-consuming, daunting task!
+Bevor Sie viel Inhalt für Ihre Website erstellen, könnte es sich lohnen, im Voraus darüber nachzudenken, wie Sie Ihren Inhalt kategorisieren könnten, und vielleicht einen Bilderordnerbaum zu erstellen, der Ihrem Kategoriebaum ähnlich ist. Andernfalls könnten Sie am Ende eine sehr große Anzahl von Bildern und Dateien im Stamm Ihres Bilderbaums haben, was schwer zu verwalten wird. Wenn Sie sich später entscheiden, Bilder in eine bessere Struktur zu verschieben, müssen Sie die Links zu diesen Bildern in Ihren Beiträgen finden und sie ändern. Das könnte eine zeitaufwendige, entmutigende Aufgabe sein!
 
-### Folder Navigation
+### Ordnernavigation
 
-Use the folder tree in the **Local** column to select a folder. In the
-case illustrated above the cassiopeia folder was first selected. That
-revealed the sampledata folder which was then select to show its
-content.
+Verwenden Sie den Ordnerbaum in der **Lokal**-Spalte, um einen Ordner auszuwählen. Im oben dargestellten Fall wurde zuerst der Ordner cassiopeia ausgewählt. Dadurch wurde der *sampledata*-Ordner angezeigt, der dann ausgewählt wurde, um seinen Inhalt zu zeigen.
 
-The current location is also indicated in the breadcrumbs above the
-images. In this case **images **→** cassiopeia **→** sampledata**.
+Der aktuelle Standort wird auch in den Breadcrumbs über den Bildern angezeigt. In diesem Fall **images → cassiopeia → sampledata**.
 
-If you select a different folder the previous folder at the same level
-closes.
+Wenn Sie einen anderen Ordner auswählen, wird der vorherige Ordner auf derselben Ebene geschlossen.
 
-### Creating a folder
+### Einen Ordner erstellen
 
-- Select the parent folder under which the new folder should be created.
-- Select the **Create New Folder** button.
-- In the *Create New Folder* popup window, enter a name for the folder
-  in the **Folder Name** field.
-- Click the **Create** button.
-- The new folder will appear in in the selected parent folder along with
-  a green Success system message.
+- Wählen Sie den übergeordneten Ordner aus, unter dem der neue Ordner erstellt werden soll.
+- Wählen Sie die Schaltfläche **Neuen Ordner erstellen**.
+- Geben Sie im Popup-Fenster *Neuen Ordner erstellen* einen Namen für den Ordner im Feld **Ordnername** ein.
+- Klicken Sie auf die Schaltfläche **Erstellen**.
+- Der neue Ordner wird im ausgewählten übergeordneten Ordner zusammen mit einer grünen Erfolgssystemnachricht angezeigt.
 
-### Deleting a folder
+### Einen Ordner löschen
 
-***Warning: deleting a folder will also delete all contents of the
-folder!***
+**Warnung: Durch das Löschen eines Ordners werden auch alle Inhalte des Ordners gelöscht!**
 
-- Select the parent of the folder to be deleted using the directory tree
-  shown under **Local**. That will show all of the folders and files in
-  the parent.
-- Move the cursor over the folder to be deleted in the media area. It
-  will turn grey and a white button will appear near the top left.
-- Select the white button. A green tick will appear to indicate it is
-  selected.
-- Select the **Delete** button from the Toolbar.
-- In the **Confirm Delete** popup dialog select the **Delete** button.
-  The folder will be deleted along with all of it files, subfolders and
-  their files.
+- Wählen Sie das übergeordnete Element des zu löschenden Ordners aus, indem Sie den im **Lokal**-Bereich angezeigten Verzeichnisbaum verwenden. Dadurch werden alle Ordner und Dateien im übergeordneten Element angezeigt.
+- Bewegen Sie den Cursor über den zu löschenden Ordner im Medienbereich. Er wird grau und es erscheint eine Schaltfläche in der Nähe der oberen linken Ecke.
+- Wählen Sie die Schaltfläche aus. Ein Häkchen wird angezeigt, um anzuzeigen, dass sie ausgewählt ist.
+- Wählen Sie die **Löschen**-Schaltfläche aus der Symbolleiste.
+- Wählen Sie im Popup-Dialog **Löschen bestätigen** die Schaltfläche **Löschen** aus. Der Ordner wird zusammen mit allen seinen Dateien, Unterordnern und deren Dateien gelöscht.
 
-The folder selected for deletion is illustrated below:
+Der zur Löschung ausgewählte Ordner wird unten dargestellt:
 
-<img alt="J4.x-media-delete-folder-en.jpg" src="/images/4/40/J4.x-media-delete-folder-en.jpg" decoding="async" data-file-width="800" data-file-height="201" width="800" height="201">
+![Medienseite zeigt Papierkorb-Ordner](../../../en/images/media/media-sample-data-garbage-select.png)
 
-## Media Area Toolbar
+## Medienbereich-Werkzeugleiste
 
-This is the bar above the list of images, files and folders that has
-buttons for a variety of tasks.
+Dies ist die Leiste über der Liste von Bildern, Dateien und Ordnern, die
+Schaltflächen für eine Vielzahl von Aufgaben enthält.
 
-### Select box
+### Auswahlfeld
 
-A check box that allows you to select all of the items in the folder
-displayed in the media area. You might want to use it to delete all of
-the current items without deleting the folder.
+Ein Kontrollkästchen, das es Ihnen ermöglicht, alle Elemente im Ordner
+auszuwählen, die im Medienbereich angezeigt werden. Sie könnten es nutzen, um alle aktuellen Elemente zu löschen, ohne den Ordner selbst zu löschen.
 
 ### Breadcrumbs
 
-Use the folder names above the media area to go backwards in the folder
-hierarchy.
+Verwenden Sie die Ordnernamen über dem Medienbereich, um im Ordnerhierarchie
+zurückzugehen.
 
-Double click a folder name in the media area to open that folder.
+Doppelklicken Sie auf einen Ordnernamen im Medienbereich, um diesen Ordner zu
+öffnen.
 
-### Search
+### Suche
 
-If you have a long list of images and files you can search for items
-containing any group of characters. The search is progressive: as you
-add characters to the search term the list is reduced to just those
-containing that character string.
+Wenn Sie eine lange Liste von Bildern und Dateien haben, können Sie nach
+Elementen suchen, die eine beliebige Zeichenfolge enthalten. Die Suche ist
+progressiv: Während Sie Zeichen zum Suchbegriff hinzufügen, wird die Liste
+auf nur diejenigen reduziert, die diese Zeichenfolge enthalten.
 
-### Magnify
+### Vergrößern
 
-Use the magnify buttons to enlarge or reduce the thumbnail size.
-Depending on the size of your screen you may see 2, 4, 6 or 8 thumbnail
-images side by side.
+Verwenden Sie die Vergrößerungsschaltflächen, um die Größe der Miniaturansichten zu
+vergrößern oder zu verkleinern. Abhängig von der Größe Ihres Bildschirms sehen Sie
+möglicherweise 2, 4, 6 oder 8 Miniaturbilder nebeneinander.
 
-### List or Thumbnail Views
+### Listen- oder Miniaturansichten
 
-In thumbnail view, select the list symbol to switch to list view. In
-list view, select the thumbnail symbol to switch to thumbnail view. In
-list view you will see information on image size and dimensions, amongst
-other data.
+In der Miniaturansicht wählen Sie das Listensymbol, um zur Listenansicht zu
+wechseln. In der Listenansicht wählen Sie das Miniatursymbol, um zur
+Miniaturansicht zu wechseln. In der Listenansicht sehen Sie Informationen über
+Bildgröße und -abmessungen sowie andere Daten.
 
-### Information
+### Informationssymbol
 
-Select the Information icon to open a side panel showing information
-about whatever is selected.
+Wählen Sie das Informationssymbol, um ein Seitenfenster zu öffnen, das
+Informationen über das ausgewählte Element anzeigt.
 
-## Further Information
+*Übersetzt von openai.com*
 
-In this series of tutorials:
-
--  Managing
-  Media
--  Media: Upload Delete
-  Rename
--  Media: Image Crop Resize
-  Rotate
--  Media:
-  Options
--  Media: Uploading SVG
-  files

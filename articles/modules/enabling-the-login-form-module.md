@@ -1,31 +1,53 @@
-<!-- Filename: Enabling_the_Login_Form_module / Display title: Das Modul "Anmeldung" veröffentlichen -->
+<!-- Filename: Enabling_the_Login_Form_module / Display title: Anmeldeformular   -->
 
-Sollen sich bestimmte (authorisierte) Besucher der Website anmelden
-können, um zusätzliche Ressourcen zu sehen, muß das "Anmeldung"-Modul
-veröffentlicht werden. Dafür gibt es zwei Möglichkeiten:
+## Anmeldemethoden auf der Website
 
-1.  den Status in der Module-Liste auf **Veröffentlicht** (grüner Haken)
-    setzen oder
-1.  den Namen des Moduls in der Module-Liste anklicken, im
-    Bearbeitungs-Formular den Status auf **Veröffentlicht** ändern und
-    *Speichern*.
+Es gibt zwei Möglichkeiten, um registrierten Benutzern das Einloggen in das Frontend einer Website zu ermöglichen. Es gibt ein **Login-Formular** als Menüpunkt, der in der Benutzergruppe der Menüpunkte zu finden ist. Die Zugriffsberechtigungen hierfür müssen auf *Gast* gesetzt werden. Ein zweiter *Logout*-Menüpunkt wird benötigt, dessen Zugriffsberechtigungen auf *Registriert* gesetzt werden müssen.
 
-<img
-src="https://docs.joomla.org/images/thumb/b/b5/Login_module_j39.png/300px-Login_module_j39.png"
-class="thumbimage" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/b/b5/Login_module_j39.png/450px-Login_module_j39.png 1.5x, https://docs.joomla.org/images/thumb/b/b5/Login_module_j39.png/600px-Login_module_j39.png 2x"
-data-file-width="900" data-file-height="520" width="900" height="520" />
+Die Alternative ist das **Login-Formular**-Modul. Es wird standardmäßig in der Position *sidebar-right* in einer neuen Joomla-Installation installiert. Dieses Modul kann in eine andere Position verschoben, unpubliziert, in den Papierkorb verschoben und gelöscht werden. Letzteres bezieht sich auf eine Instanz des Moduls und nicht auf den Modulcode. Daher können Sie ein neues *Login-Formular*-Modul erstellen oder eine Kopie anfertigen, möglicherweise für die Verwendung in verschiedenen Vorlagen. Das Login-Formular-Modul ändert seine Anzeige nach dem Einloggen, um einen *Logout*-Button anzuzeigen.
 
-Weitere Informationen unter  Modul "Anmeldung"
-anpassen
+## Das Login-Formular-Modul
 
-### Siehe auch
+Um ein unveröffentlichtes Login-Formular zu veröffentlichen:
 
-Regeln für die Registrierung von Benutzern
+* Wählen Sie **Inhalt → Seitenmodule** im Administrator-Menü aus.
+* Suchen Sie das **Login-Formular**-Modul.
+* Wenn das **Status**-Symbol ein grünes Häkchen in einem Kreis ist, ist es bereits aktiviert. Wenn das Statussymbol ein graues Kreuz ist, ist es derzeit deaktiviert. Wählen Sie das Symbol, um das Modul zu aktivieren.
+* Wenn das *Login-Formular*-Modul nicht in der Liste vorhanden ist, stellen Sie die Filteroptionen ein,
+  *- Wählen Sie Status - Feld auf *Alle* oder *Papierkorb*, um zu sehen, ob es in den Papierkorb verschoben wurde. Wenn ja, lässt es sich durch Auswahl seines Papierkorbsymbols veröffentlichen.
+* Wenn das Login-Formular-Modul fehlt, erstellen Sie ein neues.
 
-;
+Um ein neues Login-Formular oder ein zweites Login-Formular zu erstellen:
 
--  Logging in or out of the Administrator
-  back-end
--  Setting user registration
-  policy
+* Wählen Sie **Inhalt → Seitenmodule** im Administrator-Menü aus.
+* Wählen Sie die **Neu**-Schaltfläche in der Toolbar aus.
+* Wählen Sie aus der Modulliste das **Login**-Element aus.
+* Füllen Sie das *Module: Login* Datenformular aus.
+  - Geben Sie einen eindeutigen Titel ein.
+  - Wählen Sie eine Vorlagenposition oder erstellen Sie eine benannte Position für die Verwendung in einem Beitrag.
+  - Füllen Sie andere Felder nach Bedarf aus.
+* **Speichern & Schließen**
+* Testen Sie, ob das Modul korrekt in der Frontend-Ansicht der Seite erscheint.
+
+## Zuweisen des Login-Formularmoduls zu ausgewählten Webseiten
+
+Sie können das Login-Formularmodul auf einer oder mehreren Seiten anzeigen lassen, indem Sie es ausgewählten Menüeinträgen zuweisen. Dies erfolgt über die Felder in der Gruppe Menüzuweisung auf dem Modulbearbeitungsbildschirm:
+
+- Wählen Sie die Registerkarte **Menüzuweisung**.
+- Die Liste **Modulzuweisung** hat vier Optionen:
+  - **Auf allen Seiten**: Das Login-Formularmodul wird auf allen Seiten angezeigt.
+  - **Keine Seiten**: Das Login-Formularmodul wird auf keiner Seite angezeigt.
+  - **Nur auf den ausgewählten Seiten**: Eine Liste aller Menüs und Menüeinträge Ihrer Website wird angezeigt. Das Login-Formularmodul wird auf den Seiten angezeigt, die in dieser Liste ausgewählt sind.
+  - **Auf allen Seiten außer den ausgewählten:** Das Login-Formular wird auf allen nicht ausgewählten Seiten angezeigt.
+- **Menüauswahl**: Zeigt eine Liste aller Menüs und Menüeinträge, von denen ein oder mehrere ausgewählt werden können. Dieses Feld wird nur verwendet, wenn das Feld **Menüs** auf **Menüeintrag/Einträge aus der Liste auswählen** eingestellt ist.
+
+  ![Modulmenüzuweisung](../../../en/images/modules/modules-login-menu-assignment.png)
+
+## Anpassen des Anmeldeformular-Moduls
+
+Wenn Sie das Erscheinungsbild des Anmeldemoduls ändern möchten, können Sie entweder Bootstrap-Stile oder Ihre eigenen in Ihrer Template-Datei user.css definierten Stile hinzufügen. Fügen Sie die Stile im **Erweitert**-Tab des Moduls „Anmelden“ im Bearbeitungsformular hinzu.
+
+Wenn Sie die im Anmeldeformular angezeigten Informationen ändern möchten, können Sie ein Template-Override erstellen. Weitere Details finden Sie im Abschnitt über [Template Overrides](jdocmanual?article=user/templates/template-overrides).
+
+*Übersetzt von openai.com*
+

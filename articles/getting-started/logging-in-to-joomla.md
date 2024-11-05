@@ -1,125 +1,67 @@
-<!-- Filename: J4.x:Logging_in_to_Joomla / Display title: Einloggen in Joomla -->
-
-<span id="main-portal-heading">**Tutorial**
-An- und Abmelden bei Joomla!</span> Joomla!  4.0
+<!-- Filename: J4.x:Logging_in_to_Joomla / Display title: Anmelden bei Joomla -->
 
 ## Einführung
 
-Eine der großartigen Eigenschaften von Joomla! ist, dass es die
-Flexibilität bietet, Aufgaben entweder über das Administrator-Dashboard
-(oft als Backend bezeichnet) oder, falls aktiviert, direkt vom Frontend
-(dem öffentlich zugänglichen Teil der Website) aus zu erledigen.
+Eines der großartigen Dinge an Joomla! ist, dass es die Flexibilität bietet, Aufgaben über das Administrator-Dashboard (oft als Backend bezeichnet) auszuführen und, wenn aktiviert, Aufgaben direkt von der Außenseite der Website (Frontend) aus durchzuführen.
 
-Der Frontend-Zugang ist eine einfache und effiziente Methode, die es
-Autoren ermöglicht, Artikel schnell hinzuzufügen oder zu bearbeiten,
-ohne das Administrator-Dashboard aufrufen zu müssen.
+Der Zugriff auf das Frontend ist eine einfache und effiziente Möglichkeit, Inhaltsautoren das schnelle Hinzufügen oder Bearbeiten von Beiträgen zu ermöglichen, ohne das Administrator-Dashboard aufrufen zu müssen.
 
-Das Joomla-Login ist so konfiguriert, dass man kontrollieren kann, was
-zu sehen ist und was man tun kann (oder nicht tun kann), indem der
-Joomla-Benutzermanager und die leistungsstarken Zugriffssteuerungsebenen
-(ACL) verwendet werden. Das bedeutet, dass eine Joomla-Website Benutzer
-haben kann, die nur das Backend oder nur das Frontend oder beides
-nutzen.
+Die Joomla-Anmeldung ist so konfiguriert, dass sie kontrolliert, was Benutzer mit Hilfe der Benutzerkomponente von Joomla und den leistungsstarken Zugriffskontrollstufen (ACL) sehen und tun (oder nicht tun) können. Dies bedeutet, dass eine Joomla-Website Benutzer haben kann, die nur das Backend nutzen, einige, die nur das Frontend nutzen, und andere, die beides nutzen.
 
-Im Folgenden wird die An- und Abmeldung sowohl vom Backend als auch vom
-Frontend Ihrer Joomla-Website behandelt.
+Das Folgende behandelt das An- und Abmelden sowohl vom Backend als auch vom Frontend einer Joomla-Website.
 
-**Hinweis:** Der Joomla-Administrator hat möglicherweise den
-Frontend-Zugang deaktiviert, so dass alle Aufgaben über das
-Backend-Administrator-Dashboard ausgeführt werden müssen.
+**Hinweis:** Ein Joomla-Administrator kann den Frontend-Zugriff deaktiviert haben, sodass alle Aufgaben über das Backend-Administrator-Dashboard durchgeführt werden müssen.
 
-Die Schritte, die in diesem Tutorial behandelt werden, basieren auf
-einer Standard-Joomla!-Installation.
+### Administrator-Anmeldung
 
-## An- und Abmeldung beim Backend-Administrator Dashboard
+Navigieren Sie zur Administrator-Anmeldeseite. Dies ist die Webadresse der Website, ergänzt um /administrator, z. B. my-joomla-website.com/administrator, was die Joomla-Administrator-Anmeldeseite aufruft:
 
-### Anmelden
+![Administrator-Anmeldeformular](../../../en/images/getting-started/logging-in-to-joomla-administrator-login-form.png)
 
-Die Login-Seite für den Administrationsbereich kann durch Eingabe der
-Webadresse mit der Endung /administrator, z. B.
-meine-joomla-website.de/administrator, aufgerufen werden.
+1.  Geben Sie Ihren **Benutzernamen** ein
+2.  Geben Sie Ihr **Passwort** ein
 
-Die Anmeldeseite für den Administrationsbereich:
+Wählen Sie die Schaltfläche **Anmelden**, um zum Joomla! Home-Dashboard weitergeleitet zu werden.
 
-<img
-src="https://docs.joomla.org/images/thumb/2/2a/J4x_administrator_login_en.png/800px-J4x_administrator_login_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/2/2a/J4x_administrator_login_en.png 1.5x"
-data-file-width="1000" data-file-height="562" width="800" height="450"
-alt="J4x administrator login en.png" />
+**Hinweis:**
 
-1.  Add your **Username**.
-2.  Add your **Password**.
+1.  Joomla bietet eine Option zur Einrichtung und Nutzung der Web-Authentifizierung. 
+    Dies liegt nicht im Umfang dieses Tutorials.
+2.  Wenn auf einer Website mehrere Sprachen installiert sind, können Sie vor der Anmeldung eine Sprache aus einer Dropdown-Liste auswählen.
 
-Click the **Log in** button and you will be taken to the Joomla! Home
-Dashboard.
+### Administrator-Abmeldung
 
-**Note:**
+Um sich abzumelden, wählen Sie das **Benutzermenü** und dann **Abmelden**.
 
-1.  Joomla provides you with the option to set up and use Web
-    Authentication - this is not within the scope of this tutorial.
-2.  If the website has other languages installed you will be able to
-    select the relevant language from a dropdown list before logging in.
+![Administrator-Abmeldelink](../../../en/images/getting-started/logging-in-to-joomla-logout-link.png)
 
-### Logging Out
+### Seitenanmeldung
 
-To log out click the **User Menu** then **Log out**.
+Wenn der Frontend-Zugriff aktiviert ist, wurde ein Anmeldeformular auf der Website hinzugefügt. Joomla erlaubt verschiedene Möglichkeiten, dies zu tun. Eine Standardinstallation enthält ein Anmeldeformular in der Seitenleiste der Website, aber Sie könnten finden, dass ein Link in das Menü der Website oder vielleicht in der Fußzeile hinzugefügt wurde. In einigen Fällen könnte ein *Seite erstellen*-Link existieren. Das Design der Website bestimmt, wo Sie das Anmeldeformular aufrufen.
 
-<img
-src="https://docs.joomla.org/images/thumb/8/89/J4x_administrator_logout_en.png/800px-J4x_administrator_logout_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/8/89/J4x_administrator_logout_en.png 1.5x"
-data-file-width="1000" data-file-height="159" width="800" height="127"
-alt="J4x administrator logout en.png" />
+Dieses Beispiel verwendet ein Anmeldeformular, das sich in der rechten Seitenleiste befindet.
 
-## Log in and out from the frontend of the website
+![Seitenanmeldemodul](../../../en/images/getting-started/logging-in-to-joomla-site-login-form.png)
 
-### Logging In
+Im **Anmeldeformular**
 
-If frontend access is enabled, a login form will have been added to the
-website. Joomla allows a number of ways to do this. A standard
-installation includes a login form in the sidebar of the website but you
-may find a link has been added to the website menu, or perhaps in the
-footer. In some cases a *Create Page* link may exist. The design of the
-website will dictate where you access the login form.
+1.  Geben Sie Ihren **Benutzernamen** ein
+2.  Geben Sie Ihr **Passwort** ein
 
-In this example we use a login form on the website that is located in
-the sidebar.
+Wählen Sie die Schaltfläche **Anmelden**.
 
-<img
-src="https://docs.joomla.org/images/thumb/a/ae/J4x_front_end_login_en.png/800px-J4x_front_end_login_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/a/ae/J4x_front_end_login_en.png 1.5x"
-data-file-width="1000" data-file-height="548" width="800" height="438"
-alt="J4x front end login en.png" />
+Wenn Sie sich vom Frontend der Website anmelden, bleiben Sie möglicherweise auf derselben Seite, von der Sie sich angemeldet haben, oder Sie werden zu Ihrer Profilseite weitergeleitet. Sie werden feststellen, dass das Anmeldeformular auch eine **Abmelden** Schaltfläche enthält.
 
-In the **Login Form**:
+### Seitenabmeldung
 
-1.  Add your **Username**.
-2.  Add your **Password**.
+![Seitenabmeldemodul](../../../en/images/getting-started/logging-in-to-joomla-site-logout-form.png)
 
-Click the **Log in** button.
+Um sich abzumelden, gehen Sie zum Anmeldeformular und wählen Sie die Schaltfläche **Abmelden**.
 
-When logging in from the frontend of the website, you will be kept on
-the same page that you logged in on. You will notice the login form will
-also be replaced with a **Log out** button.
+## Tipps
 
-### Logging Out
+- Einige Joomla-Website-Administratoren installieren Erweiterungen, die den Zugriff auf das Backend-Administrator-Dashboard verbergen oder einschränken. Möglicherweise müssen Sie zusätzliche Schritte unternehmen oder eine alternative Anmelde-URL besuchen.
+- Wenn Sie Änderungen über den Frontend-Login vornehmen, sparen Sie Zeit, indem Sie sich auf der Seite anmelden, die Sie bearbeiten möchten.
 
-<img
-src="https://docs.joomla.org/images/thumb/a/a9/J4x_front_end_logout_en.png/800px-J4x_front_end_logout_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/a/a9/J4x_front_end_logout_en.png 1.5x"
-data-file-width="1000" data-file-height="233" width="800" height="186"
-alt="J4x front end logout en.png" />
+*Übersetzt von openai.com*  
 
-To logout go to the position you logged in then click the **Log out**
-button.
-
-## Tips
-
-- Some Joomla website administrators install extensions that hide or
-  restrict access to the backend Administrator Dashboard. You may have
-  to take additional steps or visit an alternative login URL.
-- If you are making edits using the frontend login, save time by logging
-  in on the page you wish to edit.

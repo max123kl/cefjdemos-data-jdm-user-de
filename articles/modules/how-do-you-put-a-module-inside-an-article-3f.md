@@ -1,106 +1,51 @@
-<!-- Filename: How_do_you_put_a_module_inside_an_article%3F / Display title: Wie kann man ein Modul in den Inhalt eines Beitrags setzen? -->
+<!-- Filename: How_do_you_put_a_module_inside_an_article%3F / Display title: Module innerhalb von Beiträgen  -->
 
-Joomla!  <span class="small">≥ </span>2.5 Serie
+## Einführung
 
-Normalerweise sind Module Modulpositionen zugeordnet. Diese sind auf der
-Webseite entsprechend den Festlegungen im Template verteilt. Manchmal
-ist es notwendig ein Modul in einen Beitrag einzubetten. Im Joomla Core
-gibt es dazu drei Möglichkeiten: loadposition, loadmodule und
-loadmoduleid. Das Plugin *Inhalt - Module laden* muss aktiviert sein.
+Sie möchten in der Regel Module in irgendeiner Weise mit Beiträgen verknüpfen. Module werden normalerweise Modulpositionen zugewiesen, und die Modulpositionen erscheinen an einer Stelle auf der Webseite, die durch das Template festgelegt wird. Allerdings ist es manchmal nützlich, ein Modul tatsächlich in einen Beitrag einzubetten. Joomla hat ein Plugin namens *Inhalt - Module laden*, um dies zu ermöglichen. Wenn es aktiviert ist, kann ein Modul auf drei verschiedene Arten in einen Beitrag eingebettet werden:
 
-Syntax:
+```
+    {loadposition position,[style]}
+    {loadmodule mod_type,the title,[style]}
+    {loadmoduleid moduleId}
+```
 
-- {loadposition position,\[style\]}
-- {loadmodule mod_type,the title,\[style\]}
-- {loadmoduleid moduleId}
+Dabei ist `style` einer der Werte für den Modulstil aus dem Reiter „Erweitert“ im Formular zur Dateneingabe des Moduls, zum Beispiel html, outline, table, card oder noCard. 
 
 ## loadposition
 
-Um ein Modul innerhalb eines Beitrags einzufügen, wird das Modul auf
-einer Position veröffentlicht und die Position dann folgendermaßen in
-den Beitrag geladen:
+Um ein Modul in einem Beitrag einzufügen, veröffentlichen Sie das Modul auf einer Position und laden diese Position im Beitrag wie folgt:
 
-1.  Erstellen eines Moduls und Festlegen der Modulposition auf
-    ***meineposition***. ***meineposition*** kann ein beliebiger Wert
-    sein, der nicht mit anderen, bereits vorhandenen Modulpositionen des
-    Templates in Konflikt treten sollte. Dazu wird im Feld Position ein
-    beliebiger Wert ***meineposition*** eingetragen und danach die
-    Return-Taste gedrückt, anstelle einen Wert aus der Drop-Down-Liste
-    auszuwählen.
-2.  Zuordnung des Moduls zu **Auf allen Seiten** unter Menüzuweisung.
-    Dies stellt sicher, das das Modul immer zu sehen ist, unabhängig
-    davon wie der Seitenbesucher zu dem Beitrag gelangt. Das Modul wird
-    nur angezeigt, wenn die load-Anweisung für das Modul in einem
-    Beitrag
-    erscheint.
-3.  Im Bearbeiten-Modus wird im Beitrag an die Stelle in der das Modul
-    erscheinen soll der Text ***{loadposition meineposition}***
-    eingefügt. Dieser wird dann durch den Inhalt des Moduls ersetzt.
+1. Erstellen Sie ein Modul und setzen Sie dessen Position auf ***myposition***. ***myposition*** kann jeder Wert sein, der nicht mit einer bestehenden Template-Position in Konflikt steht. Geben Sie im Modulbearbeitungsformular die Position ***myposition*** ein und drücken Sie Enter, anstatt sie aus der Dropdown-Liste auszuwählen.
+2. Weisen Sie das Modul **Alle** Menüelemente zu. Dadurch wird sichergestellt, dass es immer angezeigt wird, egal wie der Besucher zum Beitrag gelangt ist. Das Modul wird nur angezeigt, wenn Sie den Befehl verwenden, um das Modul in einem Beitrag zu laden.
+3. Bearbeiten Sie den Beitrag und fügen Sie den Text ***{loadposition myposition}*** an der Stelle ein, an der das Modul angezeigt werden soll.
 
-\*Wichtig: dieses funktioniert nur wenn das [Plugin *Inhalt - Module
-laden* aktiviert
-ist](https://docs.joomla.org/Help25:Extensions_Plugin_Manager_Edit#Content_-_Load_Modules "Special:MyLanguage/Help25:Extensions Plugin Manager Edit").
-Falls das Plugin deaktiviert ist, wird der Text *{loadposition
-meineposition}* unverändert im Beitrag angezeigt. Außerdem sollte der
-Name der verwendeten Modulposition in Kleinbuchstaben geschrieben sein.
-Die CamelCase-Schreibweise funktioniert nicht als Name der Position.
+**Hinweis:** Wenn das Plugin *Content - Load Modules* deaktiviert ist, wird der Text *{loadposition myposition}* unverändert im Beitrag angezeigt. Außerdem sollte der Name der Position komplett in Kleinbuchstaben geschrieben werden. CamelSchreibweise wird fehlschlagen.
 
 ## loadmodule
 
-Eine Alternative zu "{loadposition xx}" ist die "{loadmodule yyy}"
-Variante, die mit gleichen Plugin umgesetzt wird.
+Die Syntax *{loadmodule yyy}* sucht nach dem ersten Modul, dessen **Typ** mit dem String 'yyy' übereinstimmt. So könntest du ein *mod_login* Modul laden, indem du {loadmodule login} in deinen Text einfügst. Der Typ ist nicht so offensichtlich! Zum Beispiel hat der Sprachumschalter den Typ **languages**. Um den Typ zu finden, musst du die Liste der Modulordner mit einem Dateimanager/Explorer durchsehen und den *mod_* Teil des Ordnernamens weglassen.
 
-In diesem Fall sucht das Plugin nach dem ersten Auftreten einen Moduls
-dessen **Typ** mit der Zeichenkette 'yyy' übereinstimmt. So kann man
-z.B. ein "mod_login" Modul laden, indem im Text eines Beitrages
-{loadmodule login} eingefügt wird. In manchen Fällen gibt es mehre
-Module des gleichen Typs, es soll aber nur eine spezifische Instanz des
-Moduls geladen werden. Zum Beispiel gibt es zwei Login Module (die hier
-Login 1 und Login 2 genannt werden). In diesem Fall verwendet man
-{loadmodule mod_modType, modTitle} wobei mod\_**modType** mod_login und
-**modTitle** für Ihre Instanz dieses Moduls ist. Das hieße für das obige
-Beispiel endet man mit **{loadmodule mod_login Login 2}**. Man kann den
-Stil, der für die Darstellung des Moduls verwendet werden soll, als
-dritten Parameter {loadmodule login,Login 2,xhtml} angeben. Falls kein
-Stil angegeben ist, wird "none" verwendet.
+Wenn du eine bestimmte Instanz eines Moduls laden möchtest, weil du mehr als ein Login-Modul hast, z. B. mit den Titeln Login 1, Login 2 usw., musst du {loadmodule mod_modType, modTitle} verwenden, wobei **mod_modType** mod_login wäre und **modTitle** der Name/Titel ist, den du deiner Instanz dieses Moduls gegeben hast. Im obigen Beispiel würdest du dann mit **{loadmodule mod_login Login 2}** enden.
+
+Du kannst auch den Stil hinzufügen, der für die Darstellung des Moduls verwendet wird. Um dies zu tun, füge den Stil als dritten Parameter hinzu, wie {loadmodule login,Login 2,xhtml}. Wenn du keinen Stil hinzufügst, wird keiner verwendet.
 
 ## loadmoduleid
 
-Seit Joomla-Version 3.9.0 gibt es neben den Alternativen
-`{loadposition xx}` und `{loadmodule yyy}` die Variante
-`{loadmoduleid z}`, die ebenfalls vom Plugin umgesetzt wird.
+Die *{loadmoduleid z}* Syntax sucht nach dem Modul, dessen `id` der
+Nummer `z` entspricht. So könnten Sie das Modul mit der id 200 laden, indem Sie
+*{loadmoduleid 200}* in Ihren Text einfügen. Diese Variante verwendet keine zusätzlichen
+Parameter wie den `style` Parameter.
 
-In diesem Fall sucht das Plugin nach dem Modul, dessen `id` der Zahl `z`
-entspricht. Man kann zum Beispiel das Modul mit der id 200 in den
-Beitrag einfügen, indem man in den Editor-Text den Platzhalter
-`{loadmoduleid 200}` einsetzt. Beachte dabei, dass diese Variante
-weitere Parameter wie `style` nicht "versteht".
+## Editor-Schaltfläche
 
-## Editor-Schaltfläche (seit Joomla!-Version 3.5)
+Wenn das Editor-xtd-Plugin *Schaltfläche - Modul* aktiviert ist, können Sie die Editor-Schaltfläche *Modul* verwenden, um die oben beschriebenen Tags einfacher in den Editor-Text einzufügen. Die Modulliste verfügt über eine Schaltfläche in der Titelspalte, um nach ID einzufügen, und eine Schaltfläche in der Positionsspalte, um nach Position einzufügen.
 
-Wenn das editor-xtd-Plugin "Schaltfläche - Modul" aktiviert ist, kannst
-du den Editor-Button "Modul" verwenden, um die oben beschriebenen
-Plugin-Tags bequemer in den Editor-Text einzufügen. Seit Joomla-Version
-3.9 auch die Variante `loadmouleid`.
+## Module innerhalb von Module
 
-## Module innerhalb von Modulen
+Es ist möglich, ein Modul innerhalb eines *Custom HTML* Moduls einzufügen. Diese werden von Inhalts-Plugins auf die gleiche Weise wie Beiträge verarbeitet.
 
-In Joomla! 2.5+ und Joomla! 3.x+ ist es möglich ein Modul innerhalb
-eines "Eigene Inhalte (Custom HTML)"-Moduls einzufügen. Sie werden von
-Content-Plugins (Inhalt-Plugins) genauso verarbeitet wie Artikel.
+Es kann zu Formatierungsproblemen kommen, da der Stil des *Custom HTML* Moduls den Stil des eingeschlossenen Moduls umgibt. Das ist der Grund, warum die *Modul*-Schaltfläche im Editor in Modulen des Typs *Custom* nicht verfügbar ist.
 
-Damit dies funktioniert muss die Option **Inhalte vorbereiten**
-aktiviert werden wie im Screenshot zu sehen ist.
+*Übersetzt von openai.com* 
 
-<img
-src="https://docs.joomla.org/images/f/f4/J3x_custom_html_prepare_content_option-de.png"
-decoding="async" data-file-width="627" data-file-height="299"
-width="627" height="299"
-alt="Zeigt die Inhalte vorbereiten Option in einem Modul Eigene Inhalte." />
-
-Man sollte daran denken, dass Formatierungsmöglichkeiten wie "chrome"
-(Modulstil) des "Eigene Inhalte"-Moduls das "chrome" des
-eingeschlossenen Moduls umschließen und so zu unerwünschten
-Nebeneffekten bezüglich Formatierungen und Layout führen können. Das ist
-der Grund, warum die Editor-Schalfläche "Modul" in diesem Modultyp nicht
-verfügbar ist.

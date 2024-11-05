@@ -1,54 +1,54 @@
-<!-- Filename: J4.x:Optional_Technical_Requirements / Display title: Optionale technische Voraussetzungen -->
+<!-- Filename: J4.x:Optional_Technical_Requirements / Display title: Optionale Technische Anforderungen -->
 
-## Optionale Voraussetzungen für Joomla! 4.x
+Diese Seite listet *optionale* technische Anforderungen auf, die nicht erforderlich
+sind, um Joomla! zu installieren und auszuführen, jedoch für einige interne APIs benötigt werden. Die Liste
+wurde für Joomla 4 erstellt.
 
-Diese Seite listet „optionale“ technische Anforderungen auf, die nicht
-erforderlich sind, um Joomla! zu installieren und zu betreiben, aber für
-einige interne APIs erforderlich sind.
+| Punkt                     | Beschreibung                                                                                                                                   |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Anwendung**             |                                                                                                                                                 |
+| JApplicationDaemon        | Erfordert PHPs `ext/pcntl` und `ext/posix`                                                                                                      |
+| **Archiv**                |                                                                                                                                                 |
+| BZ2                       | Erfordert PHPs `ext/bz2`                                                                                                                        |
+| GZip                      | Erfordert PHPs `ext/zlib`                                                                                                                       |
+| Zip                       | Erfordert PHPs `ext/zip` oder `ext/zlib`                                                                                                        |
+| **Cache**                 |                                                                                                                                                 |
+| APC                       | Erfordert PHPs `ext/apc` auf PHP 5.3 oder 5.4, `ext/apcu` auf PHP 5.5 oder 5.6, nicht unterstützt auf PHP 7.x (Hinweis: DIES MUSS ÜBERPRÜFT WERDEN) |
+| APCu                      | Erfordert PHPs `ext/apcu` auf PHP 5.3+                                                                                                          |
+| CacheLite                 | Erfordert das PEAR Cache_Lite-Paket (getestet auf 1.7.16, funktioniert mit 1.8)                                                                 |
+| Memcache                  | Erfordert PHPs `ext/memcache` und einen Memcache-Server (Hinweis: Die Memcache-Erweiterung ist nicht kompatibel mit PHP 7.x)                      |
+| Memcached                 | Erfordert PHPs `ext/memcached` und einen Memcached-Server                                                                                       |
+| Redis                     | Erfordert PHPs `ext/redis` und einen Redis-Server                                                                                               |
+| Wincache                  | Erfordert PHPs `ext/wincache` (nur Windows)                                                                                                     |
+| XCache                    | Erfordert PHPs `ext/xcache`                                                                                                                     |
+| **Client-Adapter**        |                                                                                                                                                 |
+| LDAP                      | Erfordert PHPs `ext/ldap`                                                                                                                       |
+| HTTP/Curl                 | Erfordert PHPs `ext/curl`                                                                                                                       |
+| HTTP/Socket               | Erfordert die PHP-Funktion `fsockopen()` aktiviert zu sein                                                                                      |
+| HTTP/Stream               | Erfordert die PHP-Funktion `fopen()` und `allow_url_fopen` aktiviert zu sein                                                                    |
+| **Kryptografie**          |                                                                                                                                                 |
+| JCrypt                    | Erfordert PHPs `ext/mcrypt` für alle Chiffren außer SodiumCipher, das `ext/sodium` benötigt                                                     |
+| JKeychain                 | Erfordert PHPs `ext/openssl`                                                                                                                    |
+| **Datenbank**             |                                                                                                                                                 |
+| Microsoft SQL Azure       | Erfordert PHPs `ext/sqlsrv` (die PHP 5.x-Erweiterung unterstützt nur Windows, eine Linux-kompatible Version der Erweiterung ist für PHP 7.x verfügbar) |
+| Microsoft SQL Server      | Erfordert PHPs `ext/sqlsrv` (die PHP 5.x-Erweiterung unterstützt nur Windows, eine Linux-kompatible Version der Erweiterung ist für PHP 7.x verfügbar) |
+| MySQL                     | Erfordert PHPs `ext/mysql` (nicht unterstützt auf PHP 7.x)                                                                                      |
+| MySQLi                    | Erfordert PHPs `ext/mysqli`                                                                                                                     |
+| Oracle                    | Erfordert PHPs `ext/pdo` mit Oracle-Unterstützung (nur für 3PD verfügbar; das CMS funktioniert damit nicht)                                     |
+| PDO MySQL                 | Erfordert PHPs `ext/pdo` mit MySQL-Unterstützung                                                                                                |
+| PostgreSQL                | Erfordert PHPs `ext/pgsql`                                                                                                                      |
+| SQLite                    | Erfordert PHPs `ext/pdo` mit SQLite-Unterstützung (nur für 3PD verfügbar; das CMS funktioniert damit nicht)                                    |
+| **Bild**                  |                                                                                                                                                 |
+|                           | Erfordert PHPs `ext/gd`                                                                                                                         |
+|                           | Erfordert PHPs `ext/fileinfo`                                                                                                                   |
+| **Sitzung**               |                                                                                                                                                 |
+| APC                       | Erfordert PHPs `ext/apc` auf PHP 5.3 oder 5.4, `ext/apcu` auf PHP 5.5 oder 5.6, nicht unterstützt auf PHP 7.x (Hinweis: DIES MUSS ÜBERPRÜFT WERDEN) |
+| Memcache                  | Erfordert PHPs `ext/memcache` und einen Memcache-Server (Hinweis: Die Memcache-Erweiterung ist nicht kompatibel mit PHP 7.x)                      |
+| Memcached                 | Erfordert PHPs `ext/memcached` und einen Memcached-Server                                                                                       |
+| Wincache                  | Erfordert PHPs `ext/wincache` (nur Windows)                                                                                                     |
+| XCache                    | Erfordert PHPs `ext/xcache`                                                                                                                     |
+| **OPTIONALE VERBESSERUNGEN** |                                                                                                                                                 |
+| **String**                |                                                                                                                                                 |
+| mbstring                  | Aktivieren Sie PHPs `ext/mbstring` für die phputf8-Bibliothek, um native Funktionen zu verwenden                                                |
 
-|                                  |                                                                                                                                                                       |
-|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Applikation**                  |                                                                                                                                                                       |
-| JApplicationDaemon               | Benötigt PHP's `ext/pcntl` und `ext/posix`                                                                                                                            |
-| **Archive**                      |                                                                                                                                                                       |
-| BZ2                              | Benötigt PHP's `ext/bz2`                                                                                                                                              |
-| GZip                             | Benötigt PHP's `ext/zlib`                                                                                                                                             |
-| Zip                              | Benötigt PHP's `ext/zip` oder `ext/zlib`                                                                                                                              |
-| **Cache**                        |                                                                                                                                                                       |
-| APC                              | Benötigt PHP's `ext/apc` unter PHP 5.3 oder 5.4, `ext/apcu` unter PHP 5.5 oder 5.6, nicht unterstützt unter PHP 7.x (Hinweis: **Dieser Punkt muss überprüft werden**) |
-| APCu                             | Benötigt PHP's ext/apcu unter PHP 5.3+                                                                                                                                |
-| CacheLite                        | Benötigt das PEAR Cache_Lite-Paket (getestet mit Version 1.7.16, wird auch mit Version 1.8 funktionieren)                                                             |
-| Memcache                         | Benötigt PHP's `ext/memcache` und einen Memcache Server (Hinweis: Die Memcache Erweiterung ist nicht kompatibel mit PHP 7.x)                                          |
-| Memcached                        | Benötigt PHP's `ext/memcached` und einen Memcached Server                                                                                                             |
-| Redis                            | Benötigt PHP's `ext/redis` und einen Redis Server                                                                                                                     |
-| Wincache                         | Benötigt PHP's `ext/wincache` (nur Windows)                                                                                                                           |
-| XCache                           | Benötigt PHP's `ext/xcache`                                                                                                                                           |
-| **Client-Adapter**               |                                                                                                                                                                       |
-| LDAP                             | Benötigt PHP's `ext/ldap`                                                                                                                                             |
-| HTTP/Curl                        | Benötigt PHP's `ext/curl`                                                                                                                                             |
-| HTTP/Socket                      | Benötigt PHP's `fsockopen()`, die Funktion muss aktiviert sein                                                                                                        |
-| HTTP/Stream                      | Benötigt PHP's `fopen()`, die Funktion und `allow_url_fopen` muss aktiviert sein                                                                                      |
-| **Kryptografie/Verschlüsselung** |                                                                                                                                                                       |
-| JCrypt                           | Benötigt PHP's `ext/mcrypt` für alle Verschlüsselungen, mit Ausnahme von SodiumCipher, das `ext/sodium` benötigt.                                                     |
-| JKeychain                        | Benötigt PHP's `ext/openssl`                                                                                                                                          |
-| **Datenbank**                    |                                                                                                                                                                       |
-| Microsoft SQL Azure              | Benötigt PHP's `ext/sqlsrv` (die PHP 5.x Erweiterung unterstützt nur Windows, eine Linux kompatible Version der Erweiterung ist für PHP 7.x verfügbar)                |
-| Microsoft SQL Server             | Benötigt PHP's `ext/sqlsrv` (die PHP 5.x Erweiterung unterstützt nur Windows, eine Linux kompatible Version der Erweiterung ist für PHP 7.x verfügbar)                |
-| MySQL                            | Benötigt PHP's `ext/mysql` (nicht unterstützt unter PHP 7.x)                                                                                                          |
-| MySQLi                           | Benötigt PHP's `ext/mysqli`                                                                                                                                           |
-| Oracle                           | Benötigt PHP's `ext/pdo` mit Oracle Unterstützung (verfügbar nur für 3PD; das CMS läuft nicht damit)                                                                  |
-| PDO MySQL                        | Benötigt PHP's `ext/pdo` mit MySQL Unterstützung                                                                                                                      |
-| PostgreSQL                       | Benötigt PHP's `ext/pgsql`                                                                                                                                            |
-| SQLite                           | Benötigt PHP's `ext/pdo` mit SQLite Unterstützung (verfügbar nur für 3PD; das CMS läuft damit nicht)                                                                  |
-| **Bilder**                       |                                                                                                                                                                       |
-|                                  | Benötigt PHP's `ext/gd`                                                                                                                                               |
-|                                  | Benötigt PHP's `ext/fileinfo`                                                                                                                                         |
-| **Session**                      |                                                                                                                                                                       |
-| APC                              | Benötigt PHP's `ext/apc` unter PHP 5.3 oder 5.4, `ext/apcu` unter PHP 5.5 oder 5.6, nicht unterstützt unter PHP 7.x (Hinweis: **Dieser Punkt muss überprüft werden**) |
-| Memcache                         | Benötigt PHP's `ext/memcache` und einem Memcache Server (Hinweis: Die Memcache Erweiterung ist nicht kompatibel mit PHP 7.x)                                          |
-| Memcached                        | Benötigt PHP's `ext/memcached` und einen Memcached Server                                                                                                             |
-| Wincache                         | Benötigt PHP's `ext/wincache` (nur Windows)                                                                                                                           |
-| XCache                           | Benötigt PHP's `ext/xcache`                                                                                                                                           |
-| **OPTIONALE VERBESSERUNGEN**     |                                                                                                                                                                       |
-| **String**                       |                                                                                                                                                                       |
-| mbstring                         | PHP's `ext/mbstring` aktivieren, für die phputf8-Bibliothek, um native Funktionen zu nutzen                                                                           |
+*Übersetzt von openai.com*

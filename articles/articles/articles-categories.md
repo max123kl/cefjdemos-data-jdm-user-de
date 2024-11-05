@@ -1,176 +1,119 @@
-<!-- Filename: J4.x:Create_and_Manage_Article_Categories / Display title: Beitragskategorien erstellen und verwalten -->
+<!-- Filename: J4.x:Create_and_Manage_Article_Categories / Display title: Beiträge: Kategorien -->
 
 ## Einführung
 
-Imagine a library without a classification system: books are just placed
-on the shelves in the order in which they are received. That is not very
-helpful if the library has millions of books and you are looking for
-something on History, Gardening or Science. The same sort of argument
-applies to Articles. If you have dozens, hundreds or thousands of
-articles you really need a method to classify them so that you can
-easily find what you need. That is what Categories are for.
+Stellen Sie sich eine Bibliothek ohne Klassifikationssystem vor: Bücher werden einfach in der Reihenfolge, in der sie eingehen, in die Regale gestellt. Das ist nicht sehr hilfreich, wenn die Bibliothek Millionen von Büchern hat und Sie nach etwas über Geschichte, Gartenarbeit oder Wissenschaft suchen. Dasselbe Argument gilt für Beiträge. Wenn Sie dutzende, hunderte oder tausende von Beiträgen haben, benötigen Sie wirklich eine Methode, um sie zu klassifizieren, damit Sie leicht finden können, was Sie brauchen. Dafür sind Kategorien da.
 
-A Joomla! category can contain both articles and sub-categories in a
-tree-like structure nested to any depth, although it is unlikely that
-you will want to go beyond a depth of three or four. For example, if
-your articles are about Nature you might classify them as follows:
+Eine Joomla!-Kategorie kann sowohl Beiträge als auch Unterkategorien in einer baumartigen Struktur enthalten, die in beliebige Tiefe geschachtelt ist, obwohl es unwahrscheinlich ist, dass Sie tiefer als drei oder vier Ebenen gehen möchten. Zum Beispiel, wenn Ihre Beiträge über die Natur sind, könnten Sie sie folgendermaßen klassifizieren:
 
-- Animals
-  - Birds
-    - Hawks
-    - Finches
-    - Gulls
-  - Mammals
-    - Apes
-    - Monkeys
-    - Rodents
-- Plants
-  - Flowers
-    - Daisies
-    - Roses
-  - Trees
-    - Oaks
-    - Elms
+- Tiere
+  - Vögel
+    - Falken
+    - Finken
+    - Möwen
+  - Säugetiere
+    - Menschenaffen
+    - Affen
+    - Nagetiere
+- Pflanzen
+  - Blumen
+    - Gänseblümchen
+    - Rosen
+  - Bäume
+    - Eichen
+    - Ulmen
 
-In this example the Animals category might contain articles about
-animals in general as well as sub-categories for articles on different
-types of animal.
+In diesem Beispiel könnte die *Tiere*-Kategorie Beiträge über Tiere im Allgemeinen sowie Unterkategorien für Beiträge über verschiedene Tierarten enthalten.
 
-Joomla provides a single default category named Unclassified. Any
-article not assigned to a specific category that you have created
-becomes a member of the Unclassified category. You create categories as
-required to suit the nature of your articles.
+Joomla bietet eine einzelne Standardkategorie mit dem Namen Unkategorisiert. Jeder Beitrag, der keiner von Ihnen erstellten spezifischen Kategorie zugewiesen ist, wird Mitglied der Kategorie Unkategorisiert. Sie erstellen Kategorien nach Bedarf, um der Natur Ihrer Beiträge zu entsprechen.
 
-An article can only be in one category. In some circumstances that is
-not quite enough. Suppose for example you wish to look for books of all
-sorts written in a particular language, or all plants that are poisonous
-or all animals that are dangerous. That is where Tags come in useful.
-They are covered elsewhere.
+Ein Beitrag kann nur in einer Kategorie sein. In manchen Fällen reicht das nicht ganz aus. Angenommen, Sie möchten nach Büchern aller Art suchen, die in einer bestimmten Sprache geschrieben wurden, oder nach allen Pflanzen, die giftig sind, oder nach allen Tieren, die gefährlich sind. Genau hier werden Tags nützlich. Sie werden an anderer Stelle behandelt.
 
-### Using Categories
+### Verwendung von Kategorien
 
-In the administrator Articles list the Filter Options form has a **-
-Select Category -** drop-down list that displays your category tree
-allowing you to filter for articles in the selected Category. You can
-also create Category Blog and Category List menu item types to display
-articles from a selected category to site visitors.
+Auf der Administratorseite *Beiträge* verfügt das Formular *Filteroptionen* über eine **- Kategorie auswählen -** Dropdown-Liste, die einen Kategoriebereich anzeigt, mit dem Sie nach Beiträgen in einer ausgewählten Kategorie filtern können. Sie können auch Menüelementtypen *Kategorien-Blog* und *Kategorien-Liste* erstellen, um Beiträge aus einer ausgewählten Kategorie für die Besucher der Seite anzuzeigen.
 
-## Kategorien und Unterkategorien hinzufügen
+## Hinzufügen von Kategorien und Unterkategorien
 
-### Über das Dashboard
+Es gibt mehrere Wege zur Seite *Beiträge: Neue Kategorie*:
 
-<img
-src="https://docs.joomla.org/images/thumb/0/0c/J4x_home_dashboard_add_category-de.png/800px-J4x_home_dashboard_add_category-de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/0/0c/J4x_home_dashboard_add_category-de.png 1.5x"
-data-file-width="1000" data-file-height="298" width="800" height="238"
-alt="J4x home dashboard add category-de.png" />
+- Über das **Home Dashboard** Wählen Sie das **Plus (+) Symbol** rechts neben dem 
+  *Beiträge Kategorien* Link. Letzterer führt zur *Beiträge: Kategorien* 
+  Listen-Seite.
+- Über das **Administrator-Menü** Wählen Sie den Menüpunkt *Inhalt* aus, um die Liste zu erweitern, und wählen Sie dann das **Plus (+) Symbol** rechts neben dem *Kategorien* Link.
+- Über das **Inhalt Dashboard** Wählen Sie das Dashboard-Symbol rechts neben dem *Inhalt* Link im Administrator-Menü und wählen Sie dann im Dashboard-Panel *Inhalt* das **Plus (+) Symbol** rechts neben dem *Kategorien* Link.
+- Über **Beiträge: Kategorien** Folgen Sie einem der Wege zur Listen-Seite und wählen Sie die **Neue** Schaltfläche in der Toolbar.
 
-Je nachdem, ob das Dashboard nach der Installation angepasst wurde, gibt
-es eine oder zwei Möglichkeiten, eine neue Kategorie zu erstellen:
+Der folgende Screenshot zeigt den *Beitragskategorien* Link im Home Dashboard zur Liste der Kategorien und das danebenliegende *Plus-Symbol*, das zum Formular *Beiträge: Neue Kategorie* führt.
 
-1.  In der Seitenleiste auf den Link **Inhalt** und dann im
-    Dropdown-Menü auf das **Plus (+) Symbol** rechts neben dem Link
-    **Kategorien** klicken.
-2.  Falls im Dashboard der Abschnitt „Site“ angezeigt wird, auf das
-    **Plus (+) Symbol** rechts neben dem Symbol **Beitragskategorien**
-    klicken.
+![Das Symbol zum Hinzufügen einer Kategorie im Home-Dashboard hervorgehoben](../../../en/images/articles/category-add-via-home-dashboard.png)
 
-### Über Beiträge: Kategorien-Liste
+## Die Beiträge: Neues Kategorieformular
 
-<img
-src="https://docs.joomla.org/images/thumb/7/79/J4x_article_categories_list_add_category-de.png/800px-J4x_article_categories_list_add_category-de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/7/79/J4x_article_categories_list_add_category-de.png 1.5x"
-data-file-width="1000" data-file-height="251" width="800" height="201"
-alt="J4x article categories list add category-de.png" />
+![Das neue Kategoriebearbeitungsformular der Beiträge](../../../en/images/getting-started/article-category-edit.png)
 
-Auf die Schaltfläche **Neu** klicken.
+Der obige Screenshot zeigt das ausgefüllte Formular. Es gibt nur zwei Felder, die einige Inhalte benötigen. Alles andere hat Standard- oder Nullwerte, die Sie momentan belassen und später bei Bedarf ausfüllen können.
 
-Mit jeder dieser Optionen wird die Seite geöffnet: **Beiträge: Neue
-Kategorie**, die nun für die Eingabe bereit ist.
+- **Titel** Dies ist das einzige Pflichtfeld. Es sollte kurz, aber beschreibend für die Kategorie sein.
 
-<img
-src="https://docs.joomla.org/images/thumb/c/c6/J4x_add_article_category-de.png/800px-J4x_add_article_category-de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/c/c6/J4x_add_article_category-de.png 1.5x"
-data-file-width="1000" data-file-height="375" width="800" height="300"
-alt="J4x add article category-de.png" />
+### Der Kategorie-Tab
 
-In das Feld **Titel** den Namen der neuen Kategorie eintragen. Dies ist
-die einzige obligatorische Eingabe.
+- **Beschreibung** Obwohl nicht zwingend erforderlich, kann dieses Feld in den Kategorielisten-Seiten der Website angezeigt werden, die durch Menüeinträge gesteuert werden. Möglicherweise müssen Sie später die Beschreibung aktualisieren.
+- **Übergeordnet** Wenn auf *- Kein Übergeordneter -* gesetzt, ist dieses neue Element eine potenzielle übergeordnete Kategorie für andere Kategorien. Wenn eine andere Kategorie als übergeordnet ausgewählt wird, ist dieses neue Element eine Unterkategorie.
+- **Status** Standardmäßig ist eine neue Kategorie auf *Veröffentlicht* gesetzt. Sie können den Status einer Kategorie zu *Veröffentlicht*, *Nicht veröffentlicht*, *Archiviert* oder *Papierkorb* ändern.
+  [ToDo] Erklären, was passiert, wenn eine Kategorie nicht veröffentlicht wird...
+- **Zugriff** Standardmäßig ist der Zugriff auf *Öffentlich* gesetzt. Weitere Optionen zur Einschränkung des Zugriffs sind *Gast*, *Registriert*, *Speziell* und *Super Benutzer*.
+  [ToDo] Erklären, wie der Zugriff auf eine Kategorie verwendet werden könnte...
+- **Sprache** In mehrsprachigen Seiten wird durch Setzen auf *Alle* die neue Kategorie unabhängig von der Site-Sprache. Wenn auf eine bestimmte Sprache eingestellt, ist sie nur auf Seiten in dieser Sprache verfügbar.
+- **Tags** Wenn Sie sie verwenden, können Sie der Kategorie ein oder mehrere Tags hinzufügen. Das Setzen von Tags auf Kategorieebene ist eine gute Möglichkeit, um Konsistenz zu wahren. Für dieses Tutorial wurde ein *Natur*-Tag erstellt und verwendet, um Listen zu filtern, damit nur Elemente angezeigt werden, die mit den Tutorials zusammenhängen.
+- **Hinweis** und **Versionshinweis** Verwenden Sie diese, um relevante Notizen hinzuzufügen, falls erforderlich.
 
-Mit dem Editor kann eine Beschreibung für die Kategorie hinzugefügt
-werden. Dies ist eine Frage der persönlichen Entscheidung.
+### Der Optionen-Tab
 
-Wenn eine neue Kategorie erstellt wird, ist das Einstellungsfeld
-**Status** standardmäßig auf **Veröffentlicht** eingestellt. Der Status
-kann auf *Veröffentlicht*, *Unveröffentlicht*, *Archiviert* oder
-*Papierkorb* geändert werden.
+Einstellungen in diesem Tab beeinflussen das Erscheinungsbild dieser Kategorie auf den Seiten der Website.
 
-<img
-src="https://docs.joomla.org/images/thumb/1/11/J4x_article_category_settings-de.png/300px-J4x_article_category_settings-de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/1/11/J4x_article_category_settings-de.png 1.5x"
-data-file-width="435" data-file-height="612" width="300" height="422"
-alt="J4x article category settings-de.png" />
+- **Layout** Dies bezieht sich auf die Platzierung von Inhalten auf der Seite. Es kann je nach verwendetem Komponent und Template Auswahlmöglichkeiten für Layouts geben.
+  [ToDo] Beispiele...
+- **Bild** Möglicherweise möchten Sie ein Bild verwenden, um als Symbol zu dienen, sodass diese Kategorie in einer Liste von Kategorien sofort erkannt werden kann. Wird es zu einem solchen Zweck verwendet, ist eine *Bildbeschreibung (Alt-Text)* nicht notwendig, jedoch sollte das *Keine Beschreibung* Kontrollkästchen aktiviert werden.
 
-Abgesehen davon sind die anderen Einstellungen:
+### Speichern & Schließen
 
-**Übergeordnete Kategorie:** Das Vorgehen beim Hinzufügen einer neuen
-Kategorie oder einer Unterkategorie ist nahezu identisch. Der einzige
-Unterschied ist, dass entweder die Kategorie auf „**- Kein
-übergeordnetes Element -**“ (die Standardeinstellung) festgelegt oder
-eine übergeordnete, schon bestehende Kategorie ausgewählt wird. Dadurch
-wird die neue Kategorie zu einer Unterkategorie der ausgewählten
-übergeordneten Kategorie.
+- **Speichern & Schließen** Um die Bearbeitung dieser Kategorie abzuschließen. Oder im Dropdown-Menü...
+  - **Speichern & Neu** Speichern Sie diese Kategorie und öffnen Sie ein neues Bearbeitungsformular für eine neue Kategorie. Zum Beispiel möchten Sie vielleicht ein Kategoriensystem starten, indem Sie eine *Affen*-Kategorie mit *Säugetiere* als übergeordnet hinzufügen.
+  - **Speichern ins Menü als Liste** ...
+  - **Speichern ins Menü als Blog** ...
+  - **Als Kopie speichern** ...
 
-**Access:** By default access is set to Public. Other options to
-restrict access are *Guest*, *Registered*, *Special* and *Super Users*.
+Durch das Schließen des Bearbeitungsformulars gelangen Sie zur **Beiträge: Kategorien**-Liste.
 
-**Tags:** If you use them, you can add one or more tags to the category.
-Setting tags at category level is a good way to maintain consistency.
+![Eine Kategorienliste, gefiltert nach dem Tag Natur](../../../en/images/articles/categories-list.png)
 
-**Note** and **Version Note:** Use these to add relevant notes if
-required.
+### Speichern ins Menü als Liste
 
-Click **Save & Close**. If you are creating more categories you can
-click **Save & New** instead and will open up a new input page.
+Die Auswahl dieses Elements aus dem Dropdown-Menü *Speichern & Schließen* wird das Kategoriebearbeitungsformular speichern und schließen und ein neues Menüeintragsformular mit allen Daten öffnen, die benötigt werden, um eine *Kategorienliste* für diese Kategorie zu erstellen. Möglicherweise möchten Sie den *Titel* ändern. Zum Beispiel könnte es *Säugetier-Beitragsliste* sein, um klarzustellen, dass es sich wahrscheinlich um eine Liste von Beiträgen handelt.
 
-<img
-src="https://docs.joomla.org/images/thumb/1/10/J4x_article_category_saved-en.png/800px-J4x_article_category_saved-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/1/10/J4x_article_category_saved-en.png 1.5x"
-data-file-width="1000" data-file-height="51" width="800" height="41"
-alt="J4x article category saved-en.png" />
+Im *Seitendarstellung*-Tab versuchen Sie, das Feld *Seitenüberschrift anzeigen* auf *Anzeigen* zu setzen. Das zeigt *Säugetier-Beitragsliste* als fettgedruckte Überschrift oben auf der Seite und verleiht ihr ein insgesamt vollständigeres Erscheinungsbild.
 
-Once the category has been saved you will be returned to the **Articles:
-Categories** page.
+### Speichern ins Menü als Blog
 
-<img
-src="https://docs.joomla.org/images/thumb/4/4d/J4x_article_sub_category_list_view-en.png/800px-J4x_article_sub_category_list_view-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/4/4d/J4x_article_sub_category_list_view-en.png 1.5x"
-data-file-width="1000" data-file-height="722" width="800" height="578"
-alt="J4x article sub category list view-en.png" />
+Die Auswahl dieses Elements aus dem Dropdown-Menü *Speichern & Schließen* wird das Kategoriebearbeitungsformular speichern und schließen und ein neues Menüeintragsformular mit allen Daten öffnen, die benötigt werden, um einen *Kategorienblog* für diese Kategorie zu erstellen. Möglicherweise möchten Sie den *Titel* ändern. Zum Beispiel könnte es *Säugetier-Beitragsblog* sein, sodass die neuesten Beiträge über Säugetiere vorgestellt werden.
 
-The screenshot above, for articles on pets, shows an example of how some
-categories have been set up. It is easy to see that the list includes
-sub-categories (grouped and shown offset to the right below the parent).
+Im *Seitendarstellung*-Tab versuchen Sie, das Feld *Seitenüberschrift anzeigen* auf *Anzeigen* zu setzen. Das zeigt *Säugetier-Beitragsblog* als fettgedruckte Überschrift oben auf der Seite und verleiht ihr ein insgesamt vollständigeres Erscheinungsbild.
 
-Once you have created your categories they are available for use in your
-articles.
+Der folgende Screenshot zeigt die Seitenansicht einer in Entwicklung befindlichen Kategorien-Blog-Seite.
 
-## Tips
+![Kategorie-Blog-Seite Säugetiere](../../../en/images/articles/article-mammals-articles-blog-site-view.png)
 
-- You can also create article categories from within an article.
-- Remember that you can only assign one category to an article.
-- As both parent categories and sub-categories can have further
-  sub-categories, plan and organise categories carefully. A complicated
-  category hierarchy can become a challenge to manage.
-- Another method of grouping content in Joomla is the use of the
-  **Tags** Component allowing you to add multiple tags to your articles.
-  Using categories and tags can help minimise the number of
-  sub-categories and provides an efficient way to structure your website
-  content and provide visitors with more features to navigate your
-  website content.
+## Tipps
+
+- Sie können auch Beitragskategorien direkt innerhalb eines Beitrags erstellen.
+- Denken Sie daran, dass Sie einen Beitrag nur einer Kategorie zuweisen können.
+- Da sowohl Hauptkategorien als auch Unterkategorien weitere
+  Unterkategorien haben können, planen und organisieren Sie die Kategorien sorgfältig. Eine komplizierte
+  Kategorierhierarchie kann eine Herausforderung bei der Verwaltung sein.
+- Eine weitere Methode zur Gruppierung von Inhalten in Joomla ist die Verwendung der **Tags**-Komponente, mit der Sie Ihren Beiträgen mehrere Tags hinzufügen können.
+  Die Verwendung von Kategorien und Tags kann helfen, die Anzahl der
+  Unterkategorien zu minimieren und bietet eine effiziente Möglichkeit, Website-
+  Inhalte zu strukturieren und den Besuchern mehr Funktionen zur Navigation 
+  der Inhalte zu bieten.
+

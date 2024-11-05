@@ -1,72 +1,31 @@
 <!-- Filename: J4.x:Media:_Options / Display title: Medien: Optionen -->
 
-## The Options Form
+## Einführung
 
-To access the Media: Options form select the **Options** button in the
-Toolbar on the Media page. The fields are well commented and provided
-with default values that should be suitable for almost all sites. You
-usually only need to use the options form if you wish to keep Files
-separate from Images or if you have an unusual file format not included
-in the default list.
+Die Seite *Medien: Optionen* wird verwendet, um den Upload und die Speicherung von Medien, sowohl Bilder als auch Dateien, zu steuern. **Achtung:** Es gibt Sicherheitsaspekte, die mit einigen Arten von Dateien verbunden sind - ein möglicher Zugang für Hacker.
 
-**Beware:** there are security implications associated with some types
-of file - a hacker's way in.
-
-## Separate Files
-
-To set up a location for files that is separate from images first create
-a new folder in the root of your installation, for example **files**.
-Remember, it will be part of a url link so lower case and no spaces or
-punctuation marks.
-
-### Plugin 'Dateisystem - Lokal'
-
-Find the FileSystem Local plugin in the list of plugins and open it add
-your newly created file folder to the list of places you can keep media.
-Just click on the + button and select files from the list of available
-folders.
-
-<img
-src="https://docs.joomla.org/images/9/9e/J4.x-media-filesystem-local-plugin-en.png"
-class="thumbborder" decoding="async" data-file-width="800"
-data-file-height="406" width="800" height="406"
-alt="J4.x-media-filesystem-local-plugin-en.png" />
-
-Make sure the plugin is enabled. Save & Close.
-
-### Options Form
-
-In the Options form enter the folder name in the **Path to Files
-Folder** field. Make sure you do not use the name of an existing core
-Joomla folder.
-
-<img src="https://docs.joomla.org/images/9/98/J4.x-media-options-en.png"
-class="thumbborder" decoding="async" data-file-width="800"
-data-file-height="406" width="800" height="406"
-alt="J4.x-media-options-en.png" />
+Um das Formular *Medien: Optionen* zu öffnen, wählen Sie die **Optionen**-Schaltfläche in der Toolbar auf der Medienseite aus. Die Felder sind gut kommentiert und mit Standardwerten versehen, die für fast alle Seiten geeignet sein sollten. Sie müssen das Optionsformular normalerweise nur verwenden, wenn Sie Dateien getrennt von Bildern halten möchten oder wenn Sie ein ungewöhnliches Dateiformat haben, das nicht in der Standardliste enthalten ist.
 
 ## Screenshot
 
-When set up, you will be able to choose between the images and files
-folders in the Local part of the Media view.
+![Das Medienoptionen-Formular](../../../en/images/media/media-options.png)
 
-<img
-src="https://docs.joomla.org/images/0/08/J4.x-media-images-files-en.png"
-class="thumbborder" decoding="async" data-file-width="800"
-data-file-height="406" width="800" height="406"
-alt="J4.x-media-images-files-en.png" />
+## Pfad zu Dateien und Ordnern
 
-## Further Information
+Dies sind separate Elemente im Konfigurationsformular, aber beide verweisen auf den *images*-Ordner in einer neuen Joomla-Installation. Wenn Sie nicht-bildhafte Medien separat speichern möchten (zum Beispiel PDFs, Tabellenkalkulationen und Textdateien), verwenden Sie die folgenden Schritte:
 
-In this series of tutorials:
+1. Erstellen Sie einen Ordner namens *files* im Stammverzeichnis Ihrer Joomla-Installation.
+2. Aktivieren Sie das Plugin *Dateisystem - Lokal* und konfigurieren Sie es, wie im Beitrag zu [Medien-Datei-Locations](jdocmanual?article=user/media/media-file-locations) beschrieben.
+3. Geben Sie den Ordnernamen *files* in das Feld *Pfad zu Dateien Ordner* des Medien-Optionen-Formulars ein.
 
--  Managing
-  Media
--  Media: Upload Delete
-  Rename
--  Media: Image Crop Resize
-  Rotate
--  Media:
-  Options
--  Media: Uploading SVG
-  files
+Geben Sie im Optionen-Formular den Ordnernamen im Feld **Pfad zu Dateien Ordner** ein. Achten Sie darauf, keinen Namen eines bestehenden Joomla-Kernordners zu verwenden.
+
+Wenn alles eingerichtet ist, können Sie im lokalen Teil der Medienansicht zwischen den Ordnern für Bilder und Dateien wählen.
+
+![Die Medienseite](../../../en/images/media/media-sample-data-cassiopeia.png)
+
+## Zusätzliche Bild- oder Dokumenttypen
+
+Es kann vorkommen, dass ein Bild oder Dokument nicht hochgeladen werden kann. Überprüfen Sie in diesem Fall, ob die Erweiterung zu den *Zulässigen Erweiterungen* gehört, ob die Erweiterung zu den *Erlaubten Erweiterungstypen* für das Medium gehört und ob sie zu den *Erlaubten MIME-Typen* gehört (möglicherweise müssen Sie dies nachschlagen). Alle drei müssen korrekt sein, ansonsten wird der Upload verweigert.
+*Übersetzt von openai.com*
+

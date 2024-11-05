@@ -1,108 +1,29 @@
-<!-- Filename: J3.x:Adding_custom_fields/List_Field / Display title: Listen-Feld -->
+<!-- Filename: J3.x:Adding_custom_fields/List_Field / Display title: Listenfeld -->
 
-## Listen-Feld
+## Zweck
 
-**Artikel in dieser Serie**
+Der Listentyp des Formularfelds bietet ein Dropdown-Menü oder eine Liste von benutzerdefinierten Einträgen. Wenn das Feld einen gespeicherten Wert hat, wird dieser ausgewählt, sobald die Seite geladen wird. Wenn nicht, wird der Standardwert (falls vorhanden) ausgewählt.
 
-1.  Einführung
-2.   Parameter für alle Eigenen
-    Felder
-3.  Kalender-Feld
-4.  Kontrollkästchen-Feld
-5.   Farbe
-    Feld
-6.   Editor
-    Feld
-7.   Zahlen
-    Feld
-8.   Listen
-    Feld
-9.   Bilder-Listen
-    Feld
-10.  Medien
-    Feld
-11.  Optionsfeld
-    (radio)
-12.  Repeatable
-    Field
-13.  Sql
-    Feld
-14. Textfeld
-15.  Textbereich
-    Feld
-16.  URL
-    Feld
-17.  Benutzer
-    Feld
-18.  Benutzergruppe
-    Feld
-19.  Wie man die Eigenen Felder
-    gruppiert
-20.  Welche Komponenten unterstützen die Eigenen
-    Felder
-21.  Implementierung in der eigenen
-    Komponente
-22.  Eigene Felder in Overrides
-    anwenden
+## Felderstellung
 
-### Liste
+Besondere Optionen in diesem Feld sind:
 
-Dieses Feld bietet eine Dropdown Liste oder Listenbox mit selbst
-definierten Werten. Wenn das Feld einen gespeicherten Wert hat, wird
-dieser Wert beim ersten Laden der Seite angezeigt. Wenn der Wert leer
-ist, wird der Standardwerd (falls definiert) angezeigt.
+- **Mehrfach** Mehrere Werte können ausgewählt werden. Wenn auf *Nein* gesetzt, wird ein Eintrag in der Liste angezeigt. Wenn auf *Ja* gesetzt, werden drei Einträge angezeigt. Die Liste scrollt, um die Auswahl eines oder mehrerer Einträge zu ermöglichen.
+- **Listeneinträge** Elemente nach Bedarf hinzufügen und mithilfe des Zieh-Symbols deren Reihenfolge ändern. Beginnen Sie die Liste mit Text auf *- Auswählen -* und leerem Wert. Dies bietet einen leeren Standard, wodurch diese Liste im Beitrag fehlt.
+- **Feldklasse** Auf *w-auto* setzen, um die Liste nur so breit wie nötig für die Etiketten zu machen.
 
-#### Optionen
+![Erstellung eines Listenfeldes](../../../en/images/fields/fields-list.png)
 
-Spezielle Optionen in diesem Feld sind:
+## Dateneingabe
 
-- Mehrfachauswahl
-  Erlaubt die Mehrfachauswahl - falls aktiviert.
-- Listenwerte
-  Die Werte der Liste.
+Einfach: Wähle einfach ein Element aus der Liste oder mehrere Elemente aus, wenn *Mehrfach* auf *Ja* steht.
 
-#### Zugehörige Informationen
+## Datendarstellung
 
-Siehe
-Listenformular-Feld-Typ
+Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich und Ihr Template ist für das Design des Feldes verantwortlich.
 
-#### Screenshots
+Die Ausgabe ist ein Einzelobjekt oder eine durch Komma getrennte Liste.
 
-##### Feld erstellen
+Suchen Sie nach dem **Ursprungs**-Eintrag.
 
-Als Beispiel erstellen wir ein Feld mit den Optionen wie im nächsten
-Bild gezeigt.
-<img src="https://docs.joomla.org/images/0/08/List_field_create-de.png"
-decoding="async" data-file-width="800" data-file-height="578"
-width="800" height="578" alt="List field create-de.png" />
-
-##### Nutzung des Feldes im Backend
-
-Im Backend wird während der Erstellung oder Bearbeitung eines Beitrages
-(oder auch Kontaktes) das Feld wie im folgenden Bild angezeigt:
-
-<img src="https://docs.joomla.org/images/4/45/List-de.png"
-decoding="async" data-file-width="800" data-file-height="429"
-width="800" height="429" alt="List-de.png" />
-
-##### Nutzung des Feldes im Frontend
-
-Im Frontend wird das Feld wie im Folgenden Bild angezeigt.
-
-<img
-src="https://docs.joomla.org/images/b/b5/List_field_frontend-de.png"
-decoding="async" data-file-width="800" data-file-height="284"
-width="800" height="284" alt="List field frontend-de.png" />
-
-Die Option *Automatische Anzeige* gibt die Position des Feldes an und
-das Template bestimmt das Design des Feldes.
-Felderinhalte werden nur im Frontend angezeigt, wenn es im Beitrag mit
-Daten gefüllt wurde. Das Feld kann auch als Pflichtfeld deklariert
-werden, dann vergisst man auch nicht das Ausfüllen.
-
-<a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/Integer_Field"
-id="content-button" class="button expand success">Zurück:
-Zahlen-Feld</a> <a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/List_of_Images_Field"
-id="content-button" class="button expand">Weiter: Bilder-Listen Feld</a>
+![Anzeige aller Felder](../../../en/images/fields/fields-display.png)

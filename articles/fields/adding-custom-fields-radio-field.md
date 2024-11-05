@@ -1,105 +1,32 @@
-<!-- Filename: J3.x:Adding_custom_fields/Radio_Field / Display title: Optionsfeld (radio) -->
+<!-- Filename: J3.x:Adding_custom_fields/Radio_Field / Display title: Radiofeld -->
 
-<span id="section-portal-heading"></span>
+## Zweck
 
-## Optionsfeld (radio)
+Das Radio-Feld bietet Auswahlknöpfe, von denen nur einer ausgewählt werden kann.
 
-**Artikel in dieser Serie**
+## Felderstellung
 
-1.  Einführung
-2.   Parameter für alle Eigenen
-    Felder
-3.  Kalender-Feld
-4.  Kontrollkästchen-Feld
-5.   Farbe
-    Feld
-6.   Editor
-    Feld
-7.   Zahlen
-    Feld
-8.   Listen
-    Feld
-9.   Bilder-Listen
-    Feld
-10.  Medien
-    Feld
-11.  Optionsfeld
-    (radio)
-12.  Repeatable
-    Field
-13.  Sql
-    Feld
-14. Textfeld
-15.  Textbereich
-    Feld
-16.  URL
-    Feld
-17.  Benutzer
-    Feld
-18.  Benutzergruppe
-    Feld
-19.  Wie man die Eigenen Felder
-    gruppiert
-20.  Welche Komponenten unterstützen die Eigenen
-    Felder
-21.  Implementierung in der eigenen
-    Komponente
-22.  Eigene Felder in Overrides
-    anwenden
+* Das **Label** basiert auf dem Titel und erscheint in der Ausgabe vor dem ausgewählten Wert.
+* Radiobuttons werden einzeln hinzugefügt, jeder mit Text und Wert. Der Text erscheint in der Ausgabe. Der Wert wird im Datenerfassungsformular verwendet und muss jeweils unterschiedlich sein. Der erste Eintrag in der Liste sollte den Text auf *- Auswählen -* gesetzt haben und dessen Wert leer lassen. Dies ermöglicht es, dass das Feld nicht gesetzt wird und somit nicht in der Ausgabe erscheint.
+* Verwenden Sie die Schaltflächen zum Ziehen, um die Reihenfolge der Radiobutton-Liste zu ändern.
 
-### Radio
+![Radiobuttons](../../../en/images/fields/fields-radio.png "Radiobuttons")
 
-Dieses Feld bietet Radio-Buttons zur Auswahl von verschiedenen Optionen.
 
-#### Optionen
+## Dateneingabe
 
-Spezielle Optionen in diesem Bereich sind:
+Einfach: Wählen Sie einfach den erforderlichen Wert aus.
 
-- Werte
-  Die Auswahlmöglichkeiten für das Optionsfeld.
+![Radio-Feldauswahl](../../../en/images/fields/fields-radio-entry.png "Radio-Feldauswahl")
+```
 
-#### Zugehörige Informationen
+## Datenanzeige
 
-Siehe  Radio
-Formular-Feld-Typ
+Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich und dein Template ist für das Design des Feldes verantwortlich.
 
-#### Screenshots
+Suche nach dem **Lebenszyklus**-Element.
 
-##### Feld erstellen
+![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Anzeige der Felder")
 
-Als Beispiel erstellen wir ein Feld mit den Optionen wie im nächsten
-Bild gezeigt.
+Dem Feld Titel folgt der Text des ausgewählten Wertes.
 
-<img src="https://docs.joomla.org/images/9/92/Radio_field_create-de.png"
-decoding="async" data-file-width="800" data-file-height="638"
-width="800" height="638" alt="Radio field create-de.png" />
-
-##### Nutzung des Feldes im Backend
-
-Im Backend wird während der Erstellung oder Bearbeitung eines Beitrages
-(oder auch Kontaktes) das Feld wie im folgenden Bild angezeigt:
-
-<img src="https://docs.joomla.org/images/1/13/Radio-de.png"
-decoding="async" data-file-width="800" data-file-height="327"
-width="800" height="327" alt="Radio-de.png" />
-
-##### Nutzung des Feldes im Frontend
-
-Im Frontend wird das Feld angezeigt wie im folgenden Bild zu sehen. Die
-Option *Automatische Anzeige* gibt die Position des Feldes an und das
-Template bestimmt das Design des Feldes.
-Felderinhalte werden nur im Frontend angezeigt, wenn es im Beitrag mit
-Daten gefüllt wurde. Das Feld kann auch als Pflichtfeld deklariert
-werden, dann vergisst man auch nicht das Ausfüllen.
-
-<img
-src="https://docs.joomla.org/images/e/e3/Radio_field_frontend-de.png"
-decoding="async" data-file-width="800" data-file-height="371"
-width="800" height="371" alt="Radio field frontend-de.png" />
-
-<a href="https://docs.joomla.org/J3.x:Adding_custom_fields/Media_Field"
-id="content-button" class="button expand success">Zurück: Medien
-Feld</a> <a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/Repeatable_Field"
-id="content-button" class="button expand">Weiter: Wiederholbares
-Feld</a>

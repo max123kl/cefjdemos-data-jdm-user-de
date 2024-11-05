@@ -1,20 +1,14 @@
-<!-- Filename: J4.x:Menu_Dashboard / Display title: Dashboard-Menü -->
+<!-- Filename: J4.x:Menu_Dashboard / Display title: Menü-Dashboard  -->
 
-## Introduction
+## Einführung
 
-To open the Menu Dashboard select the dashboard icon to the right of the
-Menu item in the Administrator menu. The default dashboard contains two
-panels, one for Menus & Menu Items and one for items in individual Site
-menus. Neither can be edited or unpublished.
+Um das Menü-Dashboard zu öffnen, wählen Sie das Dashboard-Symbol rechts neben dem Menüpunkt im Administrator-Menü. Das Standard-Dashboard enthält zwei Panels, eines für Menüs & Menüeinträge und eines für Einträge in individuellen Seitenmenüs. Keines von beiden kann bearbeitet oder unveröffentlicht werden.
 
-You can have as many Site and Administrator menus as you like in almost
-any position you like. This feature is often used to show different
-menus to different User Groups after login.
+Sie können so viele Seiten- und Administrator-Menüs haben, wie Sie möchten, und sie fast auf jede Position platzieren, die Ihnen gefällt. Diese Funktion wird oft verwendet, um nach dem Login verschiedene Menüs für verschiedene Benutzergruppen anzuzeigen.
 
 ## Screenshot
 
-<img
-src="https://docs.joomla.org/images/8/8b/J4.x-menu-dashboard-en.png"
-class="thumbborder" decoding="async" data-file-width="800"
-data-file-height="321" width="800" height="321"
-alt="J4.x-menu-dashboard-en.png" />
+![Menü-Dashboard](../../../en/images/dashboards/menus-dashboard.png)
+
+*Übersetzt von openai.com*
+

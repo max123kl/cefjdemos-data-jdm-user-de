@@ -1,360 +1,207 @@
-<!-- Filename: J4.x:Installing_Joomla / Display title: Joomla! installieren -->
+<!-- Filename: J4.x:Installing_Joomla / Display title: Installation von Joomla -->
 
 ## Einführung
 
-Die erstmalige Installation von Joomla! ist sehr einfach. Nach Abschluss
-der Vorarbeiten, dem Einrichten einer Hosting-Umgebung und dem Erstellen
-einer Datenbank wird die Installation durch den eingebauten
-Web-Installer zu einem Kinderspiel. Die einzelnen Schritte sind:
+Die Installation von Joomla! zum ersten Mal ist sehr einfach. Nach Abschluss der vorbereitenden Schritte, der Einrichtung einer Hosting-Umgebung und der Erstellung einer Datenbank wird der integrierte Webinstaller von Joomla Ihre neue Seite in nur wenigen Minuten einrichten. Die vorherigen Schritte:
 
-### Hosting Umgebung
+### Hosting-Einrichtung
 
-Wenn noch keine Hosting-Umgebung eingerichtet ist, muss dies jetzt
-nachgeholt werden, entweder bei einem Hosting-Anbieter oder auf dem
-lokalen Computer. Details findet man in  Hosting
-Setup.
+Falls Sie noch keine Hosting-Umgebung eingerichtet haben, sollten Sie dies jetzt tun, entweder bei einem Hosting-Dienst oder auf Ihrem lokalen Computer.
 
-Außerdem gibt es einige PHP-Einstellungen, die zur Installation von
-Joomla erforderlich sind. Die Einstellungen befinden sich normalerweise
-in einer *php.ini* oder *user.ini* Konfigurationsdatei auf dem Server.
-Wenn ein Shared Hosting zur Verfügung steht, sollte man sich bei seinem
-Provider erkundigen, wie man diese Einstellungen ändern kann, sofern
-dies möglich ist. Falls eine lokale Umgebung, z.B. mit
-XAMPP, ein
-VPS oder dedizierter Rechner verwendet wird, sollten diese Einstellungen
-uneingeschränkt möglich sein und selbst vorgenommen werden können.
+Außerdem gibt es einige PHP-Einstellungen, die ausreichend sein müssen, damit Joomla installiert werden kann. Die Einstellungen befinden sich normalerweise in einer *php.ini*- oder *user.ini*-Konfigurationsdatei auf dem Server. Wenn Sie Shared Hosting nutzen, sprechen Sie mit Ihrem Hosting-Dienst darüber, wie diese Einstellungen geändert werden können, falls dies möglich ist. Wenn Sie auf einem lokalen Server arbeiten, zum Beispiel mit XAMPP, oder auf einem VPS oder dedizierten Host, sollten Sie durch diese Einstellungen nicht eingeschränkt sein und können sie selbst festlegen.
 
-Die Minimalanforderungen für die Datei *php.ini* sind nachfolgend
-angegeben:
+Die Mindestwerte für die *php.ini*-Datei sind unten aufgeführt:
 
 - *memory_limit:* 256M
-- *upload_max_filesize:* 30M
-- *post_max_size:* 30M
+- *upload_max_filesize:* 64M
+- *post_max_size:* 64M
 - *max_execution_time:* 30
 
-Es ist zwar möglich, mit niedrigeren Werten für upload_max_filesize und
-post_max_size zu arbeiten, aber größere Erweiterungen werden beim Upload
-fehlschlagen und unvorhersehbare Probleme verursachen.
+Es ist möglich, mit niedrigeren Werten für upload_max_filesize und post_max_size zu arbeiten, aber größere Erweiterungen werden beim Hochladen fehlschlagen und unvorhersehbare Probleme verursachen.
 
-### Datenbank Setup
+### Datenbankeinrichtung
 
-Wenn noch keine Datenbank eingerichtet ist, sollte dies jetzt nachgeholt
-werden. Es wird für einen Hosting-Service im  Hosting
-Setup-Tutorial
-behandelt. Ferner gibt es das Tutorial  Erstellen einer Datenbank für
-Joomla!,
-das die Möglichkeiten von localhost und phpMyAdmin beschreibt.
+Falls Sie noch keine Datenbank eingerichtet haben, sollten Sie dies jetzt tun. Dies wird für einen cPanel-Hosting-Dienst im Tutorial [cPanel Hosting](jdocmanual?article=user/hosting/cpanel-hosting "cPanel Hosting") behandelt. Es gibt auch ein *Erstellen einer Datenbank für Joomla!*-Tutorial, das localhost- und phpMyAdmin-Methoden abdeckt.
 
-Grundlegende Datenbankinformationen, die beim Start der eigentlichen
-Joomla!-Installation benötigt werden, sollten vorher unbedingt notiert
-werden.
+Sie sollten sich grundlegende Datenbankinformationen notieren, die benötigt werden, wenn die eigentliche Joomla-Installation gestartet wird.
 
-- Wo befindet sich die Datenbank – normalerweise ist das *localhost*,
-  auch bei einem Hosting-Service. Das kann auch ein spezieller Server
-  des Hosts sein, wie z.B. *`dbserver1.yourhost.com`*.
-- Name der Datenbank
-- Name des Datenbankbenutzers
-- Passwort des Datenbankbenutzers
+- Speicherort der Datenbank, normalerweise *localhost* selbst bei einem Hosting-Dienst. Es kann sich um den Server eines bestimmten Hosts handeln, wie zum Beispiel *`dbserver1.yourhost.com`*.
+- Der Datenbankname
+- Der Datenbankbenutzername
+- Das Passwort des Datenbankbenutzers
 
-## Vorbereitungen zur Installation
+## Vorbereitung zur Installation
 
-### Download und Upload der Joomla! Installationsdateien
+### Herunterladen und Hochladen von Joomla!-Paketdateien
 
-Download der aktuellen Version von Joomla! über den Link auf der
-<a href="https://downloads.joomla.org/" class="external text"
-target="_blank" rel="noreferrer noopener">Joomla-Download</a>-Seite
+Laden Sie die aktuelle Version von Joomla! über den Link auf der
+[Download Joomla](https://downloads.joomla.org/) Seite herunter.
 
-Die heruntergeladene Zip-Datei des Joomla-Installationspakets auf den
-Server übertragen. Bei einem Hosting-Service kann man vielleicht die
-cPanel-Dateimanager-Upload-Funktion benutzen oder einen FTP-Client
-verwenden, um die heruntergeladene Joomla 4.x Zip-Datei auf den Server
-zu übertragen. Es gibt verschiedene FTP-Clients zur Auswahl. Hier findet
-sich ein detaillierter <a
-href="https://en.wikipedia.org/wiki/Comparison_of_FTP_client_software"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Vergleich von FTP-Client-Software</a>.
-Im Zweifelsfall sollte FileZilla verwendet werden.
+Verschieben Sie das heruntergeladene Joomla-Installationspaket-Zipfile auf den Server.
+Bei einem Hosting-Dienst können Sie die cPanel Dateimanager-Uploadfunktion
+nutzen oder einen FTP-Client verwenden, um das heruntergeladene Joomla
+5.x-Zipfile auf Ihren Server zu übertragen. Es gibt verschiedene FTP-Clients.
+Hier ist ein detaillierter [Vergleich von FTP-Client-Software](https://de.wikipedia.org/wiki/Vergleich_von_FTP-Client-Software).
+Im Zweifelsfall verwenden Sie FileZilla.
 
-Das Stammverzeichnis (root) des Servers
+Der *Root*-Ordner Ihres Servers
 
-Es empfiehlt sich, die heruntergeladene Zip-Paketdatei auf den Server zu
-verschieben und dort zu entpacken, anstatt sie lokal zu entpacken und
-dann den Dateiverzeichnisbaum zu verschieben. Normalerweise lädt man die
-Webdateien in das Stammverzeichnis der Hosting-Umgebung hoch. Dieses
-wird normalerweise *public_html* genannt. Andere enthalten z. B.
-*htdocs* oder ähnliches. Dies hängt davon ab, was der Webhoster auf dem
-Server eingerichtet hat. Für Joomla-Zwecke kann man die Dateien direkt
-in *public_html* oder einen selbst erstellten Unterordner innerhalb
-dieses Ordners laden.
+Es ist besser, das heruntergeladene Zip-Paket auf Ihren Server zu übertragen
+und es dort zu entpacken, als es lokal zu entpacken und dann den gesamten
+Dateibaum zu verschieben. Normalerweise laden Sie Ihre Webdateien in den Root-Ordner
+Ihres Hosting-Dienstes hoch. Dieser wird typischerweise `public_html` genannt,
+aber andere Varianten wie `htdocs` sind möglich und hängen davon ab, wie Ihr
+Host den Server eingerichtet hat. Für Joomla-Zwecke können Sie die Dateien
+direkt in *public_html* oder einen Unterordner, den Sie darin erstellt haben,
+laden.
 
-<img
-src="https://docs.joomla.org/images/thumb/4/41/Stop_hand_nuvola.svg.png/25px-Stop_hand_nuvola.svg.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/thumb/4/41/Stop_hand_nuvola.svg.png/38px-Stop_hand_nuvola.svg.png 1.5x, https://docs.joomla.org/images/4/41/Stop_hand_nuvola.svg.png 2x"
-data-file-width="40" data-file-height="40" width="25" height="25"
-alt="Stop hand nuvola.svg.png" />Warnung!
+**Warnung:** Entpacken Sie die Dateien auf Ihrem eigenen Computer und kopieren
+Sie diese dann auf Ihren Server, achten Sie darauf, nur die Ordner und Dateien
+zu verschieben, die sich **innerhalb** des Joomla-Pakets befinden. Wenn Sie die
+Ordner und Dateien in einen Ordner entpacken, zum Beispiel *`Joomla`* genannt,
+und dann diesen Ordner hochladen, muss Ihr Standort unter
+*`deinseitenname.com/Joomla`* anstatt *`deinseitenname.com`* aufgerufen werden.
+Sie können das Unterverzeichnis von Joomla in etwas passenderes umbenennen,
+zum Beispiel jblog, und das könnte Ihnen nützlich erscheinen. **Hinweis:**
+Verzeichnisnamen sollten klein geschrieben, ohne Leerzeichen und mit
+Bindestrichen statt Unterstrichen zur Trennung der Wörter sein.
 
-Wenn die Dateien auf dem eigenen Computer entpackt und dann auf den
-Server kopiert werden, muss darauf geachtet werden, dass nur die Ordner
-und Dateien verschoben werden, die **innerhalb** des Joomla-Pakets
-enthalten sind. Wenn die Ordner und Dateien in einen Ordner entpackt
-werden, der zum Beispiel *`Joomla`* heißt und dieser Ordner hochgeladen
-wird, erreicht man die Website unter der URL *`yoursitename.com/Joomla`*
-anstatt unter *`yoursitename.com`*. Das Joomla Unterverzeichnis kann in
-einen anderen, der Website angemesseneren Namen, umbenannt werden, wie
-z. B. jblog, was praktisch sein könnte. **Hinweis:** Verzeichnisnamen
-sollten kleingeschrieben werden, ohne Leerzeichen und mit Minuszeichen
-statt Unterstrichen, um Wörter zu trennen.
-
-Die Zip-Paketdateien können mit diversen Tools (z.B. unzip) direkt auf
-dem Host entpackt werden, welches auf dem Server installiert sein muss.
-Falls Ihr Hosting-Service das Admin-Tool cPanel verwendet, kann im
-File-Manager der Extract Knopf gedrückt werden. Unabhängig davon kann
-auch das kostenlose Drittanbieter-Tool
-<a href="https://www.akeeba.com/products/akeeba-kickstart.html"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Akeeba Kickstart</a> dafür benutzt
-werden. Die entpackten Dateien und Verzeichnisse sollten im aktuellen
-Ordner abgelegt werden. Die Extraktion auf dem lokalen Computer hängt
-vom Betriebssystem ab. Mit einem Rechts-Klick könnte man prüfen, ob es
-ein Menü zum Entpacken gibt. In diesem Fall legt das Betriebssystem die
-Dateien möglicherweise in einem Ordner mit dem gleichen Namen wie die
-Zip-Datei ab. Nach dem Entpacken sollte man die Zip-Datei löschen und
-den Ordner, in den die Dateien extrahiert wurden, umbenennen, sodass er
-einen kurzen Namen erhält, der für die Verwendung in einer URL geeignet
-ist.
+Die Zip-Paketdateien können direkt auf dem Host mit verschiedenen
+Befehlszeilenwerkzeugen (z.B. unzip), die auf dem Server installiert sein
+müssen, extrahiert werden. Wenn Ihr Hosting-Dienst das Admin-Tool cPanel
+verwendet, kann die Extraktion im Dateimanager durch Klicken auf den
+Extract-Button durchgeführt werden. Außerdem kann das kostenlose
+Drittanbieter-Tool Akeeba Kickstart für diesen Zweck verwendet werden. 
+Die entpackten Dateien und Verzeichnisse werden in den aktuellen Ordner
+gelegt. Die Extraktion auf Ihrem lokalen Computer hängt von Ihrem Betriebssystem ab.
+Versuchen Sie, mit der rechten Maustaste zu klicken, um zu sehen, ob es ein
+Extraktionsmenü gibt. In diesem Fall könnte Ihr Betriebssystem die Dateien in
+einen Ordner mit demselben Namen wie die Zipdatei legen. Nach der Extraktion
+können Sie die Zipdatei löschen und den Extraktionsordner in etwas Kurzes und
+Nützliches für die Verwendung in einer URL umbenennen.
 
 ## Installation Starten
 
-Wenn die oben genannten Anforderungen erfüllt sind, eine Datenbank
-erstellt wurde und die erforderlichen Joomla!-Dateien vorhanden sind,
-kann mit der Installation von Joomla! begonnen werden. Den Web-Installer
-von Joomla! startet man, in dem der bevorzugte Browser geöffnet wird und
-der Domain-Name der Website aufgerufen wird. Bei einer Host-Installation
-wählt man *`https://www.yoursitename.com`*. Bei einer lokalen
-Joomla-Installation sollte *`http://localhost/`* gewählt werden. Dann
-erscheint der Installationsbildschirm..
+Mit den oben genannten Anforderungen, einer erstellten Datenbank und den erforderlichen Joomla-Dateien sind Sie bereit, Joomla zu installieren. Starten Sie den Joomla-Webinstaller, indem Sie Ihren bevorzugten Browser öffnen und zur Domain der Webseite navigieren. Bei einer Hosting-Installation verwenden Sie *`https://www.yoursitename.com`*. Wenn Sie Joomla lokal installieren, verwenden Sie *`http://localhost/`* und sollten den Installationsbildschirm sehen.
 
-<img
-src="https://docs.joomla.org/images/thumb/c/c1/J4x_Installation_screen_page_1_de.png/500px-J4x_Installation_screen_page_1_de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/c/c1/J4x_Installation_screen_page_1_de.png/750px-J4x_Installation_screen_page_1_de.png 1.5x, https://docs.joomla.org/images/c/c1/J4x_Installation_screen_page_1_de.png 2x"
-data-file-width="1000" data-file-height="514" width="500" height="257"
-alt="J4x Installation screen page 1 de.png" />
+![Joomla-Installer Teil 1, Installationssprache und Site-Name](../../../en/images/getting-started/installing-joomla-installer-1.png)
 
-Joomla wird versuchen, das Feld *Installationssprache auswählen*
-automatisch mit der vom Browser verwendeten Sprache abzugleichen. Bei
-Bedarf lässt sich diese Einstellung ändern.
+Joomla wird versuchen, das Feld *Sprache auswählen* automatisch anhand der Sprache Ihres Browsers zu identifizieren. Sie können dies bei Bedarf ändern.
 
-Bitte die nachfolgenden Informationen eingeben:
+Füllen Sie die folgenden Informationen aus.
 
-- **Name der Website**: Der Name der Joomla!-Website – dies kann später
-  auf der Seite  Globale Konfiguration der
-  Website
-  zu jedem beliebigen späteren Zeitpunkt geändert werden.
+- **Site Name** Der Name Ihrer Webseite — dies kann jederzeit später auf der Seite „Globale Konfiguration der Webseite“ geändert werden.
 
-Wenn alles auf der ersten Seite ausgefüllt ist, auf die Schaltfläche
-*Zugangsdaten einrichten* klicken, um fortzufahren.
+Wenn alles auf der ersten Seite ausgefüllt ist, den *Logindaten einstellen* Button anklicken, um fortzufahren.
 
-## Zugangsdaten
+## Anmeldedaten
 
-Jetzt sollte das Fenster für die Anmeldedaten zu sehen sein.
+Sie sollten nun den Bildschirm mit den Anmeldedaten sehen.
 
-<img
-src="https://docs.joomla.org/images/thumb/5/55/J4x_Installation_screen_page_2_de.png/500px-J4x_Installation_screen_page_2_de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/5/55/J4x_Installation_screen_page_2_de.png/750px-J4x_Installation_screen_page_2_de.png 1.5x, https://docs.joomla.org/images/5/55/J4x_Installation_screen_page_2_de.png 2x"
-data-file-width="1000" data-file-height="602" width="500" height="301"
-alt="J4x Installation screen page 2 de.png" />
+![Joomla-Installer Teil 2, Anmeldedaten](../../../en/images/getting-started/installing-joomla-installer-2.png)
 
-Bitte die nachfolgenden Informationen eingeben:
+Füllen Sie die folgenden Informationen aus.
 
-- **Name des Super-Benutzers**: der Real-Name des Administrators. So
-  wird die Begrüßung durch Joomla beim Anmelden aussehen.
-- **Benutzername des Super-Benutzers**: Der Benutzername für den **Super
-  User**. Er sollte nicht *admin* lauten (das wäre eine gute  Mein
-  Profil
-  beschrieben, auf der *Administration*-Oberfläche geändert werden.
-- **Passwort des Super-Benutzers**: Bitte bedenken, dass der Superuser
-  die maximale Kontrolle über die Website und die
-  Administrator-Oberfläche hat. Es sollte deshalb ein komplexes Passwort
-  gewählt werden. Um es später zu ändern, kann in der
-  *Administration*-Oberfläche das
-  Benutzermenü
-  aufgerufen werden.
-- **E-Mail-Adresse des Super Benutzers**: Bitte hier eine gültige E-Mail
-  eingeben, für den Fall, dass das Passwort vergessen wurde. An diese
-  E-Mail-Adresse wird ein Link zum Ändern des Super-User-Passworts
-  gesendet.
+- **Echter Name** Der Name des Super-Benutzers. So wird Joomla Sie begrüßen, wenn Sie sich einloggen.
+- **Benutzername des Super-Benutzerkontos** Der Benutzername für den *Super-Benutzer*. Vermeiden Sie es, *admin* als Administratornamen zu verwenden!
+- **Admin-Passwort** Denken Sie daran, dass ein Super-Benutzer maximalen Zugriff auf die Site- und Administrator-Schnittstellen hat, also verwenden Sie ein schwieriges Passwort. Nutzen Sie **Mein Profil** in der *Administrationsschnittstelle*, um es später zu ändern.
+- **Super-Benutzer-E-Mail-Adresse** Die E-Mail-Adresse des Super-Benutzers. Geben Sie eine gültige E-Mail-Adresse ein, falls Sie Ihr Passwort vergessen. Dies ist die E-Mail-Adresse, an die Sie einen Link zum Ändern des Super-Benutzer-Passworts erhalten.
 
-Wenn alles auf der zweiten Seite ausgefüllt ist, wird auf die
-Schaltfläche **„Datenbankverbindung einrichten“** geklickt, um
-fortzufahren.
+Wenn alles auf der zweiten Seite ausgefüllt ist, klicken Sie auf die Schaltfläche *Datenbankverbindung einrichten*, um fortzufahren.
 
-## Datenbank-Konfiguration
+## Datenbankkonfiguration
 
-Die Informationen über die Datenbank, die bei der Erstellung der
-Datenbank für diese Installation notiert wurden, sind hier einzutragen.
-Siehe auch die Seite  Datenbank für Joomla!
-erstellen.
+Geben Sie die Datenbankinformationen ein, die Sie notiert haben, als Sie die Datenbank
+für diese Installation erstellt haben.
 
-<img
-src="https://docs.joomla.org/images/thumb/1/1a/J40_Installation_screen_page_3-de.png/500px-J40_Installation_screen_page_3-de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/1/1a/J40_Installation_screen_page_3-de.png/750px-J40_Installation_screen_page_3-de.png 1.5x, https://docs.joomla.org/images/1/1a/J40_Installation_screen_page_3-de.png 2x"
-data-file-width="1000" data-file-height="753" width="500" height="377"
-alt="J40 Installation screen page 3-de.png" />
+![Joomla-Installer Teil 3, Datenbankkonfiguration](../../../en/images/getting-started/installing-joomla-installer-3.png)
 
-Der Einfachheit halber wird in dieser Anleitung auf die Installation mit
-einer <a href="https://en.wikipedia.org/wiki/MySQLi" class="extiw"
-title="wikipedia:MySQLi">MySQLi</a>-Datenbank eingegangen. Die
-Anweisungen auf der Installationsseite sind selbsterklärend, hier sind
-sie noch einmal aufgeführt:
+Zur Vereinfachung beziehen sich diese Anweisungen auf die Installation
+mit einer MySQLi-Datenbank. Die Anweisungen auf der Installationsseite sind
+selbsterklärend, aber hier sind sie noch einmal:
 
-- **Datenbanktyp**: MySQLi ist die übliche verwendete Datenbank
-- **Datenbank-Server**: Wo befindet sich die Datenbank? Üblich ist
-  *localhost*, auch bei Hosting-Services. Einige Anbieter verwenden
-  jedoch einen speziellen Datenbank-Server, wie z.B.
-  *dbserver1.yourhost.com*.
-- **Datenbank-Benutzername**: Der Benutzername, der für die Verbindung
-  mit der Datenbank verwendet wird
-- **Datenbank-Password**: Das Passwort zum Benutzernamen (nicht das
+- **Datenbanktyp** MySQLi ist die übliche Datenbank, die verwendet wird
+- **Hostname** Wo sich Ihre Datenbank befindet. Üblich ist *localhost*,
+  sogar bei Hosting-Diensten. Allerdings verwenden einige Hosts einen spezifischen Datenbankserver wie *dbserver1.yourhost.com*.
+- **Benutzername** Der Benutzername, der zur Verbindung mit der Datenbank verwendet wird
+- **Passwort** Das Passwort für den Datenbankbenutzer (nicht Ihr
   Administrator-Passwort)
-- **Datenbank-Name**: Der Name der Datenbank
-- **Tabellen-Präfix**: Er wird aus Sicherheitsgründen automatisch
-  generiert. Den per Zufall generierten Wert kann man übernehmen oder
-  ändern. Wichtig ist nur, dass der Unterstrich (`_`) am Ende nicht
-  vergessen wird.
-- **Verbindungsverschlüsselung**: Bestimmt, wie die Verbindung zur
-  Datenbank verschlüsselt werden soll. Wenn man es nicht besser weiß –
-  dann bleibt man am besten bei der Voreinstellung. Dies ermöglicht es
-  jedoch Unternehmen, die eine ein oder zwei Wege-Authentifizierung für
-  die Datenbankverbindung verwenden, diese zu ermöglichen.
+- **Datenbankname** Der Name der Datenbank
+- **Tabellenpräfix** Dies wird automatisch als Sicherheitsfunktion
+  generiert. Sie können den zufällig generierten Standard akzeptieren oder ihn ändern.
+  Vergessen Sie nur nicht, das Unterstrich-Zeichen (`_`) am Ende des
+  Präfixes zu setzen.
+- **Verbindung Verschlüsselung** gibt an, wie die Verbindung zur
+  Datenbank verschlüsselt werden soll. Wenn Sie es nicht wissen, ist es am besten,
+  die Standardeinstellung zu belassen. Es ermöglicht jedoch Unternehmen, die eine oder
+  zweiseitige Authentifizierung für die Datenbankverbindung verwenden, dies bereitzustellen.
 
-Alle diese und weitere Einstellungen können auf der Seite
-Konfiguration
-unter *Server-Optionen*, nach Abschluss der Installation, bearbeitet
-werden. Bitte beachten, dass die Installation beschädigt wird, wenn
-diese Einstellungen nach der Installation geändert werden, es sei denn,
-es existiert eine vollständige Kopie der aktuellen Joomla-Datenbank. Die
-typische Anwendung wäre, den Benutzernamen und das Passwort der
-Datenbank zu aktualisieren oder den Umzug einer bestehenden Installation
-auf einen neuen Host, mit anderen Parametern, abzuschließen.
+Alle diese Einstellungen und mehr können auf der Seite *Globale Konfiguration der Website*
+unter *Serveroptionen* bearbeitet werden, nachdem die Installation abgeschlossen ist. Beachten Sie,
+dass Sie Ihre Installation beschädigen, wenn Sie diese Einstellungen nach
+der Installation ändern, es sei denn, Sie haben eine vollständige Kopie der aktuellen Datenbank,
+die von der Joomla-Installation verwendet wird. Übliche Anwendungen wären, den
+Benutzernamen und das Passwort der Datenbank zu aktualisieren oder eine vorhandene Installation auf einen neuen Host mit anderen Parametern zu verschieben.
 
-Nachdem die Schaltfläche *Joomla! installieren* angeklickt wurde, wird
-das sich drehende Joomla-Logo zu sehen sein. Sobald die Installation
-abgeschlossen ist, sollte man die Erfolgsmeldung sehen.
+Nachdem Sie die *Joomla installieren* Taste geklickt haben, sollten Sie die
+Joomla-Installationsfortschrittsanzeige sehen.
 
-## Fertigstellung
+![Joomla-Installer Teil 4, Installationsfortschrittsanzeige](../../../en/images/getting-started/installing-joomla-installer-4.png)
 
-### Erfolg und Fertigstellung der Installation
+Sobald die Installation abgeschlossen ist, sollten Sie die Erfolgsseite sehen.
 
-Herzlichen Glückwunsch! Joomla 4 ist nun installiert.
+## Abschluss
 
-<img
-src="https://docs.joomla.org/images/thumb/f/f1/J40_Installation_screen_page_4_de.png/500px-J40_Installation_screen_page_4_de.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/f/f1/J40_Installation_screen_page_4_de.png/750px-J40_Installation_screen_page_4_de.png 1.5x, https://docs.joomla.org/images/thumb/f/f1/J40_Installation_screen_page_4_de.png/1000px-J40_Installation_screen_page_4_de.png 2x"
-data-file-width="1384" data-file-height="600" width="500" height="217"
-alt="J40 Installation screen page 4 de.png" />
+### Erfolgreicher Abschluss der Installation
 
-Wenn Joomla ohne die  Installation zusätzlicher
-Sprachen
-sofort verwendet werden soll, dann wählt man *Administrator öffnen*, um
-zum *Administrator Dashboard* zu kommen oder wählt die Option *Site
-öffnen*, um zur Homepage der Website zu springen. Möglicherweise ist ein
-Abschnitt mit empfohlenen PHP-Einstellungen zu sehen.
+Herzlichen Glückwunsch! Ihre Joomla-Seite ist einsatzbereit.
 
-- **Empfohlene Einstellungen**: Diese Einstellungen werden in der
-  PHP-Konfiguration empfohlen, verhindern aber nicht, dass Joomla!
-  installiert wird. Falls nötig, können sie mit Hilfe der obigen
-  Anleitung geändert werden.
+![Joomla-Installer Teil 5, Ihre Joomla-Seite ist fertig](../../../en/images/getting-started/installing-joomla-installer-5.png)
+
+Der obige Screenshot zeigt eine Entwicklerinstallation. Eine Produktionsinstallation entfernt automatisch den Installationsordner.
+
+Wenn Sie Joomla sofort nutzen möchten, ohne zusätzliche Sprachen zu installieren, können Sie *Administrator öffnen* auswählen, um zum *Administrator-Dashboard* zu gelangen, oder *Seite öffnen*, um zur Startseite der Website zu gelangen. Möglicherweise sehen Sie einen Abschnitt mit empfohlenen PHP-Einstellungen.
+
+- **Empfohlene Einstellungen** Diese Einstellungen werden in Ihrer PHP-Konfiguration empfohlen, verhindern aber nicht die Installation von Joomla!. Sie können sich auf die oben genannten Anweisungen beziehen, um zu erfahren, wie sie geändert werden können, falls dies notwendig ist.
 
 ### Zusätzliche Sprachen
 
-Im Rahmen des Joomla-Installationsprozesses besteht die Möglichkeit,
-zusätzliche Sprachen zu installieren, bevor die Installation
-abgeschlossen wird:
+Im Rahmen des Joomla-Installationsprozesses haben Sie die Möglichkeit, zusätzliche Sprachen zu installieren, bevor Sie die Installation abschließen.
 
-Dazu die Schaltfläche „Zusätzliche Sprachen installieren“ anklicken.
+Wählen Sie dazu die Schaltfläche Zusätzliche Sprachen installieren
 
-Dies führt zu einer zusätzlichen Installationsseite, auf der die
-gewünschten Sprachen ausgewählt werden können.
+Dies führt Sie zu einer zusätzlichen Installationsseite, auf der Sie die gewünschten Sprachen auswählen können.
 
-#### Zusätzliche Sprachen Installieren
+#### Zusätzliche Sprachen installieren
 
-Eine Liste der vorhandenen Sprachpakete wird angezeigt (Deutsch ist
-unter *German* zu finden)
+Eine Liste von Sprachpaketen wird angezeigt.
 
-<img
-src="https://docs.joomla.org/images/thumb/5/56/J40_Installation_screen_page_5_de.png/500px-J40_Installation_screen_page_5_de.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/thumb/5/56/J40_Installation_screen_page_5_de.png/750px-J40_Installation_screen_page_5_de.png 1.5x, https://docs.joomla.org/images/thumb/5/56/J40_Installation_screen_page_5_de.png/1000px-J40_Installation_screen_page_5_de.png 2x"
-data-file-width="1368" data-file-height="755" width="500" height="276"
-alt="J40 Installation screen page 5 de.png" />
+![Joomla-Installer Teil 6, zusätzliche Sprachen installieren](../../../en/images/getting-started/installing-joomla-installer-6.png)
 
-**Nur bis zu drei gewünschte Sprachen auswählen** (bei mehr als drei
-kann es zu Timeout-Problemen kommen – später können weitere Sprachen
-installiert werden).
+Wählen Sie bis zu 3 Sprachen aus, die Sie installieren möchten. (Mehr als 3 gleichzeitig können zu Timeout-Problemen führen; Sie können später weitere installieren.)
 
-Bitte Folgendes im Hinterkopf behalten:
+Beachten Sie Folgendes:
 
-- Sprachpakete, die in benutzerdefinierten Installationspaketen
-  enthalten sind, werden zu diesem Zeitpunkt nicht aufgelistet, da sie
-  bereits installiert sind.
-- Die Version der vorgeschlagenen Pakete passt zur Joomla-Hauptversion
-  (4.0.x, 4.1.x, usw.). Die Unterversion des Pakets muss nicht
-  übereinstimmen, z. B. wenn eine Version 4.0.3 installiert ist und ein
-  4.0.2 Sprachpaket angezeigt wird.
-- Nicht übereinstimmende Sprachpakete im Beispiel oben können nicht
-  übersetzte Textstellen enthalten.
-- Die nicht angepassten Sprachpakete werden als Update bereitgestellt,
-  sobald die Pakete von den registrierten Übersetzungsteams aktualisiert
-  werden. Das verfügbare Update wird sowohl im Dashboard als auch in
-  **System **→** Erweiterungen **→** Sprachen** angezeigt.
-  Dieses Verfahren ist vergleichbar mit
-  **System **→** Verwalten **→** Sprachen **→** Sprachen installieren**.
+- Sprachpakete, die in benutzerdefinierten Distributionen enthalten sind, werden in diesem Schritt nicht angezeigt, da sie bereits installiert sind.
+- Eine Version der vorgeschlagenen Pakete wird zur Joomla-Hauptversion passen (5.0.x, 5.1.x usw.). Die Nebenversionsnummer des Pakets kann jedoch nicht übereinstimmen, z.B. Sie installieren Version 5.0.3 und ein 5.0.2 Sprachpaket wird angezeigt.
+- Nicht übereinstimmende Sprachpakete im obigen Beispiel können unübersetzte Zeichenfolgen enthalten.
+- Die nicht übereinstimmenden Sprachpakete werden als Update angeboten, wenn die Pakete von den registrierten Übersetzungsteams aktualisiert werden. Das verfügbare Update wird sowohl im Kontrollpanel als auch unter **Erweiterungen → Update** angezeigt. Dieses Verhalten ist ähnlich wie **Erweiterungen → Sprachen installieren**.
 
-Auf die Schaltfläche *Weiter* klicken, dann wird ein Fortschrittsbalken
-angezeigt, während das Sprachpaket oder die Sprachpakete installiert
-werden.
+*Weiter* und eine Fortschrittsleiste werden angezeigt, während das Sprachpaket oder die Sprachpakete installiert werden.
 
 #### Standard-Sprache wählen
 
-Wenn die Installation abgeschlossen ist, wird jetzt auf dem Bildschirm
-ein Fenster mit ähnlichem Inhalt angezeigt: *Herzlichen Glückwunsch!
-Joomla! wurde vollständig installiert*. Der wesentliche Unterschied
-besteht in der Liste der installierten Sprachen, aus der die
-Standardsprache für die Website und die Administratoroberfläche
-ausgewählt werden kann.
+Wenn die Installation der Sprachen abgeschlossen ist, wird Ihnen nun ein ähnlicher Bildschirm *Herzlichen Glückwunsch! Ihre Joomla-Seite ist einsatzbereit.* angezeigt. Der Unterschied wird eine Liste der installierten Sprachen sein, die es Ihnen ermöglicht, die Standard-Sprache für die Seite und die Administrator-Oberfläche auszuwählen.
 
-<img
-src="https://docs.joomla.org/images/8/8b/J40_Installation_screen_page_4_default_langs_de.png"
-class="thumbborder" decoding="async" data-file-width="1384"
-data-file-height="579" width="1384" height="579" alt="500" />
+![Joomla-Installer Teil 7, Standardsprache wählen](../../../en/images/getting-started/installing-joomla-installer-7.png)
 
-- Die Auswahl für die Standardsprache kann hier getroffen werden.
-- Wenn die Standardsprache ausgewählt ist, zur Bestätigung auf die
-  Schaltfläche *Standardsprache festlegen* klicken.
-- Es wird eine Systemmeldung angezeigt, die bestätigt, dass Joomla die
-  Standardsprachen für **Administrator** und **Site** eingestellt hat.
-  Diese Meldung kann geschlossen werden.
+- Wählen Sie die Standardsprache, die Sie verwenden möchten.
+- Wenn Sie die Standardsprache ausgewählt haben, bestätigen Sie diese mit der Schaltfläche *Standardsprache festlegen*.
+- Eine Systemnachricht wird angezeigt, die bestätigt, dass Joomla die Standard-ADMINISTRATOR- und SITE-Sprache festgelegt hat. Diese Nachricht kann geschlossen werden.
 
-#### Abschließen
+#### Abschluss
 
-Jetzt kann man das *Administrator Dashboard* aufrufen, indem man
-*Administrator öffnen* wählt oder direkt zur Homepage der Website gehen,
-indem man *Site öffnen* anklickt.
+Sie können nun zum *Administrator-Dashboard* navigieren. Melden Sie sich an, indem Sie *Administrator öffnen* auswählen oder gehen Sie direkt zur Startseite Ihrer Seite, indem Sie *Seite öffnen* wählen.
 
-## Verwandte Informationen
+*Übersetzt von openai.com*
 
--  Hosting
-  Setup
--  Sicherheits-Checkliste / Einrichtung von Hosting und
-  Server
--  Creating A VPS Testing
-  Server
--  Joomla! an die eigene Umgebung
-  anpassen
--  Joomla CLI
-  Installation

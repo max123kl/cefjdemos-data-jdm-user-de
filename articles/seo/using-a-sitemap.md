@@ -1,162 +1,67 @@
-<!-- Filename: Using_A_Sitemap / Display title: Verwendung einer Sitemap -->
+<!-- Filename: Using_A_Sitemap / Display title: Die Verwendung einer Sitemap -->
 
 ## Verwendung einer Sitemap
 
-Suchmaschinen finden in der Regel Deine Seiten durch Links die von
-anderen Seiten im Internet auf Deine Seite verweisen. Eine gute Maßnahme
-ist es, eine Sitemap zu erstellen, die den 'Bots' eine Auflistung der
-Unterseiten bietet - wie eine Art Karte, um alle Inhalte der Website zu
-finden.  
-Sitemaps sind nicht nur wichtig für die Suchmaschinen, sie helfen auch
-Besuchern mit Behinderungen, sich durch die Webseitenstruktur zu
-navigieren. Oft ist die Navigation über Menüs zu schwierig und Sitemaps
-bieten eine leicht zugängliche Schnittstelle für Hilfsprogramme.
-<a href="https://www.w3.org/TR/WCAG20-TECHS/G63.html"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">W3C Working Group Note on
-Sitemaps</a>  
+Während Suchmaschinen Ihre Seiten normalerweise über Links von anderen Orten im Internet finden können, ist es eine gute Praxis, eine Sitemap zu erstellen, die Suchmaschinen-Bots eine Liste der Seiten auf Ihrer Website gibt - denken Sie daran als eine Karte, um alle Inhalte auf Ihrer Website zu finden. Sitemaps sind nicht nur für Suchmaschinen wichtig, sie sind auch sehr hilfreich für Menschen mit Behinderungen, die möglicherweise eine einfache Benutzeroberfläche benötigen, um die Struktur Ihrer Website zu sehen und sich ohne Ihre Menüstrukturen auf der Website zu bewegen. <a href="https://www.w3.org/TR/WCAG20-TECHS/G63.html" rel="nofollow noreferrer noopener">W3C Working Group Note zu Sitemaps</a>
 
-Eine Sitemap dient mehreren Zwecken:
+Eine Sitemap erfüllt mehrere Zwecke:
 
-- Bietet eine strukturierte Liste mit einer Übersicht aller Inhalte der
-  Website
-- Bietet dem Besucher schnell einen Überblick über die Struktur der
-  Website
-- Bietet eine alternative Möglichkeit zur Navigation durch die Website,
-  ohne komplexe Menü-Strukturen nutzen zu müssen
-- Bietet Suchmaschinen die Möglichkeit nach Inhalten zu suchen, die
-  möglicherweise nicht durch das Menü erreichbar sind (z.B.
-  Landingpages)
+- Bietet eine strukturierte Liste, die einen Überblick über alle Inhalte auf Ihrer Website zeigt
+- Ermöglicht es einem Besucher, schnell einen Überblick über die Struktur Ihrer Website zu erhalten
+- Bietet eine alternative Möglichkeit, auf Ihrer Website zu navigieren, ohne komplexe Menüstrukturen zu nutzen
+- Bietet Suchmaschinen eine Möglichkeit, Inhalte zu finden, die möglicherweise nicht über Ihre Menüstrukturen zugänglich sind (z. B. Landing Pages)
 
-### XML-Sitemap Typen
+### Arten von Sitemaps
 
-Es ist auch möglich, XML-Sitemaps für bestimmte Arten von Informationen
-anzubieten, einschließlich:
+Es ist möglich, Sitemaps für bestimmte Arten von Informationen bereitzustellen, einschließlich:
 
-- Video - <a href="https://support.google.com/webmasters/answer/80471"
-  class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">Google-Search Console Hilfe
-  Video-Sitemaps</a>
-- Bilder - <a
-  href="https://support.google.com/webmasters/answer/answer.py?answer=178636"
-  class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">Google-Search-Console Hilfe
-  Bilder-Sitemaps</a>
-- News -
-  <a href="https://support.google.com/news/publisher/answer/75717"
-  class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">Google News-Hilfe Überblick über
-  News-Sitemaps</a>
-- International - <a
-  href="https://support.google.com/webmasters/answer/2620865?hl=en&amp;ref_topic=2370587"
-  class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">Google-Search-Console Hilfe
-  Internationale Sitemaps</a>
+- Video <a href="https://support.google.com/webmasters/answer/80471" rel="nofollow noreferrer noopener">Google-Hilfe zu Video-Sitemaps</a>
+- Bilder <a href="https://support.google.com/webmasters/answer/answer.py?answer=178636" rel="nofollow noreferrer noopener">Google-Hilfe zu Bild-Sitemaps</a>
+- Nachrichten <a href="https://support.google.com/news/publisher/answer/75717" rel="nofollow noreferrer noopener">Google-Hilfe zu Nachrichten-Sitemaps</a>
+- International <a href="https://support.google.com/webmasters/answer/2620865?hl=en&amp;ref_topic=2370587" rel="nofollow noreferrer noopener">Google-Hilfe zu internationalen Sitemaps</a>
 
-Diese Sitemap-Spezialisten ermöglichen die Bereitstellung von
-Informationen in Bezug auf die spezifischen Medien-Typen - zum Beispiel
-mit einer Video-XML-Sitemap können Angaben über die Laufzeit, Kategorie
-und die Familienfreundlichkeit angegeben werden; mit Bilder-Sitemaps
-können der Gegenstand des Bildes, seine Lizenz für die Verwendung und
-die Art des Bildes angegeben werden.
+Diese speziellen Sitemaps ermöglichen es Ihnen, Informationen in Bezug auf den spezifischen Medientyp bereitzustellen - zum Beispiel können Sie bei einer Video-Sitemap Informationen über die Laufzeit, Kategorie und familienfreundlichen Status bereitstellen; bei Bild-Sitemaps können Sie das Motiv des Bildes, seine Nutzungslizenz und den Bildtyp angeben.
 
-### Erstellung einer Sitemap
+### Erstellen einer Sitemap
 
-Auf einer statischen Website ist das Erstellen einer Sitemap einfach.
-Man erstellt manuell eine XML-Datei mit den entsprechenden Standards und
-speichert diese als XML-Datei. Bei einer dynamischen Website, wo sich
-der Inhalt regelmäßig ändert ist das keine Option - sonst muss die
-Sitemap nach jeder Änderung der Inhalte manuell aktualisiert werden!
+Bei einer statischen Website besteht das Erstellen einer Sitemap einfach darin, eine XML-Datei manuell zu erstellen, die den entsprechenden Standards entspricht, und sie als XML-Datei zu speichern. Bei einer dynamischen Website, auf der sich die Inhalte regelmäßig ändern, ist dies keine wirkliche Option - Sie müssten die Sitemap-Datei manuell aktualisieren, jedes Mal wenn Sie einen neuen Inhalt hinzufügen!
 
-Aus diesem Grund gibt es mehrere Sitemap-Erweiterungen auf der Joomla
-Extensions Directory (JED) <a
-href="https://extensions.joomla.org/category/structure-a-navigation/site-map"
-class="external text" target="_blank" rel="noreferrer noopener">Sitemap
-Kategorie im Joomla Extensions Directory</a>, die XML-Sitemaps dynamisch
-erstellen können, welche die von Suchmaschinen erwarteten
-XML-Sitemap-Standards einhält.
-<a href="https://www.sitemaps.org/" class="external text"
-target="_blank" rel="nofollow noreferrer noopener">Sitemap-Protokoll</a>
+Aus diesem Grund gibt es mehrere Sitemap-Erweiterungen im Joomla Extensions Directory (<a href="https://extensions.joomla.org/category/structure-a-navigation/site-map" rel="noreferrer noopener">Sitemap-Kategorie im Joomla Extensions Directory</a>), die es ermöglichen, dynamisch eine Sitemap zu erstellen, die den Sitemap-Standards entspricht, die von Suchmaschinen erwartet werden. <a href="https://www.sitemaps.org/" rel="nofollow noreferrer noopener">Sitemaps-Protokoll</a>
 
-Die meisten dieser Erweiterungen funktionieren über die Auswahl von
-Menüpunkten, die in einer XML-Sitemap integriert werden sollen und durch
-die Angabe, wie häufig sich diese ändern (siehe Update-Frequenz). Es ist
-aber auch möglich, Unterseiten der Menüpunkte einzubinden (z.B. ein
-Menüelement zeigt auf einen Kategorie-Blog, nun sollen aber alle Artikel
-als einzelne Elemente angezeigt werden oder - ein anderes Beispiel wäre
-ein Menüpunkt zeigt auf eine Shop-Kategorie-Seite - in der Sitemap soll
-die Liste der Kategorie und zusätzlich jedes Produkt in einer separaten
-Link aufgelistet werden).
+Die meisten dieser Erweiterungen arbeiten, indem sie Menüelemente auswählen, die Sie in eine Sitemap aufnehmen möchten, und angeben, wie oft sie geändert werden (siehe Aktualisierungshäufigkeit). Es ist auch möglich, Unterseiten dieser Menüelemente aufzunehmen (zum Beispiel könnte ein Menüpunkte zu einer Kategoriebogenseite führen, aber Sie möchten alle Beiträge anzeigen, die auf dieser Seite als einzelne Elemente gezeigt werden - ein weiteres Beispiel könnte ein Menüpunkte sein, der auf eine Shop-Kategorieseite zeigt, und in der Sitemap möchten Sie die Kategorie auflisten und dann jedes Produkt darin als separaten Link).
 
-### Update-Frequenz
+### Aktualisierungshäufigkeit
 
-In der XML-Sitemap kann manuell angegeben werden, wie oft die
-Suchmaschinen-Spider die Website besuchen sollen. Die meisten
-Suchmaschinen haben eingebaute Systeme, die automatisch die Frequenz
-anpassen, je nachdem, wie oft die betreffende Seite geändert wird.
+Während Sie manuell in Ihrer Sitemap angeben können, wie häufig Suchmaschinen-Spider Ihre Website besuchen sollten, haben die meisten Suchmaschinen integrierte Systeme, die die Häufigkeit der Rückkehrbesuche automatisch anpassen, basierend darauf, wie oft sich die betreffende Seite geändert hat.
 
-Zum Beispiel: In der XML-Sitemap wird festgelegt, dass die Website
-täglich aufgesucht werden soll, aber die Website ändert sich nur 1 x pro
-Woche, kann die Update-Frequenz angepasst werden und der Bot kommt nicht
-mehr täglich wie vorgegeben. In verschiedenen Webmaster-Portalen kann
-die Frequenz-Änderung erneut angestoßen werden (z.B. Google Webmaster
-Tools).
+Zum Beispiel, wenn Sie den Suchmaschinen-Bots sagen, dass sie Ihre Seite täglich besuchen sollen, aber wenn der Bot die Seite besucht, sich nichts für eine Woche geändert hat, könnte er die Häufigkeit der erneuten Besuche entsprechend anpassen und nicht so oft zurückkehren, wie Sie es ihm gesagt haben. Sie können über die verschiedenen Webmaster-Portale beantragen, dass die Rückbesuchrate bei Bedarf angepasst wird.
 
-Dies lässt vermuten, dass durch regelmäßig aktualisierte Inhalte das
-'Durchsuchen durch Bots' häufiger erfolgt - wodurch diese Webseiten
-schneller indiziert werden als Weseiten, deren Inhalte sich seltener
-ändert.
+Dies würde daher darauf hinweisen, dass, wenn Sie regelmäßig sich ändernde Inhalte haben, Ihre Website häufiger von "Spiderbots" besucht wird - was dazu führt, dass Inhalte schneller indiziert werden als auf Websites, die sich nicht oft ändern.
 
-Es ist generell sinnvoll, statische Webseiten entsprechend zu markieren,
-um weniger häufig durchsucht zu werden als Webseiten deren Inhalte sich
-häufig ändern. Zum Beispiel kann ein statischer Text mit einer
-Update-Frequenz von einmal im Monat, ein Blog oder eine News-Seite
-sollte mit einer Frequenz von einmal täglich markiert werden. je
-nachdem, wie oft sich die Inhalte ändern.
+Es ist generell sinnvoll, anzugeben, dass statische Seiten weniger häufig aufgerufen werden sollen als solche, die sich regelmäßig ändern. Zum Beispiel könnte ein statischer Textbeitrag mit einer Aktualisierungshäufigkeit von einmal im Monat eingestellt werden, während Ihre Blog- oder Nachrichtenseite mit einer Aktualisierungshäufigkeit von einmal am Tag oder einmal pro Woche eingestellt werden könnte, abhängig davon, wie oft Sie neuen Inhalt hinzufügen.
 
 ### HTML-Sitemaps
 
-Eine HTML-Sitemap ist im wesentlichen eine Tabelle von Inhalten der
-Website, die den Besuchern zur Verfügung gestellt werden kann. Dies
-dient im Wesentlichen zwei Zwecken:
+Eine HTML-Sitemap ist im Wesentlichen ein Inhaltsverzeichnis für Ihre Website, das Sie den Besuchern Ihrer Website zur Verfügung stellen können. Dies hat zwei Zwecke:
 
-1.  Bietet einen Anlaufspunkt wo die Besucher leicht eine Übersicht der
-    gesamten Inhalte der Website vorfinden, auch wenn diese durch andere
-    Navigationshilfen nicht leicht zugänglich sind
-2.  Bietet eine zentrale Sammlung von Links zu den Inhalten innerhalb
-    der Website, die leicht von den Suchmaschinen indiziert werden
-3.  Bietet Benutzern mit Behinderungen eine leichte und schnelle
-    Navigation durch die Website mit einer einfachen Liste von Links,
-    anstatt komplexe Menüs
+1. Sie bietet einen Ort, an den Besucher gehen können, um leicht zu jedem Inhalt auf Ihrer Website zu gelangen, selbst wenn dieser nicht unbedingt leicht zugänglich über andere Navigationshilfen auf der Website ist
+2. Sie bietet einen zentralen Speicher von Links zu den Inhalten auf Ihrer Website, die von Suchmaschinen leicht indiziert werden können
+3. Sie ermöglicht es Nutzern mit Behinderungen, Ihre Website schnell mit einer einfachen Liste von Links zu navigieren, anstatt durch komplexe Menüs
 
-Zumindest eine XML-Sitemap sollte verlinkt werden, um die wichtigsten
-Abschnitte und Seiten innerhalb der Website aufzulisten, allerdings ist
-es besser, eine detaillierte Sitemap zu erstellen.
+Mindestens sollte eine Sitemap Links zu den Hauptabschnitten und Seiten innerhalb Ihrer Website enthalten, aber je detaillierter Sie sie gestalten können, desto besser.
 
-Wie bereits erwähnt, werden Erweiterungen angeboten, die das Erstellen
-von XML-Sitemaps automatisch erledigen. Diese basieren auf den Inhalten
-von Joomla.
+Es gibt bereits erwähnte Erweiterungen, die Sitemaps automatisch basierend auf Joomla-Inhalten erstellen.
 
-### HTML-Sitemaps
+### XML-Sitemaps
 
-XML-Sitemaps sind eine einfache Möglichkeit für Webmaster die
-Suchmaschinen über neue und bestehende Seiten auf Ihren Websites zu
-informieren, die für das Crawlen verfügbar sind. In seiner einfachsten
-Form ist eine Sitemap eine XML-Datei, die Listen von URLs einer Website
-enthält. Ergänzt durch zusätzliche Metadaten über jede URL (wann diese
-zuletzt aktualisiert wurde, wie oft der Inhalt sich in der Regel ändert
-und wie wichtig diese im Vergleich zu anderen URLs auf der Website ist),
-damit die Suchmaschinen die Website intelligenter Crawlen.
+XML-Sitemaps sind eine einfache Möglichkeit für Webmaster, Suchmaschinen über neue und bestehende Seiten auf ihren Websites zu informieren, die für das Crawlen verfügbar sind. In ihrer einfachsten Form ist eine Sitemap eine XML-Datei, die URLs für eine Website zusammen mit zusätzlichen Metadaten über jede URL auflistet (wann sie zuletzt aktualisiert wurde, wie oft sie sich normalerweise ändert und wie wichtig sie im Vergleich zu anderen URLs auf der Website ist), sodass Suchmaschinen die Website intelligenter crawlen können.
 
-Der Einsatz des Sitemap-Protokolls garantiert aber nicht, dass die
-Website in den Suchmaschinen gelistet wird, bietet jedoch hilfreiche
-Hinweise für die Webcrawler die Website besser zu crawlen.
+Die Verwendung des Sitemap-Protokolls garantiert nicht, dass Webseiten in Suchmaschinen enthalten sind, bietet jedoch Hinweise für Webcrawler, um Ihre Website besser zu durchsuchen.
 
-1.  Eine XML-Sitemap bietet eine zentrale Sammlung von Links zu den
-    Inhalten innerhalb der Website, die leichter von den Suchmaschinen
-    indiziert werden
-2.  Es ist möglich, spezielle XML-Sitemaps für News, Mobile URLs, Bilder
-    und Videos zu erstellen
+1. Eine XML-Sitemap stellt eine Liste von Links zu den Inhalten auf Ihrer Website bereit, die von Suchmaschinen leicht indiziert werden können
+2. Es ist möglich, spezifische XML-Sitemaps für Nachrichten, Mobile-URLs, Bilder und Videos zu erstellen
 
-Verfügbar sind Erweiterungen die das Erstellen von XML-Sitemaps
-basierend auf den Joomla! Inhalten automatisch erledigen.
+Es gibt bereits verfügbare Erweiterungen, die XML-Sitemaps automatisch basierend auf Joomla-Inhalten erstellen.
+
+*Übersetzt von openai.com*
+

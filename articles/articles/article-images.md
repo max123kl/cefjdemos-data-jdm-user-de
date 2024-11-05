@@ -1,123 +1,70 @@
-<!-- Filename: Adding_an_image_to_an_article / Display title: Ein Bild in einen Beitrag einfügen -->
+<!-- Filename: Adding_an_image_to_an_article / Display title: Beitrag: Bearbeiten - Bilder  -->
 
-## Introduction
+## Einführung
 
-How best to add images to an article depends on which version of Joomla
-and which editor are in use. This article has illustrations for Joomla
-4, with notes on differences in Joomla 3, and TinyMCE the Joomla default
-editor. To get started, open an article for editing:
+Es ist wichtig zu verstehen, dass Bilder für Webdokumente separat vom HTML-Text gespeichert werden. Wenn eine Webseite angefordert wird, ruft der Browser zuerst den Text sowie separate unterstützende Dateien wie Stylesheets und JavaScript-Skripte ab. Bilder werden später abgerufen. Oft verhandeln der Browser und der Webserver, welche Version eines Bildes abgerufen werden soll, um die Größe und Auflösung des Bildschirms des Browsers zu berücksichtigen. Es gibt sogar eine Joomla-Erweiterung, die mehrere Versionen eines Ursprungsbildes in verschiedenen Größen und Formaten erstellt, um die Geschwindigkeit der Lieferung und Darstellung zu verbessern.
 
-- **Select** **Content **→** Articles** in the Administrator menu.
-- **Select** the title of the article you wish to edit
+Bilder werden in Webseiten eingebettet, indem entsprechend formatierte Links eingefügt werden. Es gibt zwei verschiedene Mechanismen, um Bilder in Beiträge einzufügen:
 
-After inserting the article text, place the cursor at the location where
-the image should appear.
+- Die Registerkarte *Inhalt* im Bearbeitungsformular ermöglicht das Einfügen eines oder mehrerer Bildlinks direkt in den Text des Beitrags. Das ist das Thema dieses Beitrags.
+- Die Registerkarte *Bilder und Links* im Bearbeitungsformular bietet die Möglichkeit, ein Bild als *Intro-Bild* oder *Vollständiges Beitragsbild* oder beides einzufügen. Dies wird in einem separaten Beitrag zu [Bildern und Links](jdocmanual?article=user/articles/article-images-and-links) behandelt.
 
-## Adding a local image
+Es ist ratsam, zwischen lokalen und entfernten Bildern zu unterscheiden:
 
-If the image is located in the images folder of your Joomla installation
-you should insert the image using the **CMS Content **→** Media** button
-In the TinyMCE edit toolbar (In Joomla 3: Select the Image button):
+- **Lokale Bilder** befinden sich auf der gleichen Seite wie die Joomla-Installation, normalerweise im *images*-Ordner. Die Bildlinks müssen nicht das Protokoll und den Domainnamen enthalten, da sie aus den Site-Einstellungen entnommen werden.
+- **Entfernte Bilder** befinden sich irgendwo anders im Internet. Sie müssen das Protokoll und den Domainnamen im Link enthalten. Die Verwendung entfernter Bilder durch solches *Hotlinking* kann heute erlaubt sein, aber morgen nicht mehr. Die Verwendung entfernter Bilder ohne Erlaubnis wird als schlechtes Benehmen oder sogar als Diebstahl angesehen.
 
-<img
-src="https://docs.joomla.org/images/5/5e/Adding-an-image-to-an-article-cms-content-media.png"
-decoding="async" data-file-width="1000" data-file-height="508"
-width="1000" height="508" alt="Adding an image" />
+## Hinzufügen eines lokalen Bildes
 
-In the popup window, navigate to the image you want to use and click to
-select it. On selection a form will appear prompting for additional
-data. In Joomla 4 the form is to the left. In joomla 3 the form is at
-the bottom (scroll down):
+Der beste Weg, um lokale Bilder einzufügen, ist die Verwendung des Buttons **CMS Content → Media** in der TinyMCE-Werkzeugleiste. Es öffnet einen Mediadialog, der die Auswahl eines beliebigen Bildes im Bildordner der Website ermöglicht.
 
-<img
-src="https://docs.joomla.org/images/d/d4/Adding-an-image-to-an-article-selected-image.png"
-decoding="async" data-file-width="1000" data-file-height="508"
-width="1000" height="508" alt="Selecting an image" />
+**Wichtig:** Setzen Sie zuerst den Cursor an die Stelle, an der das Bild erscheinen soll. Dies könnte am Anfang oder Ende eines Absatzes oder in einem leeren Absatz sein.
 
-1.  Wähle die gewünschten Bildeinstellungen:
-1.  - "Beschreibung": Dies wird als "alt"-Text des Bildes dargestellt,
-      ein wichtiges Merkmal für die Übereinstimmung mit den
-      Web-Standards.
+![Das Medien-Popup-Dialogfeld](../../../en/images/articles/articles-edit-images-media.png)
 
-- **Image Class**: If an image is used without a caption some custom
-  classes may be applied here. For example, in Joomla 4, **float-end
-  ms-2 mb-1** will align the image to the right and float text around it
-  with margins to the left and below to prevent text touching the image.
-  In Joomla 3 the equivalent style is **pull-right**.
-- **Figure Class**: If a caption is set then an alignment class, if any,
-  should be applied to the Figure. It is a html tag that encloses the
-  img tag. Note that in Cassiopeia margins are applied by the template
-  style sheet.
+Navigieren Sie im Popup-Dialog zu dem Bild, das Sie verwenden möchten, und wählen Sie es aus. Bei der Auswahl erscheint ein Formular, das nach zusätzlichen Daten fragt.
 
-1.  - **Bildbeschriftung**: Wird unter dem Bild als Bild Titel
-      angezeigt.
+- **Bildbeschreibung (Alt-Text):** Diese ist wichtig für die Barrierefreiheit und die Einhaltung von Webstandards.
+- **Bildklasse:** Wenn ein Bild ohne Beschriftung verwendet wird, können hier einige benutzerdefinierte Klassen angewendet werden. Zum Beispiel wird *float-end ms-2 mb-1* das Bild rechts ausrichten und den Text darum herum mit Rändern nach links und unten fließen lassen, um zu verhindern, dass der Text das Bild berührt.
+- **Figurklasse:** Wenn eine Beschriftung festgelegt ist, kann eine Ausrichtungsklasse, falls vorhanden, auf die Figur angewendet werden. Beachten Sie, dass in Cassiopeia Ränder durch das Vorlagen-Stylesheet auf die Figur angewendet werden, sodass *float-start* oder *float-end* ausreichend sind.
+- **Figurbeschriftung:** Aktiviert die Beschriftung, die den Inhalt dieses Feldes als Beschriftung unter dem Bild anzeigt.
 
-**In Joomla 3**
+**Wichtig:** Wenn das *Figurbeschriftung*-Feld leer ist, wird das Bild innerhalb eines `<img...>`-Tags eingefügt, und das *Figurklasse*-Feld wird nicht verwendet. Wenn das *Figurbeschriftung*-Feld Text enthält, wird das `<img...>`-Tag in `<figure>...</figure>`-Tags eingebettet. Die nützlichsten Klassen zum Hinzufügen sind *float-start* und *float-end*, um das Bild links oder rechts auf der Seite mit einem umgehenden Text zu platzieren.
 
-1.  - **Ausrichtung**: Bildausrichtung festlegen. Standartmäßig ist es
-      auf **Nicht definiert** gesetzt.
-1.  - **Beschriftung Klasse**: Fügt die eingegebene Klasse an das
-      *figcaption* Element an.
-1.  Klick den *Einfügen* Button, um das Bild einzufügen. Das
-    Bild-Einfügefenster wird geschlossen und das Bild erscheint im
-    Editor. Oder klick den "Abbrechen" Button um das Bild-Einfügefenster
-    zu verlassen.
+Wählen Sie den *Inhalt einfügen*-Button, um das Bild einzufügen. Der Einfügen-Bildschirm wird geschlossen und das Bild wird im Editor angezeigt. Oder wählen Sie den *Abbrechen*-Button, um den Einfügen-Bildschirm zu verlassen.
 
-**Tip:** select the Toggle Editor button to see the applied Image and
-Caption styles.
+**Tipp:** Wählen Sie den Button Editor umschalten, um die angewendeten Bild- und Figurenstile zu sehen. Möglicherweise müssen Sie eine Figur oder ein img ausschneiden und einfügen, um sie zu verschieben.
 
-### Using Drag and Drop for Local images
+### Verwenden von Drag & Drop für lokale Bilder
 
-In both Joomla 4 and Joomla 3 you can drag an image from the desktop or
-a file browser directly into the article text and the image will be
-uploaded to the media folder and placed in the article. The only snag is
-that all such uploaded images will be placed in the same media folder.
-The location of the Images Directory used for upload and whether this
-feature is enabled (On by default) are set in the TinyMCE configuration
-Options.
+Sie können ein Bild vom Desktop oder einem Dateibrowser direkt in den Text eines Beitrags ziehen, und das Bild wird in den Medienordner hochgeladen und im Beitrag platziert. Einziger Nachteil ist, dass alle auf diese Weise hochgeladenen Bilder im selben Medienordner abgelegt werden.
 
-## Adding a remote image
+Der Ort des verwendeten *Bilder Verzeichnisses* für den Upload und ob diese Funktion aktiviert ist (standardmäßig eingeschaltet), wird in den Optionen der TinyMCE-Konfiguration festgelegt.
 
-If the image you wish to use is not in the images folder of your Joomla
-installation a slightly different procedure is needed.
+## Hinzufügen eines Remote-Bildlinks
 
-- **Select** **Insert **→** Image** from the TinyMCE toolbar to open a
-  dialog box. In Jooml 3, use the Image icon and the same dialog as used
-  for local images.
-- **Insert** the image url in the Source field.
-- **Fill out** the other fields as required.
-- **Advanced** provides some formatting options applied as in-line
-  styles. Experiment with 1rem, 2, groove. (This feature is incomplete)
+Wenn das Bild, das Sie verwenden möchten, sich nicht im images-Ordner Ihrer Joomla-Installation befindet, ist ein etwas anderes Vorgehen erforderlich.
 
-<img
-src="https://docs.joomla.org/images/3/39/Adding-an-image-to-an-article-insert-edit-image.png"
-class="thumbborder" decoding="async" data-file-width="480"
-data-file-height="477" width="480" height="477"
-alt="Data for a remote image" />
+- Wählen Sie **Einfügen → Bild** aus der TinyMCE-Werkzeugleiste, um ein Dialogfeld zu öffnen.
+- Fügen Sie im Feld **Quelle** die Bild-URL ein.
+- Füllen Sie die anderen Felder nach Bedarf aus.
+- Die Registerkarte **Erweitert** bietet einige Formatierungsoptionen, die als In-Line-Stile angewendet werden. Experimentieren Sie mit 1rem, 2, groove.
 
-### Using Drag and Drop for Remote images
+![Das Dialogfeld „Bild einfügen“](../../../en/images/articles/articles-edit-images-external-image.png)
 
-You can drag and drop an image from a remote web site directly into your
-article text. But be aware that this may also copy the image container
-html with class statements not valid for your site.
+### Verwenden von Drag & Drop zum Einfügen von Remote-Bildlinks
 
-## Bilder einfügen mit dem "Bild-Einfügefenster"
+Sie können einen Bildlink von einer externen Website direkt in Ihren Beitragstext ziehen. Beachten Sie jedoch, dass hierbei möglicherweise auch der HTML-Container des Bildes mit Klassenanweisungen kopiert wird, die für Ihre Seite ungültig sind.
 
-Du kannst auch Bilder einfügen, indem Du den "Upload-Bereich" im
-"Bild-Einfügefenster" benutzt.
+## Bilder hochladen mit dem Medien-Dialog
 
-- First open the Media browser and navigate to the folder where you wish
-  to store new images for the current article.
+Sie können neue Bilder in Ihren Bilderordner von der Seite *CMS-Inhalt -> Medien* hochladen.
 
-1.  Klicke auf den "Durchsuchen"-Button um den Datei-Browser zu öffnen.
-1.  Wähle das Bild, dass Du hochladen willst. Klicke auf "Öffnen" im
-    Datei-Browser um die Auswahl zu bestätigen. Hinweis: Stil und Layout
-    des Datei-Browsers hängt davon ab, welchen Browser und welches
-    Betriebssystem Du verwendest.
-1.  Die ausgewählten Datei(en) erscheinen im unteren Teil des "Bild
-    Einfügen-Fensters". Klicken Sie auf "Hochladen starten", um mit dem
-    Hochladen der Datei(en) zu beginnen.
-1.  - Wenn die Datei hochgeladen ist erscheint eine grüne Nachricht zur
-      Bestätigung oben im Fenster.
-1.  Du kannst nun das hochgeladene Bild wie zuvor beschrieben auswählen
-    und einfügen.
+- Öffnen Sie den Medien-Dialog und navigieren Sie zu dem Ordner, in dem Sie neue Bilder für den aktuellen Beitrag speichern möchten.
+- Wählen Sie die Schaltfläche Hochladen oben links auf dem Medienbildschirm, um einen Dateibrowser zu öffnen.
+- Wählen Sie die Bilddateien aus, die Sie hochladen möchten. Klicken Sie im Dateibrowser auf Öffnen, um die Auswahl zu bestätigen. Hinweis: Der Stil und das Layout des Dateibrowsers hängen vom verwendeten Browser und Betriebssystem ab.
+- Die ausgewählten Datei(en) erscheinen in alphabetischer Reihenfolge auf dem Medien/Bildschirm.
+- Wenn der Upload abgeschlossen ist, erscheint oben auf dem Bildschirm eine grüne Bestätigungsanzeige.
+
+Sie können nun das hochgeladene Bild wie zuvor auswählen und einfügen.
+

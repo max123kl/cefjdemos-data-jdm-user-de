@@ -1,110 +1,28 @@
-<!-- Filename: J3.x:Adding_custom_fields/List_of_Images_Field / Display title: Bilder-Listen Feld -->
+<!-- Filename: J3.x:Adding_custom_fields/List_of_Images_Field / Display title: Liste der Bilderfeld -->
 
-<span id="section-portal-heading"></span>
+## Zweck
 
-## Bilder hinzufügen Feld
+Das Feld "Liste der Bilder" bietet eine Dropdown-Liste von Bilddateien zur Auswahl, die in der Beitragsausgabe in einer durch Leerzeichen getrennten Liste angezeigt werden.
 
-**Artikel in dieser Serie**
+## Felderstellung
 
-1.  Einführung
-2.   Parameter für alle Eigenen
-    Felder
-3.  Kalender-Feld
-4.  Kontrollkästchen-Feld
-5.   Farbe
-    Feld
-6.   Editor
-    Feld
-7.   Zahlen
-    Feld
-8.   Listen
-    Feld
-9.   Bilder-Listen
-    Feld
-10.  Medien
-    Feld
-11.  Optionsfeld
-    (radio)
-12.  Repeatable
-    Field
-13.  Sql
-    Feld
-14. Textfeld
-15.  Textbereich
-    Feld
-16.  URL
-    Feld
-17.  Benutzer
-    Feld
-18.  Benutzergruppe
-    Feld
-19.  Wie man die Eigenen Felder
-    gruppiert
-20.  Welche Komponenten unterstützen die Eigenen
-    Felder
-21.  Implementierung in der eigenen
-    Komponente
-22.  Eigene Felder in Overrides
-    anwenden
+Besondere Optionen in diesem Feld sind:
 
-### Bilder hinzufügen
+- **Verzeichnis** Der Dateisystempfad zum Verzeichnis mit den aufzulistenden Bilddateien. Es können nur Bilder aus einem einzigen Verzeichnis ausgewählt werden.
+- **Mehrfach** Erlaubt die Auswahl mehrerer Werte.
+- **Bildklasse** Die Klasse, die dem Bild hinzugefügt werden soll. Zum Beispiel begrenzt *w-25 p-1* die Breite jedes Bildes auf 25% seines Containers und fügt eine Einheit Polsterung hinzu.
 
-Bietet eine drop-down-Liste aus Bild-Dateien.
+## Dateneingabe
 
-#### Optionen
+Einfach: ein oder mehrere Bilder aus der Liste auswählen.
 
-Spezielle Optionen in diesem Bereich sind:
+## Datenanzeige
 
-- Verzeichnis
-  Das Verzeichnis, das die Bilddateien enthält, die im Bezug auf den
-  Standardbildordner (einstellbar unter „Medien“  **→**  „Optionen“)
-  aufgelistet werden sollen.
-- Mehrfachauswahl
-  Erlaubt die Auswahl von mehreren Werten.
-- Bildklasse
-  Die Klasse die zum Bild hinzugefügt werden soll (src tag).
+Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich, und Ihr Template ist für das Design des Feldes verantwortlich.
 
-#### Zugehörige Informationen
+Suchen Sie nach dem Element **Beispielbilder**.
 
-Siehe  Bilder-Listen Feld
-Typ
+![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Felderanzeige")
 
-#### Screenshots
+*Übersetzt von openai.com*
 
-##### Feld erstellen
-
-Als Beispiel erstellen wir ein Feld mit den Optionen wie im nächsten
-Bild gezeigt.
-
-<img src="https://docs.joomla.org/images/2/21/Image_field_create-de.png"
-decoding="async" data-file-width="800" data-file-height="711"
-width="800" height="711" alt="Image field create-de.png" />
-
-##### Nutzung des Feldes im Backend
-
-Im Backend wird während der Erstellung oder Bearbeitung eines Beitrages
-(oder auch Kontaktes) das Feld wie im folgenden Bild angezeigt:
-
-<img src="https://docs.joomla.org/images/3/30/Image-de.png"
-decoding="async" data-file-width="800" data-file-height="518"
-width="800" height="518" alt="Image-de.png" />
-
-##### Nutzung des Feldes im Frontend
-
-Im Frontend wird das Feld angezeigt wie im folgenden Bild zu sehen. Die
-Option *Automatische Anzeige* gibt die Position des Feldes an und das
-Template bestimmt das Design des Feldes.
-Felderinhalte werden nur im Frontend angezeigt, wenn es im Beitrag mit
-Daten gefüllt wurde. Das Feld kann auch als Pflichtfeld deklariert
-werden, dann vergisst man auch nicht das Ausfüllen.
-
-<img
-src="https://docs.joomla.org/images/4/41/Image_field_frontend-de.png"
-decoding="async" data-file-width="800" data-file-height="586"
-width="800" height="586" alt="Image field frontend-de.png" />
-
-<a href="https://docs.joomla.org/J3.x:Adding_custom_fields/List_Field"
-id="content-button" class="button expand success">Zurück: Listen
-Feld</a>
-<a href="https://docs.joomla.org/J3.x:Adding_custom_fields/Media_Field"
-id="content-button" class="button expand">Weiter: Medien Feld</a>

@@ -1,103 +1,59 @@
-<!-- Filename: J4.x:Deleting_an_Article / Display title: Beitrag löschen -->
-
-<span id="main-portal-heading">**Tutorial**
-Wie ein Beitrag gelöscht wird</span> Joomla!  4.0
+<!-- Filename: J4.x:Deleting_an_Article / Display title: Beiträge: Löschen -->
 
 ## Einführung
 
-This tutorial covers the steps to delete an article in Joomla!
+In Joomla ist das Löschen eines Beitrags ein zweistufiger Prozess. Die erste Stufe verschiebt ihn in den *Papierkorb*, von wo aus er wiederhergestellt werden kann. Die zweite Stufe löscht ihn aus dem Papierkorb, danach wird der Beitrag dauerhaft entfernt.
 
-When you delete an article in Joomla you *Trash* it.
+## Überlegungen
 
-Completely deleting an article involves two stages, the first sends it
-to Trash where it is possible to restore it. The second stage empties it
-from Trash after which the article is removed permanently.
+Überlegen Sie, warum Sie den Beitrag löschen möchten:
 
-## Considerations
+- Wird er nicht mehr benötigt? In diesem Fall ist das Löschen
+  wahrscheinlich der richtige Schritt.
+- Ist es ein Beitrag, der in der Zukunft wiederverwendet werden könnte? Es kann sehr frustrierend sein zu wissen, dass Sie einen Beitrag hatten, der ein guter Ausgangspunkt für einen anderen gewesen wäre, aber Sie ihn gelöscht haben - überlegen Sie, ihn stattdessen zu archivieren.
 
-Consider why you want to delete the article:
+## Beitrag in den Papierkorb verschieben
 
-- Is it no longer needed? If so, deletion is most likely the right
-  course of action.
-- Is it an article that could be re-used in the future? It can be very
-  frustrating to know you had an article that would have been a good
-  starting point for another but you deleted it - consider archiving it
-  instead.
+- Wählen Sie **Inhalte -> Beiträge** aus dem Administratormenü aus.
+- Wählen Sie das Kontrollkästchen aus, um den Beitrag auszuwählen, den Sie löschen möchten. Ein Beitrag **muss** ausgewählt werden, um die Schaltfläche **Aktionen** in der Symbolleiste zu aktivieren.
+- Wählen Sie die Schaltfläche **Aktionen** in der Symbolleiste.
+- Wählen Sie **Papierkorb** im Dropdown-Menü.
 
-## Moving the Article to Trash
+![Beitrag zum Löschen ausgewählt](../../../en/images/articles/articles-selected-to-trash.png)
 
-- Log in to the Administrator Home Dashboard. More on this here:
-   Logging in or out of the Administrator
-  Dashboard.
-- From the Sidebar Menu navigate to **Content** then **Articles** to
-  open the **Articles List**.
-- Click the checkbox to select the article you want to delete.
+Es wird eine Bestätigungsmeldung angezeigt, und der Beitrag wird aus der aktuellen Liste der Beiträge verschwunden sein, da diese normalerweise keine gelöschten Elemente enthält.
 
+## Filtern zum Wiederherstellen oder Löschen
 
-<img
-src="https://docs.joomla.org/images/thumb/d/db/J4x_select_and_delete_article-en.png/800px-J4x_select_and_delete_article-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/d/db/J4x_select_and_delete_article-en.png 1.5x"
-data-file-width="1000" data-file-height="275" width="800" height="220"
-alt="J4x select and delete article-en.png" />
+An diesem Punkt im Prozess wurde der Beitrag noch nicht vollständig entfernt. Diese Funktion ist hilfreich, falls Sie den Beitrag versehentlich gelöscht haben.
 
-The article *must* be selected to enable the **Actions** button in the
-toolbar.
+Um die Liste der gelöschten Beiträge anzuzeigen:
 
-Click the **Actions** button then click **Trash** in the dropdown menu.
+- Wählen Sie die Schaltfläche **Filteroptionen**, um die Liste der Filter zu öffnen.
+- Wählen Sie **Gelöscht** aus der Liste *-- Status auswählen --*.
 
+![Anzeige der gelöschten Beiträge](../../../en/images/articles/articles-trash-list.png)
 
-<img
-src="https://docs.joomla.org/images/thumb/9/96/J4x_delete_article_confirmed-en.png/800px-J4x_delete_article_confirmed-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/9/96/J4x_delete_article_confirmed-en.png 1.5x"
-data-file-width="1000" data-file-height="125" width="800" height="100"
-alt="J4x delete article confirmed-en.png" />
+### Wiederherstellen
 
-The article has now been deleted and you will see a confirmation
-message. Clicking the **Trash** button removed the article from the
-**Article List** by changing its status to **Trashed**.
+Wenn Sie Ihre Entscheidung geändert haben, können Sie das **Gelöscht**-Symbol in der Spalte *Status* auswählen. Der Beitrag wird in den Zustand *Veröffentlicht* zurückkehren und aus der Liste der gelöschten Beiträge verschwinden.
 
-At this stage of the process the article has not been completely
-removed. This is a helpful feature in case you deleted the article by
-mistake.
+### Löschen
 
-## Emptying the Article from Trash
+Wählen Sie das Kontrollkästchen in der linken Spalte der Beitragsdaten. Dadurch werden die Schaltflächen *Aktionen* und *Löschen* in der Toolbar aktiviert. Die Schaltfläche *Aktionen* ermöglicht es Ihnen, die gleiche Aktion auf alle ausgewählten Beiträge anzuwenden. Wenn Sie sich wirklich sicher sind:
 
-<img
-src="https://docs.joomla.org/images/thumb/a/a6/J4x_empty_article_trash-en.png/800px-J4x_empty_article_trash-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/a/a6/J4x_empty_article_trash-en.png 1.5x"
-data-file-width="1000" data-file-height="352" width="800" height="282"
-alt="J4x empty article trash-en.png" />
+1. Wählen Sie die Schaltfläche *Löschen* in der Toolbar. Ein Nachrichtenfeld erscheint:<br>
+   <div class="alert alert-light">
+   Sind Sie sicher, dass Sie löschen möchten? Durch die Bestätigung wird/werden der/die ausgewählte(n) Beitrag/Beiträge dauerhaft gelöscht!</div>
+2. Wählen Sie **OK**, um zu bestätigen, und der Beitrag wird aus dem Papierkorb gelöscht. Der Beitrag wird aus der Datenbank gelöscht. Es ist endgültig weg!
+3. Wählen Sie die Schaltfläche **Leeren** neben **Filteroptionen**, um zur ungefilterten **Beiträge**-Liste zurückzukehren.
 
-To permanently delete the article it must be removed from Trash. To do
-this:
+## Tipps
 
-1.  From the Article List Toolbar click the **Filter Options** button.
-    This will display a set of filter fields.
-2.  Set the **- Select Status -** field to **Trashed**. This will filter
-    out all articles except trashed ones.
-3.  Click the checkbox to select the article.
-4.  Click the **Empty Trash** button.
-5.  A message box will appear asking if you are sure you want to delete.
-    Click **OK** to confirm and the article will be removed from Trash.
-6.  Click the **Clear** button at the side of **Filter Options** and
-    this will remove the filter and return to the **Article List**.
+- Denken Sie daran, das Löschen eines Beitrags ist nicht dasselbe wie das Archivieren eines Beitrags. Sobald er aus dem Papierkorb gelöscht wurde, ist er endgültig weg.
+- Wenn Sie einen Beitrag versehentlich löschen, ihn aber noch nicht aus dem Papierkorb gelöscht haben, können Sie seinen Status ändern. Sie haben die Möglichkeit, ihn als *Archiviert*, *Veröffentlicht* oder *Unveröffentlicht* festzulegen.
+- Joomla lässt Sie nicht mehr als einen Beitrag mit demselben Alias speichern. Wenn ein Beitrag gelöscht, aber im Papierkorb belassen wird, existiert er noch. Falls Sie versuchen, einen Beitrag zu speichern, und eine Fehlermeldung erhalten, die besagt, dass der Alias bereits existiert, könnte er im Papierkorb sein! Sie sollten ihn daher entweder aus dem Papierkorb leeren oder einen anderen Alias für Ihren neuen Beitrag eingeben.
+- Joomla bewahrt frühere Versionen eines Beitrags auf, es sei denn, die Funktion "Versionen" ist deaktiviert. Wenn Sie einen Beitrag löschen, weil er irgendwie „kaputt“ ist, versuchen Sie, ihn auf eine frühere Version zurückzusetzen.
 
-## Tips
+*Übersetzt von openai.com*
 
-- Remember, deleting an article is not the same as archiving an article.
-  Once it has been emptied from Trash it has gone for good.
-- If you delete an article by mistake but have not emptied it from
-  Trash, you can change its status. You have the options to set it as
-  *Archived*, *Published* or *Unpublished*.
-- Joomla will not let you save more than one article with the same
-  alias. If an article is deleted but left in Trash, it still exists. If
-  you try to save an article and you get an error stating the alias
-  already exists, it may be sat in Trash! You should therefore either
-  empty it from trash or you can enter a different alias for your new
-  article.
-- Joomla keeps previous versions of an article unless it is disabled. If
-  you are deleting an article because it somehow "broke", try reverting
-  it back to save time.
