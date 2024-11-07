@@ -1,5 +1,4 @@
-<!-- Filename: J3.x:Adding_custom_fields/Multilingual_Sites / Display title: # Mehrsprachige Websites
- -->
+<!-- Filename: J3.x:Adding_custom_fields/Multilingual_Sites / Display title: Mehrsprachige Websites -->
 
 Let me know if you need further assistance!
 ## Einführung

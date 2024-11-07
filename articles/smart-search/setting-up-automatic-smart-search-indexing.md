@@ -38,7 +38,7 @@ Obwohl die Details den Rahmen dieses Beitrags sprengen, müssen Sie im Allgemein
 
     php /var/www/myjoomla/cli/joomla.php finder:index --purge
 
-Und möglicherweise den vollständigen Pfad zur php-Datei, wie etwa /usr/local/opt/php@8.2/bin/php.
+Und möglicherweise den vollständigen Pfad zur php-Datei, wie etwa `/usr/local/opt/php@8.2/bin/php`.
 
 ## Speicherprobleme
 

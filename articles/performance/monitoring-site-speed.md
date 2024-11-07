@@ -1,11 +1,10 @@
-<!-- Filename: Monitoring_Site_Speed / Display title: # Überwachung der Seitengeschwindigkeit
+<!-- Filename: Monitoring_Site_Speed / Display title: # Überwachung der Seitengeschwindigkeit -->
 
 Das nächste häufig auftretende Problem betrifft die Seitengeschwindigkeit – die
 Zeit, die Ihre Seiten zum Laden benötigen. Es gibt mehrere Faktoren, die
 die Ladezeit einer Seite beeinflussen – nicht nur in Bezug auf die Seite
 selbst, sondern auch den Server, auf dem sie gehostet wird, und den Standort der
 Person, die die Seite besucht.
- -->
 
 ## Analyse der Website-Leistung
 
