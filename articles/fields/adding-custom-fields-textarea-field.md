@@ -2,29 +2,33 @@
 
 ## Zweck
 
-Das Textbereichsfeld ist ein Bereich zur Eingabe von mehrzeiligem Text. Ein einfaches Textfeld hat keinen WYSIWYG-Editor.
+Das Textarea-Feld ist ein Bereich für die Eingabe von mehrzeiligem Text. Ein einfaches Textfeld verfügt nicht über einen WYSIWYG-Editor.
 
 ### Optionen
 
-Besondere Optionen in diesem Feld sind:
+Spezielle Optionen innerhalb dieses Feldes sind:
 
-- **Zeilen** Die Höhe des sichtbaren Textbereichs in Zeilen. Wenn weggelassen, wird die Höhe vom Browser bestimmt. Der Wert begrenzt nicht die Anzahl der einzugebenden Zeilen. Die Zeilen sind im Backend aktiv, während ein Beitrag, ein Kontakt oder eine Drittanbieter-Komponente erstellt wird, die benutzerdefinierte Felder unterstützt. Diese Option hat keine Auswirkung auf die Größe des Feldes im Frontend.
-- **Spalten** Die Breite des sichtbaren Textbereichs in Zeichen. Wenn weggelassen, wird die Breite vom Browser bestimmt. Der Wert begrenzt nicht die Anzahl der einzugebenden Zeichen. Die Spalten sind im Backend aktiv, während ein Beitrag, ein Kontakt oder eine Drittanbieter-Komponente erstellt wird, die benutzerdefinierte Felder unterstützt. Diese Option hat keine Auswirkung auf die Größe des Feldes im Frontend.
-- **Maximale Länge** Die maximale Anzahl an Zeichen, die eingegeben werden können.
-- **Filter** Dem System erlauben, bestimmte HTML-Tags oder Rohdaten zu speichern.
+- **Zeilen** Die Höhe des sichtbaren Textbereichs in Zeilen. Wenn nicht angegeben, wird die Höhe vom Browser bestimmt. Der Wert begrenzt nicht die Anzahl der einzugebenden Zeilen. Die Zeilen sind im Backend aktiv, während ein Beitrag, ein Kontakt oder eine Drittanbieterkomponente, die benutzerdefinierte Felder unterstützt, erstellt wird. Diese Option hat keinen Einfluss auf die Größe des Feldes im Frontend.
+- **Spalten** Die Breite des sichtbaren Textbereichs in Zeichen. Wenn nicht angegeben, wird die Breite vom Browser bestimmt. Der Wert begrenzt nicht die Anzahl der einzugebenden Zeichen. Die Spalten sind im Backend aktiv, während ein Beitrag, ein Kontakt oder eine Drittanbieterkomponente, die benutzerdefinierte Felder unterstützt, erstellt wird. Diese Option hat keinen Einfluss auf die Größe des Feldes im Frontend.
+- **Maximale Länge** Die maximale Anzahl der einzugebenden Zeichen.
+- **Filter** Ermöglicht dem System, bestimmte HTML-Tags oder Rohdaten zu speichern.
+
+![Textarea-Felderstellung](../../../en/images/fields/fields-textarea-edit.png)
+
+**Hinweis:** In diesem Beispiel dient die Einbeziehung des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie ihn bei Ihren eigenen Feldtiteln weg.
 
 ## Dateneingabe
 
-Einfach: den Text eingeben, der angezeigt werden soll.
+Einfach: Geben Sie den Text ein, der angezeigt werden soll.
+
+![textarea field data entry](../../../en/images/fields/fields-textarea-data-entry.png)
 
 
 ## Datenanzeige
 
-Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich, und Ihr Template ist für das Design des Feldes verantwortlich.
+Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich und Ihr Template ist für das Design des Feldes verantwortlich.
 
-Suchen Sie nach dem **Klassifizierungs**eintrag.
+![Textarea-Feld Seitenanzeige](../../../en/images/fields/fields-textarea-site.png)
 
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Felderanzeige")
-
-Das Feldlabel startet einen einzelnen Textblock, es sei denn, Sie haben HTML-Tags wie `<p>...</p>` eingegeben.
+Das Feldlabel startet einen Textblock, es sei denn, Sie haben HTML-Tags wie `<p>...</p>` eingegeben.
 

@@ -1,29 +1,31 @@
-<!-- Filename: J3.x:Adding_custom_fields/Color_Field / Display title: Farbfeld -->
+<!-- Filename: J3.x:Adding_custom_fields/Color_Field / Display title: Farbfläche -->
 
 ## Zweck
 
-Das Farbfeld bietet einen Auswahldialog zur visuellen Auswahl einer Farbe. Das Feld zeigt den resultierenden Hex-Wert an. 
+Das Farbfeld bietet einen Picker zur visuellen Auswahl einer Farbe. Das Feld zeigt den resultierenden Hex-Wert an.
 
-
-## Felderstellung
+## Feld Erstellung
 
 Spezielle Optionen für dieses Feld:
 
-- **Feldklasse** Auf *w-auto* setzen, um das Feld gerade breit genug für die Darstellung und den Wert zu machen. 
+- **Feldklasse** Setzen Sie auf *w-auto*, um das Feld nur so breit wie nötig für den Farbfelder und den Wert zu machen.
 
+![Farbe Feld Erstellung](../../../en/images/fields/fields-colour-edit.png)
+
+**Hinweis:** In diesem Beispiel ist die Aufnahme des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie es in Ihren eigenen Feldtiteln weg.
 
 ## Dateneingabe
 
-Sie können einen Hex-Farbwert eingeben, wenn Sie wissen, dass Hex-Zahlen von 0 bis 9 und dann von a bis f reichen und die Zahlenpaare Rot, Grün und Blau sind. Beispielsweise ist #00ff00 kein Rot, maximales Grün und kein Blau. Alternativ können Sie einen Cursor verwenden, um eine Farbe visuell auszuwählen.
+Sie können einen Hex-Farbwert eingeben, wenn Sie wissen, dass Hex-Zahlen von 0 bis 9 und dann von a bis f reichen. Die Zahlenpaare stehen dabei für Rot, Grün und Blau. Also steht #00ff00 für kein Rot, maximales Grün und kein Blau. Alternativ können Sie einen Cursor verwenden, um eine Farbe visuell auszuwählen.
 
-![Farbwähler](../../../en/images/fields/fields-colour-entry.png "Farbwähler")
+![Feldeingabe für Farbe](../../../en/images/fields/fields-colour-data-entry.png)
 
 
 ## Datenanzeige
 
 Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist verantwortlich für die Position des Feldes und Ihr Template ist verantwortlich für das Design des Feldes.
 
-Die standardmäßige Datenanzeige ist der Hex-Farbwert, der nicht sehr nützlich ist. Die einfache Lösung besteht darin, ein Template-Override für die Felder / Farb-Plugin zu erstellen. Ersetzen Sie einfach diese Zeile:
+Die standardmäßige Datenanzeige ist der Hex-Farbwert, der nicht sehr nützlich ist. Die einfache Lösung besteht darin, ein Template-Override für die Felder / den Farb-Plugin zu erstellen. Ersetzen Sie einfach diese Zeile:
 ```
 echo htmlentities($value);
 ```
@@ -32,12 +34,9 @@ durch diese Zeilen:
 $value = htmlentities($value);
 echo '<span style="background-color: ' . $value . ';"> ' . $value . '</span>';
 ```
-Und der Hex-Wert wird von einem Farbfeld mit der Hintergrundfarbe des Wertes begleitet.
+Und der Hex-Wert wird durch ein Farbmuster mit der Hintergrundfarbe des Wertes vorangestellt.
 
-Suchen Sie nach dem **Blumenfarbe**-Element.
+Suchen Sie nach dem **Blumenfarbe**-Eintrag.
 
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Felder anzeigen")
-```
-
-*Translated by openai.com*
+![Feldanzeige der Farben auf der Website](../../../en/images/fields/fields-colour-site.png)
 

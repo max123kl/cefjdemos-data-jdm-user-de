@@ -2,28 +2,30 @@
 
 ## Zweck
 
-Das Benutzergruppenfeld ermöglicht die Auswahl einer oder mehrerer Benutzergruppen aus einer Liste der verfügbaren Beiträge.
+Das Usergroup-Feld ermöglicht die Auswahl einer oder mehrerer Benutzergruppen aus einer Liste der verfügbaren Gruppen.
+
 
 ## Feld Erstellung
 
-Besondere Optionen in diesem Feld sind:
+Besondere Optionen innerhalb dieses Feldes sind:
 
-- **Mehrfach** Erlauben, dass mehrere Beiträge ausgewählt werden können.
+- **Mehrfach** Ermöglicht die Auswahl mehrerer Werte.
 
-## Datumseingabe
+![Benutzergruppen Feld Erstellung](../../../en/images/fields/fields-usergroups-edit.png)
 
-Einfach, wähle einfach eine oder mehrere Gruppen aus der Liste der Gruppen aus.
+**Hinweis:** In diesem Beispiel dient die Aufnahme des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie es in Ihren eigenen Feldtiteln weg.
 
+## Dateneingabe
+
+Einfach, wählen Sie eine oder mehrere Gruppen aus der Liste der Gruppen aus.
+
+![Benutzergruppen Feld Dateneingabe](../../../en/images/fields/fields-usergroups-data-entry.png)
 
 ## Datenanzeige
 
-Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich, und Ihr Template ist für das Design des Feldes verantwortlich.
+Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich und Ihr Template ist für das Design des Feldes verantwortlich.
 
-Suchen Sie nach dem Eintrag **Editor-Gruppen**.
+![Benutzergruppenfeld Website-Anzeige](../../../en/images/fields/fields-usergroups-site.png)
 
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Felderanzeige")
-
-Dem Feldlabel folgt eine durch Kommas getrennte Liste der ausgewählten Gruppen.
-
-*Übersetzt von openai.com*
+Dem Feld Label folgt eine kommagetrennte Liste der ausgewählten Gruppen.
 

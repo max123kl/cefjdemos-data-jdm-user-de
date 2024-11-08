@@ -2,31 +2,35 @@
 
 ## Zweck
 
-Das Integer-Feld bietet eine Dropdown-Liste von ganzen Zahlen zwischen angegebenen
-Minimal- und Maximalwerten.
+Das Integer-Feld bietet eine Dropdown-Liste mit ganzen Zahlen zwischen den angegebenen Mindest- und Höchstwerten.
 
 ## Feld Erstellung
 
 Spezielle Optionen für dieses Feld:
 
-- **Mehrfach** Erlaubt die Auswahl mehrerer Werte.
-- **Erst** Der niedrigste in der Liste.
-- **Zuletzt** Der höchste in der Liste.
+- **Mehrfach** Erlaube die Auswahl mehrerer Werte.
+- **Erster** Der niedrigste in der Liste.
+- **Letzter** Der höchste in der Liste.
 - **Schritt** Die Erhöhung für jeden Schritt in der Liste.
-- **Feldklass** Auf *w-auto* setzen, um die Liste gerade breit genug für ihre Liste von ganzen Zahlen zu machen.
+- **Feldklasse** Setze auf *w-auto*, um die Liste gerade breit genug für ihre
+Liste von ganzen Zahlen zu machen.
+
+![Erstellung eines Integer-Felds](../../../en/images/fields/fields-integer-edit.png)
+
+**Hinweis:** In diesem Beispiel ist die Aufnahme des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie es in Ihren eigenen Feldtiteln weg.
 
 ## Dateneingabe
 
-Wählen Sie die erforderliche ganze Zahl aus der Liste aus, oder mehr als eine aus einer Mehrfachauswahlliste. Beachten Sie, dass ohne `w-auto` das Auswahlfeld für ganze Zahlen die volle Breite des Formulars einnimmt.
+Wählen Sie die benötigte Ganzzahl aus der Liste aus oder mehrere aus einer Mehrfachauswahlliste. Beachten Sie, dass ohne w-auto das Ganzzahlauswahlfeld die volle Breite des Formulars einnimmt.
 
-![Ganze Zahl auswählen](../../../en/images/fields/fields-integer-entry.png)
+![Dateneingabe für Ganzzahlen](../../../en/images/fields/fields-integer-data-entry.png)
+
 
 ## Datenanzeige
 
-Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich und Ihr Template ist für das Design des Feldes verantwortlich.
+Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich, und Ihr Template ist für das Design des Feldes verantwortlich.
 
-Suchen Sie nach dem **RHS Winterhärte**-Element.
-
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png)
+![Ganzzahlenfeld Website-Anzeige](../../../en/images/fields/fields-integer-site.png)
 
 *Übersetzt von openai.com*  
+

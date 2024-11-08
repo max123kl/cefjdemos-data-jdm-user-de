@@ -1,30 +1,31 @@
-<!-- Filename: J3.x:Adding_custom_fields/Checkboxes_Field / Display title: Kontrollkästchen-Feld -->
+<!-- Filename: J3.x:Adding_custom_fields/Checkboxes_Field / Display title: Kontrollkästchenfeld -->
 
 ## Zweck
 
-Das Kontrollkästchenfeld bietet ein oder mehrere auszuwählende Kontrollkästchen in einem Beitrag. Markierte Kästchen erscheinen in der Ausgabe als kommaseparierte Liste. Im folgenden Beispiel werden Kontrollkästchen verwendet, um Vermehrungsmethoden von Pflanzen anzugeben, die eine oder mehrere der Optionen Samen, Steckling oder Veredelung sein können.
+Das Kontrollkästchen-Feld bietet ein oder mehrere Kontrollkästchen zur Auswahl in einem Beitrag. Markierte Kästchen erscheinen in der Ausgabe als kommagetrennte Liste. Im folgenden Beispiel werden Kontrollkästchen verwendet, um Methoden der Pflanzenvermehrung anzugeben, die eine oder mehrere der folgenden Optionen sein können: Samen, Steckling oder Veredelung.
 
 ## Felderstellung
 
 * Das **Label** basiert auf dem Titel und erscheint in der Ausgabe vor der Liste der ausgewählten Werte.
-* Kontrollkästchen werden einzeln hinzugefügt, jeweils mit Text und Wert. Der Text erscheint in der Ausgabe. Der Wert wird im Datenformular verwendet und jeder muss unterschiedlich sein.
+* Kontrollkästchen werden einzeln hinzugefügt, jeweils mit Text und Wert. Der Text erscheint in der Ausgabe. Der Wert wird im Dateneingabeformular verwendet und muss jeweils unterschiedlich sein.
 
-![Kontrollkästchen](../../../en/images/fields/fields-checkboxes.png "Kontrollkästchen")
+![Erstellung eines Kontrollkästchenfelds](../../../en/images/fields/fields-checkboxes-edit.png)
+
+**Hinweis:** In diesem Beispiel dient die Aufnahme des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie es in Ihren eigenen Feldtiteln weg.
 
 ## Dateneingabe
 
-Hierbei geht es nur darum, die Elemente auszuwählen, die in der Ausgabe erscheinen sollen.
+Es ist lediglich eine Frage der Auswahl der Elemente, die in der Ausgabe erscheinen sollen.
 
-![Checkbox-Auswahl](../../../en/images/fields/fields-checkboxes-entry.png "Checkbox-Auswahl")
+![Kontrollkästchen Datenfeld-Eingabe](../../../en/images/fields/fields-checkboxes-data-entry.png)
 
-Felder erscheinen nur in einem Beitrag, wenn sie im Dateneingabeformular des Beitrags ausgefüllt sind.
-
+Felder erscheinen nur in einem Beitrag, wenn sie im Beitrags-Datenformular ausgefüllt sind.
 
 ## Datenanzeige
 
-Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist verantwortlich für die Position des Feldes und Ihr Template ist für das Design des Feldes verantwortlich.
+Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist verantwortlich für die Position des Feldes, und Ihr Template ist verantwortlich für das Design des Feldes.
 
-Suchen Sie nach dem Punkt **Propagation**.
+![Anzeige des Kontrollkästchenfeldes auf der Website](../../../en/images/fields/fields-checkboxes-site.png)
 
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Felderanzeige")
+*Übersetzt von openai.com*
 

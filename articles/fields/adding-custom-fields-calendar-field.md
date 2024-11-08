@@ -2,36 +2,38 @@
 
 ## Zweck
 
-Das Kalenderfeld bietet ein Textfeld für die Eingabe eines Datums. Ein Symbol neben dem Textfeld ruft einen ausklappbaren Kalender auf, der zur Auswahl eines Datums aus einem grafischen Kalender verwendet werden kann.
+Das Kalenderfeld bietet ein Textfeld zur Eingabe eines Datums. Ein Symbol neben dem Textfeld öffnet einen Kalender-Picker, der verwendet werden kann, um ein Datum aus einem grafischen Kalender auszuwählen.
 
-## Feld-Erstellung
+## Felderstellung
 
 Allgemeine Feldparameter werden in einem separaten Beitrag beschrieben.
 
-* **Titel** Sie können mehrere Datumsfelder in einem Beitrag haben, daher ist es wichtig, den Titel sorgfältig zu setzen, um Mehrdeutigkeiten in der Ausgabe zu vermeiden.
-* **Beschriftung** Dies wird in der Ausgabe angezeigt. Wenn es leer gelassen wird, wird es aus dem Inhalt des Titelfeldes übernommen, kann aber geändert werden.
-* **Uhrzeit anzeigen** Wenn auf *Ja* gesetzt, wird die Uhrzeit dem Datumsfeld, dem Datumsauswahlwerkzeug und dem Ausgabedatum hinzugefügt. **Vorsicht**: Auch wenn Sie die Uhrzeit im Standarddatum nicht angeben, wird die Uhrzeit angezeigt, wenn die Option *Uhrzeit anzeigen* aktiv ist.
-* **Platzhalter** Kann auf ein Datumsformat wie *JJJJ-MM-TT* gesetzt werden, um Benutzer an das erforderliche Format zu erinnern und/oder um eine Erinnerung daran zu geben, wofür das Datum steht, wie *Datum der Ankunft*.
+* **Titel** Sie können mehrere Datumsfelder in einem Beitrag haben, daher ist Vorsicht geboten bei der Setzung des Titels, um Mehrdeutigkeiten in der Ausgabe zu vermeiden.
+* **Label** Dies ist das, was in der Ausgabe angezeigt wird. Wenn es leer gelassen wird, wird es aus dem Inhalt des Titelfeldes übernommen, kann jedoch geändert werden.
+* **Zeit anzeigen** Wenn auf *Ja* gesetzt, wird die Zeit dem Datumsfeld, dem Datumsauswahl-Tool und dem Ausgabedatum hinzugefügt. **Achtung**: Auch wenn Sie die Zeit im Standarddatum nicht angeben, wird die Zeit angezeigt, wenn die Option *Zeit anzeigen* aktiv ist.
+* **Platzhalter** Dies befindet sich im Reiter Optionen. Es kann auf ein Datumsformat wie *JJJJ-MM-TT* gesetzt werden, um Benutzer an das erforderliche Format zu erinnern und/oder eine Erinnerung daran, wofür das Datum ist, wie z.B. *Ankunftsdatum*.
+
+![Kalenderfeld-Erstellung](../../../en/images/fields/fields-calendar-edit.png)
+
+**Hinweis:** In diesem Beispiel dient die Einbeziehung des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie dies in Ihren eigenen Feldtiteln weg.
 
 ## Dateneingabe
 
-Das Kalenderfeld ist in der Anwendung einfach. Sie können das Datum im erforderlichen Format eingeben oder ein Datum mit dem Datumswähler auswählen. Achten Sie darauf, das Datum korrekt einzugeben. Ein Fehler im Datum wird beim Speichern auf ein neues Datum korrigiert. Zum Beispiel wird ein Datum von 2024-14-02 in 2025-02-02 korrigiert.
+Die Verwendung des Kalenderfeldes ist einfach. Sie können das Datum im erforderlichen Format eingeben oder ein Datum mit dem Datumsauswahl-Tool auswählen. Es ist Vorsicht geboten beim Eingeben der Daten. Ein Fehler im Datum wird beim Speichern auf ein neues Datum korrigiert. Zum Beispiel wird ein Datum von 2024-14-02 in 2025-02-02 korrigiert.
 
-Der folgende Screenshot zeigt ein Erwerbsdatum:
+Der folgende Screenshot zeigt ein Erfassungsdatum:
 
-![Erwerbsdatum Eintrag](../../../en/images/fields/fields-date-entry.png "Erwerbsdatum")
+![Kalenderfeld Dateneingabe](../../../en/images/fields/fields-calendar-data-entry.png)
 
-Felder erscheinen nur in einem Beitrag, wenn sie im Beitragsdateneingabeformular ausgefüllt sind.
+Felder erscheinen nur in einem Beitrag, wenn sie im Dateneingabeformular des Beitrags ausgefüllt sind.
 
 ## Datenanzeige
 
-Der folgende Screenshots der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist verantwortlich für die Position des Feldes und Ihr Template ist verantwortlich für das Design des Feldes.
+Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist verantwortlich für die Position des Feldes und Ihr Template ist für das Design des Feldes verantwortlich.
 
-Suchen Sie nach dem Element **Erwerbsdatum**.
+![Kalenderfeld Website-Anzeige](../../../en/images/fields/fields-calendar-site.png)
 
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Anzeige der Felder")
-
-Die Datumsformate werden mithilfe von Sprachstrings lokalisiert.
+Die Datumsformate werden mit Sprachstrings lokalisiert.
 
 *Übersetzt von openai.com*
 

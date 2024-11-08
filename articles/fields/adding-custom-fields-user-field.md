@@ -8,20 +8,26 @@ Das Benutzerfeld ermöglicht die Auswahl eines Benutzers aus einer Liste von Ben
 
 Besondere Optionen innerhalb dieses Feldes sind:
 
-- **Standardbenutzer** Es kann sinnvoll sein, einen Standardbenutzer festzulegen, wenn derselbe Benutzer in fast allen Beiträgen erscheint.
+- **Standardbenutzer** Es kann nützlich sein, einen Standardbenutzer festzulegen, wenn derselbe Benutzer in fast allen Beiträgen erscheint.
+
+![Benutzerfeld-Erstellung](../../../en/images/fields/fields-user-edit.png)
+
+**Hinweis:** In diesem Beispiel dient die Aufnahme des Feldtyps im Titel nur zu Demonstrationszwecken. Lassen Sie es in Ihren eigenen Feldtiteln weg.
 
 ## Dateneingabe
 
-Einfach, wählen Sie einen Benutzer aus der Liste der Benutzer aus.
+Einfach, wählen Sie einfach einen Benutzer aus der Liste der Benutzer aus.
+
+![Benutzerfeldeingabe](../../../en/images/fields/fields-user-data-entry.png)
 
 
-## Datendarstellung
+## Datenanzeige
 
-Der folgende Screenshot der Website zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes zuständig und Ihr Template ist für das Design des Feldes verantwortlich.
+Der folgende Screenshot der Seite zeigt das Feld, das in einem Beitrag angezeigt wird. Die Option *Automatische Anzeige* ist für die Position des Feldes verantwortlich, und Ihr Template ist für das Design des Feldes verantwortlich.
 
-Suchen Sie nach dem **Reporter**-Eintrag.
+![Benutzerfeld-Seitenanzeige](../../../en/images/fields/fields-user-site.png)
 
-![Anzeige aller Felder](../../../en/images/fields/fields-display.png "Anzeige der Felder")
+Auf die Feldbeschriftung folgt der Name des Benutzers (nicht der Benutzername).
 
-Dem Feldetikett folgt der Name des Benutzers (nicht der Benutzername).
+*Übersetzt von openai.com*
 
