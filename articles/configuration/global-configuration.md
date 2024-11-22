@@ -10,7 +10,7 @@ Das Formular für die Globale Konfiguration ermöglicht es einem Super User, die
 
 Das Formular zur globalen Konfiguration hat sechs Registerkarten, von denen einige lange Listen von Parametern enthalten. Verwenden Sie die Schaltfläche *Inline-Hilfe umschalten* in der Symbolleiste, um mehr oder weniger Informationen zu jedem Parameter anzuzeigen.
 
-![Registerkarte "Globale Konfiguration" - Website](../../../en/images/configuration/global-configuration-site-tab.png)
+![Registerkarte Globale Konfiguration - Website](../../../en/images/configuration/global-configuration-site-tab.png)
 
 Einige Parameter zeigen oder verbergen andere Parameter, wenn sie ausgewählt werden. Zum Beispiel zeigt die **Website offline**-Schaltfläche mehr Felder an, wenn sie auf *Ja* gesetzt ist, als wenn sie auf *Nein* gesetzt ist. Mit erweiterter Inline-Hilfe sind die meisten Felder ausreichend gut dokumentiert, sodass hier keine weitere Erklärung erforderlich ist, abgesehen von einigen zusätzlichen Benutzerhinweisen auf jeder Registerkarte.
 
@@ -121,4 +121,3 @@ Berechtigungen steuern, was Benutzer in jeder Benutzergruppe sehen und tun könn
 Es gibt umfassende Beschreibungen zur Verwendung der Einstellungen unter dieser Registerkarte sowie zu den allgemeinen Prinzipien der Funktionsweise und Einrichtung von Berechtigungen in einem [Tutorial zur Zugangskontrollliste](jdocmanual?article=user/users/access-control).
 
 *Übersetzt von openai.com*
-
