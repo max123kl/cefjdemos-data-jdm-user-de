@@ -120,18 +120,17 @@ Wenn Sie während des Update-Prozesses Probleme oder Fehler haben, hier sind ein
 - Der Update-Prozess erstellt oder hängt eine Protokolldatei namens administrator/logs/joomla_update.php an, die Sie mit einem Texteditor öffnen können, um die im Protokoll aufgezeichneten Schritte zu sehen. Es werden die Hauptschritte angezeigt (Zip herunterladen, installieren, SQL-Anweisungen ausführen, aufräumen), etwa so:
 
 ```
-2024-04-17T09:13:16+00:00	INFO 127.0.0.1	update	Update gestartet von Benutzer Jimmy (139). Alte Version ist 5.0.3.
-2024-04-17T09:13:18+00:00	INFO 127.0.0.1	update	Download der Update-Datei von ...
-2024-04-17T09:13:28+00:00	INFO 127.0.0.1	update	Datei Joomla_5.1.0-Stable-Update_Package.zip heruntergeladen.
-2024-04-17T09:13:28+00:00	INFO 127.0.0.1	update	Installation der neuen Version begonnen.
-2024-04-17T09:13:40+00:00	INFO 127.0.0.1	update	Finalisierung der Installation.
-2024-04-17T09:13:40+00:00	INFO 127.0.0.1	update	Start der SQL-Updates.
-2024-04-17T09:13:40+00:00	INFO 127.0.0.1	update	Die aktuelle Datenbankversion (Schema) ist 5.0.0-2023-09-11.
+2024-04-17T09:13:16+00:00    INFO 127.0.0.1    update    Update gestartet von Benutzer Jimmy (139). Alte Version ist 5.0.3.
+2024-04-17T09:13:18+00:00    INFO 127.0.0.1    update    Download der Update-Datei von ...
+2024-04-17T09:13:28+00:00    INFO 127.0.0.1    update    Datei Joomla_5.1.0-Stable-Update_Package.zip heruntergeladen.
+2024-04-17T09:13:28+00:00    INFO 127.0.0.1    update    Installation der neuen Version begonnen.
+2024-04-17T09:13:40+00:00    INFO 127.0.0.1    update    Finalisierung der Installation.
+2024-04-17T09:13:40+00:00    INFO 127.0.0.1    update    Start der SQL-Updates.
+2024-04-17T09:13:40+00:00    INFO 127.0.0.1    update    Die aktuelle Datenbankversion (Schema) ist 5.0.0-2023-09-11.
 ... Viele einzelne SQL-Abfragen
-2024-04-17T09:13:41+00:00	INFO 127.0.0.1	update	Ende der SQL-Updates.
-2024-04-17T09:13:41+00:00	INFO 127.0.0.1	update	Deinstallation von Erweiterungen
-2024-04-17T09:13:41+00:00	INFO 127.0.0.1	update	Löschen von entfernten Dateien und Ordnern.
-2024-04-17T09:13:44+00:00	INFO 127.0.0.1	update	Aufräumen nach der Installation.
-2024-04-17T09:13:44+00:00	INFO 127.0.0.1	update	Update auf Version 5.1.0 abgeschlossen.
+2024-04-17T09:13:41+00:00    INFO 127.0.0.1    update    Ende der SQL-Updates.
+2024-04-17T09:13:41+00:00    INFO 127.0.0.1    update    Deinstallation von Erweiterungen
+2024-04-17T09:13:41+00:00    INFO 127.0.0.1    update    Löschen von entfernten Dateien und Ordnern.
+2024-04-17T09:13:44+00:00    INFO 127.0.0.1    update    Aufräumen nach der Installation.
+2024-04-17T09:13:44+00:00    INFO 127.0.0.1    update    Update auf Version 5.1.0 abgeschlossen.
 ```
-

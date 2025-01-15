@@ -28,14 +28,14 @@ Der erste Abschnitt der Vorlagendaten definiert normalerweise die Vorlageninform
 
 ```xml
 <extension version="3.1" type="template" client="site">
-	<name>cassiopeia</name>
-	<version>1.0</version>
-	<creationDate>2017-02</creationDate>
-	<author>Joomla! Project</author>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<copyright>(C) 2017 Open Source Matters, Inc.</copyright>
-	<description>TPL_CASSIOPEIA_XML_DESCRIPTION</description>
-	<inheritable>1</inheritable>
+    <name>cassiopeia</name>
+    <version>1.0</version>
+    <creationDate>2017-02</creationDate>
+    <author>Joomla! Project</author>
+    <authorEmail>admin@joomla.org</authorEmail>
+    <copyright>(C) 2017 Open Source Matters, Inc.</copyright>
+    <description>TPL_CASSIOPEIA_XML_DESCRIPTION</description>
+    <inheritable>1</inheritable>
 ```
 
 Beachten Sie, dass eine Vorlage, die untergeordnete Vorlagen haben kann, den Inherit-Wert auf 1 gesetzt hat. Untergeordnete Vorlagen haben diesen Wert auf 0 gesetzt. Diese Daten werden in der Ansicht "Templates: Vorlagen (Site)" verwendet, wie unten gezeigt.
@@ -51,21 +51,21 @@ Die Beschreibung enthält einen Sprachschlüssel und nicht den tatsächlichen Be
 Ordner und Dateien für die Cassiopeia-Vorlage werden an zwei verschiedenen Orten gespeichert. Die PHP- und zugehörigen Dateien werden im Ordner site/templates gespeichert. Die Mediendateien (CSS, Bilder, JS und SCSS) werden im Ordner site/media gespeichert. Diese Speicherorte sind in der XML-Datei wie folgt definiert:
 
 ```xml
-	<files>
-		<filename>component.php</filename>
-		<filename>error.php</filename>
-		<filename>index.php</filename>
-		<filename>joomla.asset.json</filename>
-		<filename>offline.php</filename>
-		<filename>templateDetails.xml</filename>
-		<folder>html</folder>
-	</files>
-	<media destination="templates/site/cassiopeia" folder="media">
-		<folder>js</folder>
-		<folder>css</folder>
-		<folder>scss</folder>
-		<folder>images</folder>
-	</media>
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>index.php</filename>
+        <filename>joomla.asset.json</filename>
+        <filename>offline.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>html</folder>
+    </files>
+    <media destination="templates/site/cassiopeia" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+        <folder>scss</folder>
+        <folder>images</folder>
+    </media>
 ```
 
 Dies ist das Muster, das in allen modernen Joomla 4 und 5 Vorlagen zu sehen ist. Die Struktur kann in der Ansicht "Templates: Anpassen (Cassiopeia)" gesehen werden:
@@ -77,24 +77,24 @@ Dies ist das Muster, das in allen modernen Joomla 4 und 5 Vorlagen zu sehen ist.
 Die verfügbaren Modulpositionen sind wie folgt definiert:
 
 ```xml
-	<positions>
-		<position>topbar</position>
-		<position>below-top</position>
-		<position>menu</position>
-		<position>search</position>
-		<position>banner</position>
-		<position>top-a</position>
-		<position>top-b</position>
-		<position>main-top</position>
-		<position>main-bottom</position>
-		<position>breadcrumbs</position>
-		<position>sidebar-left</position>
-		<position>sidebar-right</position>
-		<position>bottom-a</position>
-		<position>bottom-b</position>
-		<position>footer</position>
-		<position>debug</position>
-	</positions>
+    <positions>
+        <position>topbar</position>
+        <position>below-top</position>
+        <position>menu</position>
+        <position>search</position>
+        <position>banner</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>breadcrumbs</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>footer</position>
+        <position>debug</position>
+    </positions>
 ```
 
 Jedes Tag erstellt eine Modulposition, die in der Positionsliste eines Modul-Bearbeitungsformulars verfügbar ist. Das einfache Format der Positionsliste bedeutet, dass es leicht angepasst werden kann. Zum Beispiel, um eine neue Modulposition zur Liste **in einer untergeordneten Vorlage** hinzuzufügen, fügen Sie einfach ein neues Tag innerhalb des Tags mit einem einzigartigen Namen ein, wobei alle Kleinbuchstaben ohne Leerzeichen verwendet werden. Beachten Sie, dass dies nur die Position zu Modulbearbeitungsformularen hinzufügt und zusätzliche Entwicklungen in anderen Vorlagendateien erforderlich sind, um die neue Position im Frontend anzuzeigen.
@@ -112,10 +112,10 @@ Sie können auch die Modulpositionen in jeder Vorlage sehen: Gehen Sie zu **Syst
 Sprachdateien ermöglichen die Übersetzung von statischem Text in der Vorlage. Die Datei tpl_cassiopeia.ini enthält Schlüssel zu Textübersetzungen für Text, der vom Benutzer gesehen wird. Die Datei tpl_cassiopeia.sys.ini enthält Schlüssel zu Textübersetzungen für Text, der vom Administrator gesehen wird.
 
 ```xml
-	<languages folder="language">
-		<language tag="en-GB">en-GB/tpl_cassiopeia.ini</language>
-		<language tag="en-GB">en-GB/tpl_cassiopeia.sys.ini</language>
-	</languages>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/tpl_cassiopeia.ini</language>
+        <language tag="en-GB">en-GB/tpl_cassiopeia.sys.ini</language>
+    </languages>
 ```
 
 Die Sprachdateien für die standardmäßige englische GB-Sprache werden in site/language/en-GB/ gespeichert. Andere Sprachen würden ähnlich in Dateien mit dem entsprechenden ISO-Sprachcode gespeichert werden, zum Beispiel fr-FR für Französisch in Frankreich oder de-DE für Deutsch in Deutschland (was sich von Schweizer Deutsch und Österreichischem Deutsch unterscheiden könnte).
@@ -129,24 +129,24 @@ Eine Vorlage kann Anzeigeoptionen bieten, die vom Administrator im Formular "Vor
 Die Vorlagenoptionen sind innerhalb einer Struktur definiert, die Felder innerhalb von Fieldsets erstellt. Jedes Fieldset erscheint als Registerkarte im Bearbeitungsformular. Dies ist die Struktur, die die Registerkarte "Erweitert" oben erstellt.
 
 ```xml
-	<config>
-		<fields name="params">
-			<fieldset name="advanced">
-				<field
-					name="brand"
-					type="radio"
-					label="TPL_CASSIOPEIA_BRAND_LABEL"
-					default="1"
-					layout="joomla.form.field.radio.switcher"
-					filter="boolean"
-					>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
-				...
-			</fieldset>
-		</fields>
-	</config>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field
+                    name="brand"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_BRAND_LABEL"
+                    default="1"
+                    layout="joomla.form.field.radio.switcher"
+                    filter="boolean"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                ...
+            </fieldset>
+        </fields>
+    </config>
 ```
 
 Einzelne Optionen werden mit dem `<field>` Tag definiert. Jedes `<fieldset>`, und jeder `<field>` Parameter innerhalb eines `<fieldset>`, erfordert einen eindeutigen Namen, der durch ein **name** Attribut definiert ist. Dieser Name definiert den Parameter selbst und wird verwendet, um Einstellungen an die Frontend-Dateien zu übergeben. Jeder Parameter enthält auch ein **label** Attribut und ein **description** Attribut. Der Bezeichnungstext erscheint zusammen mit dem Parameter im Einstellungsbildschirm, um zu identifizieren, wofür die Einstellung verwendet wird, und detailliertere Informationen können in der Beschreibung enthalten sein.
@@ -156,125 +156,125 @@ Ein Parameterfeld kann praktisch jede Art von Formulareingabe mit entsprechenden
 Unten sind die Optionsdefinitionen in der Standard-Cassiopeia-Vorlage. In diesem Beispiel verwenden alle Bezeichnungen, Beschreibungen und Optionen Sprachzeichendefinitionen aus den in den vorherigen Abschnitten definierten Sprachdateien sowie einige aus dem Joomla-Core, sodass sie bei Bedarf in verschiedene Sprachen übersetzt werden können.
 
 ```xml
-	<config>
-		<fields name="params">
-			<fieldset name="advanced">
-				<field
-					name="brand"
-					type="radio"
-					label="TPL_CASSIOPEIA_BRAND_LABEL"
-					default="1"
-					layout="joomla.form.field.radio.switcher"
-					filter="boolean"
-					>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field
+                    name="brand"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_BRAND_LABEL"
+                    default="1"
+                    layout="joomla.form.field.radio.switcher"
+                    filter="boolean"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="logoFile"
-					type="media"
-					default=""
-					label="TPL_CASSIOPEIA_LOGO_LABEL"
-					showon="brand:1"
-				/>
+                <field
+                    name="logoFile"
+                    type="media"
+                    default=""
+                    label="TPL_CASSIOPEIA_LOGO_LABEL"
+                    showon="brand:1"
+                />
 
-				<field
-					name="siteTitle"
-					type="text"
-					default=""
-					label="TPL_CASSIOPEIA_TITLE"
-					filter="string"
-					showon="brand:1"
-				/>
+                <field
+                    name="siteTitle"
+                    type="text"
+                    default=""
+                    label="TPL_CASSIOPEIA_TITLE"
+                    filter="string"
+                    showon="brand:1"
+                />
 
-				<field
-					name="siteDescription"
-					type="text"
-					default=""
-					label="TPL_CASSIOPEIA_TAGLINE_LABEL"
-					description="TPL_CASSIOPEIA_TAGLINE_DESC"
-					filter="string"
-					showon="brand:1"
-				/>
+                <field
+                    name="siteDescription"
+                    type="text"
+                    default=""
+                    label="TPL_CASSIOPEIA_TAGLINE_LABEL"
+                    description="TPL_CASSIOPEIA_TAGLINE_DESC"
+                    filter="string"
+                    showon="brand:1"
+                />
 
-				<field
-					name="useFontScheme"
-					type="groupedlist"
-					label="TPL_CASSIOPEIA_FONT_LABEL"
-					default="0"
-					>
-					<option value="0">JNONE</option>
-					<group label="TPL_CASSIOPEIA_FONT_GROUP_LOCAL">
-						<option value="media/templates/site/cassiopeia/css/global/fonts-local_roboto.css">Roboto (lokal)</option>
-					</group>
-					<group label="TPL_CASSIOPEIA_FONT_GROUP_WEB">
-						<option value="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&amp;display=swap">Fira Sans (web)</option>
-						<option value="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&amp;family=Roboto:wght@100;300;400;700&amp;display=swap">Roboto + Noto Sans (web)</option>
-					</group>
-				</field>
+                <field
+                    name="useFontScheme"
+                    type="groupedlist"
+                    label="TPL_CASSIOPEIA_FONT_LABEL"
+                    default="0"
+                    >
+                    <option value="0">JNONE</option>
+                    <group label="TPL_CASSIOPEIA_FONT_GROUP_LOCAL">
+                        <option value="media/templates/site/cassiopeia/css/global/fonts-local_roboto.css">Roboto (lokal)</option>
+                    </group>
+                    <group label="TPL_CASSIOPEIA_FONT_GROUP_WEB">
+                        <option value="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&amp;display=swap">Fira Sans (web)</option>
+                        <option value="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&amp;family=Roboto:wght@100;300;400;700&amp;display=swap">Roboto + Noto Sans (web)</option>
+                    </group>
+                </field>
 
-				<field
-					name="noteFontScheme"
-					type="note"
-					description="TPL_CASSIOPEIA_FONT_NOTE_TEXT"
-					class="alert alert-warning"
-				/>
+                <field
+                    name="noteFontScheme"
+                    type="note"
+                    description="TPL_CASSIOPEIA_FONT_NOTE_TEXT"
+                    class="alert alert-warning"
+                />
 
-				<field
-					name="colorName"
-					type="filelist"
-					label="TPL_CASSIOPEIA_COLOR_NAME_LABEL"
-					default="colors_standard"
-					fileFilter="^custom.+[^min]\.css$"
-					exclude="^colors.+"
-					stripext="true"
-					hide_none="true"
-					hide_default="true"
-					directory="media/templates/site/cassiopeia/css/global/"
-					validate="options"
-					>
-					<option value="colors_standard">TPL_CASSIOPEIA_COLOR_NAME_STANDARD</option>
-					<option value="colors_alternative">TPL_CASSIOPEIA_COLOR_NAME_ALTERNATIVE</option>
-				</field>
+                <field
+                    name="colorName"
+                    type="filelist"
+                    label="TPL_CASSIOPEIA_COLOR_NAME_LABEL"
+                    default="colors_standard"
+                    fileFilter="^custom.+[^min]\.css$"
+                    exclude="^colors.+"
+                    stripext="true"
+                    hide_none="true"
+                    hide_default="true"
+                    directory="media/templates/site/cassiopeia/css/global/"
+                    validate="options"
+                    >
+                    <option value="colors_standard">TPL_CASSIOPEIA_COLOR_NAME_STANDARD</option>
+                    <option value="colors_alternative">TPL_CASSIOPEIA_COLOR_NAME_ALTERNATIVE</option>
+                </field>
 
-				<field
-					name="fluidContainer"
-					type="radio"
-					layout="joomla.form.field.radio.switcher"
-					default="0"
-					label="TPL_CASSIOPEIA_FLUID_LABEL"
-					>
-					<option value="0">TPL_CASSIOPEIA_STATIC</option>
-					<option value="1">TPL_CASSIOPEIA_FLUID</option>
-				</field>
+                <field
+                    name="fluidContainer"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    label="TPL_CASSIOPEIA_FLUID_LABEL"
+                    >
+                    <option value="0">TPL_CASSIOPEIA_STATIC</option>
+                    <option value="1">TPL_CASSIOPEIA_FLUID</option>
+                </field>
 
-				<field
-					name="stickyHeader"
-					type="radio"
-					label="TPL_CASSIOPEIA_STICKY_LABEL"
-					layout="joomla.form.field.radio.switcher"
-					default="0"
-					filter="integer"
-					>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+                <field
+                    name="stickyHeader"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_STICKY_LABEL"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    filter="integer"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="backTop"
-					type="radio"
-					label="TPL_CASSIOPEIA_BACKTOTOP_LABEL"
-					layout="joomla.form.field.radio.switcher"
-					default="0"
-					filter="integer"
-					>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
-			</fieldset>
-		</fields>
-	</config>
+                <field
+                    name="backTop"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_BACKTOTOP_LABEL"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    filter="integer"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
 ```
 
 In diesem Beispiel schließt das `<fieldset name="advanced">` Tag alle Parameter ein und verwendet das **name** Attribut, um die *Erweitert* Registerkarte in der Schnittstelle zu erstellen. Alles, was nötig ist, um eine weitere Registerkarte in der Schnittstelle zu erstellen, ist ein weiteres `<fieldset>` Tag mit einem anderen **name** Attribut. Mit diesem Wissen ist es relativ einfach, so viele zusätzliche Registerkarten und Parameter in einer Vorlage zu erstellen, wie nötig.
@@ -288,172 +288,171 @@ Dies ist die templateDetails.xml-Datei, die von Cassiopeia verwendet wird:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site">
-	<name>cassiopeia</name>
-	<version>1.0</version>
-	<creationDate>2017-02</creationDate>
-	<author>Joomla! Projekt</author>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<copyright>(C) 2017 Open Source Matters, Inc.</copyright>
-	<description>TPL_CASSIOPEIA_XML_DESCRIPTION</description>
-	<inheritable>1</inheritable>
-	<files>
-		<filename>component.php</filename>
-		<filename>error.php</filename>
-		<filename>index.php</filename>
-		<filename>joomla.asset.json</filename>
-		<filename>offline.php</filename>
-		<filename>templateDetails.xml</filename>
-		<folder>html</folder>
-	</files>
-	<media destination="templates/site/cassiopeia" folder="media">
-		<folder>js</folder>
-		<folder>css</folder>
-		<folder>scss</folder>
-		<folder>images</folder>
-	</media>
-	<positions>
-		<position>topbar</position>
-		<position>below-top</position>
-		<position>menu</position>
-		<position>search</position>
-		<position>banner</position>
-		<position>top-a</position>
-		<position>top-b</position>
-		<position>main-top</position>
-		<position>main-bottom</position>
-		<position>breadcrumbs</position>
-		<position>sidebar-left</position>
-		<position>sidebar-right</position>
-		<position>bottom-a</position>
-		<position>bottom-b</position>
-		<position>footer</position>
-		<position>debug</position>
-	</positions>
-	<languages folder="language">
-		<language tag="en-GB">en-GB/tpl_cassiopeia.ini</language>
-		<language tag="en-GB">en-GB/tpl_cassiopeia.sys.ini</language>
-	</languages>
-	<config>
-		<fields name="params">
-			<fieldset name="advanced">
-				<field
-					name="brand"
-					type="radio"
-					label="TPL_CASSIOPEIA_BRAND_LABEL"
-					default="1"
-					layout="joomla.form.field.radio.switcher"
-					filter="boolean"
-					>
-					<option value="0">JNEIN</option>
-					<option value="1">JJA</option>
-				</field>
+    <name>cassiopeia</name>
+    <version>1.0</version>
+    <creationDate>2017-02</creationDate>
+    <author>Joomla! Projekt</author>
+    <authorEmail>admin@joomla.org</authorEmail>
+    <copyright>(C) 2017 Open Source Matters, Inc.</copyright>
+    <description>TPL_CASSIOPEIA_XML_DESCRIPTION</description>
+    <inheritable>1</inheritable>
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>index.php</filename>
+        <filename>joomla.asset.json</filename>
+        <filename>offline.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>html</folder>
+    </files>
+    <media destination="templates/site/cassiopeia" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+        <folder>scss</folder>
+        <folder>images</folder>
+    </media>
+    <positions>
+        <position>topbar</position>
+        <position>below-top</position>
+        <position>menu</position>
+        <position>search</position>
+        <position>banner</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>breadcrumbs</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>footer</position>
+        <position>debug</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/tpl_cassiopeia.ini</language>
+        <language tag="en-GB">en-GB/tpl_cassiopeia.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field
+                    name="brand"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_BRAND_LABEL"
+                    default="1"
+                    layout="joomla.form.field.radio.switcher"
+                    filter="boolean"
+                    >
+                    <option value="0">JNEIN</option>
+                    <option value="1">JJA</option>
+                </field>
 
-				<field
-					name="logoFile"
-					type="media"
-					default=""
-					label="TPL_CASSIOPEIA_LOGO_LABEL"
-					showon="brand:1"
-				/>
+                <field
+                    name="logoFile"
+                    type="media"
+                    default=""
+                    label="TPL_CASSIOPEIA_LOGO_LABEL"
+                    showon="brand:1"
+                />
 
-				<field
-					name="siteTitle"
-					type="text"
-					default=""
-					label="TPL_CASSIOPEIA_TITLE"
-					filter="string"
-					showon="brand:1"
-				/>
+                <field
+                    name="siteTitle"
+                    type="text"
+                    default=""
+                    label="TPL_CASSIOPEIA_TITLE"
+                    filter="string"
+                    showon="brand:1"
+                />
 
-				<field
-					name="siteDescription"
-					type="text"
-					default=""
-					label="TPL_CASSIOPEIA_TAGLINE_LABEL"
-					description="TPL_CASSIOPEIA_TAGLINE_DESC"
-					filter="string"
-					showon="brand:1"
-				/>
+                <field
+                    name="siteDescription"
+                    type="text"
+                    default=""
+                    label="TPL_CASSIOPEIA_TAGLINE_LABEL"
+                    description="TPL_CASSIOPEIA_TAGLINE_DESC"
+                    filter="string"
+                    showon="brand:1"
+                />
 
-				<field
-					name="useFontScheme"
-					type="groupedlist"
-					label="TPL_CASSIOPEIA_FONT_LABEL"
-					default="0"
-					>
-					<option value="0">JKEIN</option>
-					<group label="TPL_CASSIOPEIA_FONT_GROUP_LOCAL">
-						<option value="media/templates/site/cassiopeia/css/global/fonts-local_roboto.css">Roboto (lokal)</option>
-					</group>
-					<group label="TPL_CASSIOPEIA_FONT_GROUP_WEB">
-						<option value="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&amp;display=swap">Fira Sans (web)</option>
-						<option value="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&amp;family=Roboto:wght@100;300;400;700&amp;display=swap">Roboto + Noto Sans (web)</option>
-					</group>
-				</field>
+                <field
+                    name="useFontScheme"
+                    type="groupedlist"
+                    label="TPL_CASSIOPEIA_FONT_LABEL"
+                    default="0"
+                    >
+                    <option value="0">JKEIN</option>
+                    <group label="TPL_CASSIOPEIA_FONT_GROUP_LOCAL">
+                        <option value="media/templates/site/cassiopeia/css/global/fonts-local_roboto.css">Roboto (lokal)</option>
+                    </group>
+                    <group label="TPL_CASSIOPEIA_FONT_GROUP_WEB">
+                        <option value="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&amp;display=swap">Fira Sans (web)</option>
+                        <option value="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&amp;family=Roboto:wght@100;300;400;700&amp;display=swap">Roboto + Noto Sans (web)</option>
+                    </group>
+                </field>
 
-				<field
-					name="noteFontScheme"
-					type="note"
-					description="TPL_CASSIOPEIA_FONT_NOTE_TEXT"
-					class="alert alert-warning"
-				/>
+                <field
+                    name="noteFontScheme"
+                    type="note"
+                    description="TPL_CASSIOPEIA_FONT_NOTE_TEXT"
+                    class="alert alert-warning"
+                />
 
-				<field
-					name="colorName"
-					type="filelist"
-					label="TPL_CASSIOPEIA_COLOR_NAME_LABEL"
-					default="colors_standard"
-					fileFilter="^custom.+[^min]\.css$"
-					exclude="^colors.+"
-					stripext="true"
-					hide_none="true"
-					hide_default="true"
-					directory="media/templates/site/cassiopeia/css/global/"
-					validate="options"
-					>
-					<option value="colors_standard">TPL_CASSIOPEIA_COLOR_NAME_STANDARD</option>
-					<option value="colors_alternative">TPL_CASSIOPEIA_COLOR_NAME_ALTERNATIVE</option>
-				</field>
+                <field
+                    name="colorName"
+                    type="filelist"
+                    label="TPL_CASSIOPEIA_COLOR_NAME_LABEL"
+                    default="colors_standard"
+                    fileFilter="^custom.+[^min]\.css$"
+                    exclude="^colors.+"
+                    stripext="true"
+                    hide_none="true"
+                    hide_default="true"
+                    directory="media/templates/site/cassiopeia/css/global/"
+                    validate="options"
+                    >
+                    <option value="colors_standard">TPL_CASSIOPEIA_COLOR_NAME_STANDARD</option>
+                    <option value="colors_alternative">TPL_CASSIOPEIA_COLOR_NAME_ALTERNATIVE</option>
+                </field>
 
-				<field
-					name="fluidContainer"
-					type="radio"
-					layout="joomla.form.field.radio.switcher"
-					default="0"
-					label="TPL_CASSIOPEIA_FLUID_LABEL"
-					>
-					<option value="0">TPL_CASSIOPEIA_STATIC</option>
-					<option value="1">TPL_CASSIOPEIA_FLUID</option>
-				</field>
+                <field
+                    name="fluidContainer"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    label="TPL_CASSIOPEIA_FLUID_LABEL"
+                    >
+                    <option value="0">TPL_CASSIOPEIA_STATIC</option>
+                    <option value="1">TPL_CASSIOPEIA_FLUID</option>
+                </field>
 
-				<field
-					name="stickyHeader"
-					type="radio"
-					label="TPL_CASSIOPEIA_STICKY_LABEL"
-					layout="joomla.form.field.radio.switcher"
-					default="0"
-					filter="integer"
-					>
-					<option value="0">JNEIN</option>
-					<option value="1">JJA</option>
-				</field>
+                <field
+                    name="stickyHeader"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_STICKY_LABEL"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    filter="integer"
+                    >
+                    <option value="0">JNEIN</option>
+                    <option value="1">JJA</option>
+                </field>
 
-				<field
-					name="backTop"
-					type="radio"
-					label="TPL_CASSIOPEIA_BACKTOTOP_LABEL"
-					layout="joomla.form.field.radio.switcher"
-					default="0"
-					filter="integer"
-					>
-					<option value="0">JNEIN</option>
-					<option value="1">JJA</option>
-				</field>
-			</fieldset>
-		</fields>
-	</config>
+                <field
+                    name="backTop"
+                    type="radio"
+                    label="TPL_CASSIOPEIA_BACKTOTOP_LABEL"
+                    layout="joomla.form.field.radio.switcher"
+                    default="0"
+                    filter="integer"
+                    >
+                    <option value="0">JNEIN</option>
+                    <option value="1">JJA</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
 </extension>
 ```
 
 *Übersetzt von openai.com*
-

@@ -53,7 +53,7 @@ Für Joomla 4 und 5 muss vor der Aktivierung das Plugin `if ($app->isAdmin()) {`
 
 In einem Beitrag wählen Sie die Registerkarte Veröffentlichungen und dann den *Kanonische URL* **Auto** Button. Dies platziert einen Link wie den folgenden auf jeder Seite, die den einzelnen Beitrag anzeigt:
 ```
-	<link href="/jdm3/en/user/seo/seo-basics.html" rel="canonical" />
+    <link href="/jdm3/en/user/seo/seo-basics.html" rel="canonical" />
 ```
 
 ## Inhaltliche Qualität
@@ -95,7 +95,7 @@ Nichts wird Besucher der Website mehr abschrecken als überall erscheinende Werb
 
 Links sind sowohl ein Segen als auch ein Fluch! Sie können das SEO-Ranking deiner Website positiv oder negativ beeinflussen, je nachdem, ob du Links zu seriösen oder unseriösen Quellen hast. Und sie müssen gepflegt werden. Möglicherweise hast du Links zu internen oder externen Beiträgen, die verschwunden sind, veraltete Informationen präsentieren oder nicht mehr relevant sind. Der beste Rat: Verlinke nur, wenn das Ziel echten Nutzen für deine Website-Besucher bietet, und nutze das `nofollow` Link-Attribut, wenn du nicht möchtest, dass die Zielseite mit deiner Seite in Verbindung gebracht wird.
 
-Es gibt viele Link-Checker-Tools, einige kostenlos oder freemium und andere kostenpflichtig, oft als Teil eines Website-Überwachungsdienstes.  
+Es gibt viele Link-Checker-Tools, einige kostenlos oder freemium und andere kostenpflichtig, oft als Teil eines Website-Überwachungsdienstes.
 
 ## Seitentitel und Beschreibung
 
@@ -120,4 +120,3 @@ Es versteht sich von selbst, dass attraktive Bilder eine Website enorm verbesser
 * Verwenden Sie responsive Bilder – es gibt ein Joomla-Plugin, das dynamisch webp-Versionen von png- und jpg-Bildern in verschiedenen Größen erstellt.
 
 *Übersetzt von openai.com*
-

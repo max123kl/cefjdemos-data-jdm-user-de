@@ -17,7 +17,7 @@ Options -Indexes
 
 ## Keine Verzeichnisauflistungen
 <IfModule mod_autoindex.c>
-	IndexIgnore *
+    IndexIgnore *
 </IfModule>
 ```
 
@@ -26,4 +26,3 @@ Options -Indexes
 Eine Möglichkeit, Ihre Website zu testen, besteht darin, die URL Ihres Bilderordners in die Adressleiste des Browsers einzugeben: `https://yourdomain.com/images/`. Da der Bilderordner normalerweise keine index.html- oder index.php-Datei enthält, sollten Sie eine völlig leere Seite sehen. Wenn Sie eine Liste aller Dateien und Ordner sehen, verhindern Sie keine Verzeichnis-Scans für irgendeinen Teil Ihrer Website. Beheben Sie das!
 
 *Übersetzt von openai.com*
-

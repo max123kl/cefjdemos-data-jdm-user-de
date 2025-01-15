@@ -17,24 +17,24 @@ Module werden einer Position auf einer Seite zugewiesen, die durch das verwendet
 Und die folgende Liste zeigt die verfügbaren Modulpositionen nach Namen:
 
 ```xml
-	<positions>
-		<position>topbar</position>
-		<position>below-top</position>
-		<position>menu</position>
-		<position>search</position>
-		<position>banner</position>
-		<position>top-a</position>
-		<position>top-b</position>
-		<position>main-top</position>
-		<position>main-bottom</position>
-		<position>breadcrumbs</position>
-		<position>sidebar-left</position>
-		<position>sidebar-right</position>
-		<position>bottom-a</position>
-		<position>bottom-b</position>
-		<position>footer</position>
-		<position>debug</position>
-	</positions>
+    <positions>
+        <position>topbar</position>
+        <position>below-top</position>
+        <position>menu</position>
+        <position>search</position>
+        <position>banner</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>breadcrumbs</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>footer</position>
+        <position>debug</position>
+    </positions>
 ```
 
 ## Ein Kernmodul hinzufügen
@@ -105,4 +105,3 @@ Alles erledigt?
 - **Tags - Ähnlich** Das Ähnliche-Tag-Modul zeigt Links zu anderen Elementen mit ähnlichen Tags. Die Nähe der Übereinstimmung kann angegeben werden.
 - **Wer ist online** Das Wer ist online-Modul zeigt die Anzahl der anonymen Benutzer (Gäste) und registrierten Benutzer (angemeldete Nutzer) an, die derzeit auf die Website zugreifen.
 - **Wrapper** Dieses Modul zeigt ein iframe-Fenster zu einem angegebenen Ort an.
-

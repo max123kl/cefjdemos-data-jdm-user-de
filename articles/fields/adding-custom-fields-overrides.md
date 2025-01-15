@@ -134,7 +134,7 @@ use Joomla\Component\Fields\Administrator\Helper\FieldsHelper;
 Dann verwenden Sie den folgenden Code überall dort, wo Sie die Felder in Ihrem Template platzieren möchten:
 ```php
 <?php foreach ($this->item->jcfields as $field) : ?>
-	<?php echo FieldsHelper::render($field->context, 'field.render', array('field' => $field)); ?><br>
+    <?php echo FieldsHelper::render($field->context, 'field.render', array('field' => $field)); ?><br>
 <?php endforeach ?>
 ```
 
@@ -142,7 +142,7 @@ Oder für ein Raw-Override, das das Label nicht übersetzt:
 
 ```php
 <?php foreach ($this->item->jcfields as $field) : ?>
-	<?php echo $field->label . ':' . $field->value; ?><br>
+    <?php echo $field->label . ':' . $field->value; ?><br>
 <?php endforeach ?>
 ```
 
@@ -174,5 +174,4 @@ Um den **Wert** des Feldes zu deinem Override hinzuzufügen, füge den untensteh
 
 Du kannst diesen Code zu jedem Teil deines Overrides hinzufügen. Beispiele: Der Inhalt eines div, die src in einem `img`-Tag, innerhalb eines CSS-Klassenattributs, etc.
 
-*Übersetzt von openai.com*  
-
+*Übersetzt von openai.com*
