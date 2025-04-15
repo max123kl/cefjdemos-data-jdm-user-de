@@ -54,9 +54,13 @@ Die Punkte in diesem Panel werden durch die Inline-Hilfe gut erklärt. Sollten S
 
 ![Globales Konfigurations-Server-Tab](../../../en/images/configuration/global-configuration-server-tab.png)
 
-### E-Mail-Bereich
+### E-Mail-Panel
 
-Eine Joomla-Seite sollte in der Lage sein, ausgehende E-Mails zu senden. Unter anderem sendet sie automatische Nachrichten an den Seiteninhaber, wenn Updates verfügbar sind. Allerdings schränken einige Hosting-Dienste die Methoden ein, mit denen ausgehende E-Mails gesendet werden dürfen. Verwenden Sie Ihre eigene private E-Mail-Adresse im Feld Von E-Mail:
+Eine Joomla-Website sollte in der Lage sein, ausgehende E-Mails zu versenden. Unter anderem werden automatisierte Nachrichten an den Website-Betreiber gesendet, wenn Updates verfügbar sind. Einige Hosting-Dienste schränken jedoch die Methoden ein, mit denen ausgehende E-Mails versendet werden dürfen.
+
+#### Test-E-Mail senden
+
+Vor Joomla 5.3 wurde über die Schaltfläche **Testmail senden** eine Nachricht an die im Feld **Absender-E-Mail** konfigurierte Adresse gesendet. Seit Version 5.3 wird die Testmail direkt an die E-Mail-Adresse des angemeldeten Administrators gesendet.
 
 - Versuchen Sie zuerst PHP Mail und wählen Sie die Schaltfläche *Test-Mail senden*. Wenn die E-Mail ankommt, ist alles in Ordnung. Andernfalls:
 - Probieren Sie die Sendmail-Option. Wenn das nicht funktioniert:
