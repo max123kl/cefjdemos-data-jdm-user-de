@@ -52,7 +52,7 @@ Abhängig von der Größe Ihrer Website kann das Indizieren von wenigen Minuten 
 
 Die Seite Indizierte Inhalte listet alle indizierten Inhalte auf. Wenn Sie es bevorzugen, dass bestimmte Beiträge nicht in den Suchergebnissen angezeigt werden, können Sie sie aus der Smart Search-Datenbank entfernen, indem Sie das Kontrollkästchen neben dem Titel des Beitrags auswählen und dann die Schaltfläche Unveröffentlichen drücken.
 
-**WICHTIGER HINWEIS**: Wenn Ihre Website eine große Menge an Inhalten, oder besonders große Inhalte hat, oder eingeschränkten Speicherplatz, sollten Sie sich über [Smart Search auf großen Websites](jdocmanual?article=user/smart-search/smart-search-on-large-sites "Smart Search auf großen Websites") informieren.
+**WICHTIGER HINWEIS**: Wenn Ihre Website eine große Menge an Inhalten, oder besonders große Inhalte hat, oder eingeschränkten Speicherplatz, sollten Sie sich über [Smart Search auf großen Websites](jdocmanual?article=user/smart-search/smart-search-on-large-sites) informieren.
 
 ## Smart Search den Seitenbenutzern bereitstellen
 

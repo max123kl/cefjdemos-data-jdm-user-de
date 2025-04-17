@@ -59,13 +59,13 @@ House of Commons
 - Wirtschaftsausschuss
 - Kulturausschuss
 ```
-![alle Kategorien in einer Kategoriestammstruktur](../../../en/images/contacts/contact-all-committees.png "Alle Kategorien in einer Kontaktkategoriestammstruktur")
+![alle Kategorien in einer Kategoriestammstruktur](../../../en/images/contacts/contact-all-committees.png)
 
 Die zweite Zeile jeder Eintragung stammt aus der Kategoriebeschreibung.
 
 Wenn Sie einen der Ausschuss-Links auswählen, könnte die Ausschussseite so aussehen:
 
-![Kontakte in einer Kategorie](../../../en/images/contacts/contact-culture-committee.png "Kontakte in einer Kategorie")
+![Kontakte in einer Kategorie](../../../en/images/contacts/contact-culture-committee.png)
 
 Das Layout entspricht nicht ganz den Erwartungen. Es wäre gut gewesen, ein
 Vorschaubild jeder Person einzufügen und die Details besser zu gestalten. Das
@@ -75,7 +75,7 @@ kann mit einer Template-Überschreibung gemacht werden (später).
 
 Für den Wirtschaftsausschuss gibt es einen Menüeintrag "Kontakte in einer Kategorie auflisten". Dadurch wird ein anderes Layout verwendet:
 
-![Kontaktkategorieliste](../../../en/images/contacts/contact-category-list.png "Kontaktkategorieliste")
+![Kontaktkategorieliste](../../../en/images/contacts/contact-category-list.png)
 
 Besser, aber immer noch nicht ganz richtig! Eine Designanpassung war notwendig, um den
 Bildstil zu reduzieren. Auch hier könnte eine Template-Überschreibung nützlich sein.
@@ -84,7 +84,7 @@ Bildstil zu reduzieren. Auch hier könnte eine Template-Überschreibung nützlic
 
 Für dieses Beispiel wurden die Vorsitzenden aller Ausschüsse als hervorgehoben markiert.
 
-![Hervorgehobene Kontakte](../../../en/images/contacts/contact-featured.png "Hervorgehobene Kontakte")
+![Hervorgehobene Kontakte](../../../en/images/contacts/contact-featured.png)
 
 ## Sortierreihenfolge
 

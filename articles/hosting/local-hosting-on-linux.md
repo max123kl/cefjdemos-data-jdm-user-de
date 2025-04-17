@@ -7,13 +7,13 @@ Sie müssen eine Reihe von Softwarepaketen installieren, die oft als LAMP-Stack 
 
 Wählen Sie im Systemmenü, das mit dem LM-Logo gekennzeichnet ist, den Punkt Administration / Synaptic-Paketverwaltung. Sie werden nach Ihrem Passwort gefragt. Geben Sie Ihr Login-Passwort ein, um die GUI zu öffnen. Oben rechts befindet sich ein `Search`-Button. Wählen Sie diesen aus und geben Sie **apache** ein und klicken Sie auf `Search`. Markieren Sie das Kontrollkästchen `apache2` und wählen Sie im Popup-Fenster `Mark for Installation`. Ein weiteres Popup-Fenster zeigt eine Liste zusätzlicher Pakete, die zur Unterstützung von Apache benötigt werden. Wählen Sie `Mark`:
 
-![synaptic package manager](../../../en/images/hosting/synaptic-package-manager-gui.png "Synaptic-Paketverwaltung GUI")
+![synaptic package manager](../../../en/images/hosting/synaptic-package-manager-gui.png)
 
 Wählen Sie den `Apply`-Button in der oberen Symbolleiste und den `Apply`-Button im Übersichts-Dialog. Apache wird installiert und konfiguriert, der Prozess endet mit einem Dialog **Änderungen angewendet**. Wählen Sie `Close`.
 
 Sie können überprüfen, dass Apache installiert und funktionsfähig ist, indem Sie Ihren Browser öffnen, standardmäßig Firefox bei einer neuen Linux Mint-Installation, und **localhost** in die URL-Leiste eingeben. Sie sollten die Ubuntu Apache2 Standardseite sehen:
 
-![apache default page](../../../en/images/hosting/apache-default-page.png "Apache Standardseite")
+![apache default page](../../../en/images/hosting/apache-default-page.png)
 
 Die Seite enthält einige nützliche Informationen über Dateipfade, die später möglicherweise nicht so leicht verfügbar sind. Vielleicht möchten Sie diese Seite auf Papier oder als PDF-Datei drucken.
 

@@ -21,7 +21,7 @@ Es ist möglich, mit niedrigeren Werten für upload_max_filesize und post_max_si
 
 ### Datenbankeinrichtung
 
-Falls Sie noch keine Datenbank eingerichtet haben, sollten Sie dies jetzt tun. Dies wird für einen cPanel-Hosting-Dienst im Tutorial [cPanel Hosting](jdocmanual?article=user/hosting/cpanel-hosting "cPanel Hosting") behandelt. Es gibt auch ein *Erstellen einer Datenbank für Joomla!*-Tutorial, das localhost- und phpMyAdmin-Methoden abdeckt.
+Falls Sie noch keine Datenbank eingerichtet haben, sollten Sie dies jetzt tun. Dies wird für einen cPanel-Hosting-Dienst im Tutorial [cPanel Hosting](jdocmanual?article=user/hosting/cpanel-hosting) behandelt. Es gibt auch ein *Erstellen einer Datenbank für Joomla!*-Tutorial, das localhost- und phpMyAdmin-Methoden abdeckt.
 
 Sie sollten sich grundlegende Datenbankinformationen notieren, die benötigt werden, wenn die eigentliche Joomla-Installation gestartet wird.
 

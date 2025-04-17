@@ -4,11 +4,11 @@
 
 Es gibt ein Kernmodul *Feed Display*, das verfügbar ist, um Nachrichten von anderen Seiten anzuzeigen. Der folgende Screenshot zeigt das Dateneingabeformular mit der URL des Joomla-Ankündigungen-News-Feeds. Beachten Sie, dass die Wortanzahl auf 100 festgelegt ist. Andernfalls kann die Länge einer Ankündigung für ein Seitenleistenmodul übermäßig sein.
 
-![Feed Display Modul Dateneingabe](../../../en/images/news-feeds/news-joomla-news-form.png "Feed Display Module Dateneingabe")
+![Feed Display Modul Dateneingabe](../../../en/images/news-feeds/news-joomla-news-form.png)
 
 Das Ergebnis kann unschön sein, kann aber mit einigen benutzerdefinierten Stilen in user.css verbessert werden:
 
-![Feed Display Modul Dateneingabe](../../../en/images/news-feeds/news-joomla-news-display.png "Feed Display Modul Dateneingabe")
+![Feed Display Modul Dateneingabe](../../../en/images/news-feeds/news-joomla-news-display.png)
 
 ## Feed-Anzeigeseiten
 
@@ -22,7 +22,7 @@ Als Alternative zur Darstellung von Nachrichten in einem Modul können Sie ein M
     - Der Tab **Optionen** enthält Elemente zur Steuerung der Feed-*Anzeige*.
 * **Speichern & Schließen**
 
-![NewsFeed-Komponentendateneingabe](../../../en/images/news-feeds/news-feed-data-entry.png "NewsFeed-Komponentendateneingabe")
+![NewsFeed-Komponentendateneingabe](../../../en/images/news-feeds/news-feed-data-entry.png)
 
 Erstellen Sie ein Menüelement ausgehend vom Administrator-Menü:
 
@@ -32,11 +32,11 @@ Erstellen Sie ein Menüelement ausgehend vom Administrator-Menü:
 * Füllen Sie den Rest des Formulars entsprechend aus.
 * **Speichern & Schließen**
 
-![NewsFeed-Menüelement-Dateneingabe](../../../en/images/news-feeds/news-feed-data-entry.png "NewsFeed-Menüelement-Dateneingabe")
+![NewsFeed-Menüelement-Dateneingabe](../../../en/images/news-feeds/news-feed-data-entry.png)
 
 Testen Sie es: Gehen Sie zum Seitennmenü und wählen Sie das Feed-Menüelement aus.
 
-![NewsFeed-Anzeige](../../../en/images/news-feeds/news-feed-display.png "NewsFeed-Anzeige")
+![NewsFeed-Anzeige](../../../en/images/news-feeds/news-feed-display.png)
 
 Jeder Beitrag im Feed ist ein `<li>` innerhalb eines `<ul>`-Tags, daher erscheint er standardmäßig mit einem Aufzählungspunkt markiert. Dies ist nicht so offensichtlich, wenn die Beiträge lang sind. Sie können Ihre eigenen Stile in *user.css* anwenden. Folgendes sorgt dafür, dass jeder Beitrag in einem eigenen Kasten erscheint:
 
@@ -55,13 +55,13 @@ ul.com-newsfeeds-newsfeed__items > li {
 
 Was so aussieht:
 
-![Benutzerdefinierte NewsFeed-Anzeige](../../../en/images/news-feeds/news-feed-custom-display.png "Benutzerdefinierte NewsFeed-Anzeige")
+![Benutzerdefinierte NewsFeed-Anzeige](../../../en/images/news-feeds/news-feed-custom-display.png)
 
 ## Nachrichten-Feeds in einer Kategorie auflisten
 
 Die Seite *Joomla! RSS-Nachrichten-Feeds* listet acht separate News-Feeds auf. Sie könnten einen Feed für einige oder alle davon erstellen und sie einer Kategorie zuweisen, zum Beispiel *Joomla Nachrichten*. Dann können Sie einen Menüpunkt erstellen, bei dem der *Menüpunkt-Typ* auf *Nachrichten-Feeds in einer Kategorie auflisten* gesetzt ist und die Kategorie auf *Joomla Nachrichten* gesetzt wird.
 
-![Nachrichten-Feed nach Kategoriemenü-Formular](../../../en/images/news-feeds/news-feed-menu-category-form.png "Nachrichten-Feed nach Kategoriemenü-Formular")
+![Nachrichten-Feed nach Kategoriemenü-Formular](../../../en/images/news-feeds/news-feed-menu-category-form.png)
 
 Probieren Sie es aus, um das Ergebnis zu sehen!
 *Übersetzt von openai.com*

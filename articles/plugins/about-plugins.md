@@ -4,7 +4,7 @@
 
 Plugins sind Joomla!-Erweiterungen, die *im Hintergrund* auf einen Auslöser reagieren. Es gibt ungefähr 160 Kern-Plugins in über 20 Gruppen. Drittanbieter-Entwickler bieten noch viele weitere an. Das folgende Bild zeigt den Anfang der Plugin-Liste, bei der die Listenlänge für den Screenshot auf 5 eingestellt wurde.
 
-![Plugin-Liste](../../../en/images/plugins/plugins-list.png "Plugin-Liste")
+![Plugin-Liste](../../../en/images/plugins/plugins-list.png)
 
 ## Plugin-Typen
 

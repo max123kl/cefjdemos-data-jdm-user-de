@@ -45,7 +45,7 @@ Jeder Hosting-Dienst bietet verschiedene Pläne zu unterschiedlichen Preisniveau
 
 Es gibt kein wirklich kostenloses Hosting! Ein Joomla-Partner-Hostingdienst bietet jedoch eine kostenlose Joomla-Website in der Domain joomla.com an. Das gibt Ihnen die Möglichkeit, Ihre eigene voll funktionsfähige Joomla-Website völlig kostenlos auszuprobieren. Es ist vergleichbar mit einem Shared-Hosting-Plan, jedoch mit Einschränkungen und häufigen Bitten, auf einen kostenpflichtigen Plan zu upgraden. Der kostenlose Plan muss alle 30 Tage erneuert werden, sonst wird er beendet. Der folgende Beitrag zeigt die erforderlichen Schritte zur Einrichtung einer kostenlosen Joomla-Site.
 
-* [Kostenloses Joomla Hosting](jdocmanual?article=user/hosting/free-hosting "")
+* [Kostenloses Joomla Hosting](jdocmanual?article=user/hosting/free-hosting)
 
 Wenn Sie feststellen, dass Ihnen Joomla gefällt, können Sie auf einen kostenpflichtigen Plan aktualisieren oder andernorts nach einem Hostingdienst suchen, der Ihren Bedürfnissen und Ihrem Budget entspricht.
 
@@ -87,7 +87,7 @@ Wenn Sie einen Domainnamen erworben haben, wird Ihr Hosting-Dienst ihn für Sie 
 
 Der folgende Beitrag zeigt, was Sie erwarten können, wenn Sie einen Hosting-Plan mit einer cPanel-Benutzeroberfläche erwerben.
 
-* [cPanel Hosting](jdocmanual?article=user/hosting/cpanel-hosting "cPanel Hosting")
+* [cPanel Hosting](jdocmanual?article=user/hosting/cpanel-hosting)
 
 ## VPS-Hosting
 
@@ -103,9 +103,9 @@ Die meisten Personen, die Websites entwickeln, halten lokale Kopien auf einem La
 
 Die folgenden Beiträge beschreiben, wie man lokales Hosting auf verschiedenen Arten von Desktop- oder Laptop-Computern einrichtet:
 
-* [Lokales Hosting auf Windows](jdocmanual?article=user/hosting/local-hosting-on-windows "Lokales Hosting auf Windows") nur für Windows
-* [Lokales Hosting mit XAMPP](jdocmanual?article=user/hosting/local-hosting-with-xampp "Lokales Hosting mit XAMPP") für Linux, Mac und Windows.
-* [Lokales Hosting auf Linux](jdocmanual?article=user/hosting/local-hosting-on-linux "Lokales Hosting auf Linux")
+* [Lokales Hosting auf Windows](jdocmanual?article=user/hosting/local-hosting-on-windows) nur für Windows
+* [Lokales Hosting mit XAMPP](jdocmanual?article=user/hosting/local-hosting-with-xampp) für Linux, Mac und Windows.
+* [Lokales Hosting auf Linux](jdocmanual?article=user/hosting/local-hosting-on-linux)
 
 *Übersetzt von openai.com*
 

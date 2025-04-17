@@ -4,17 +4,17 @@
 
 Dies ist ein Kern-Plugin, das verwendet werden kann, um die Barrierefreiheit beim Erstellen von Beitragsinhalten zu überprüfen. Der folgende Screenshot zeigt einige Plugin-Einstellungen:
 
-![Plugin-Formulareinstellungen](../../../en/images/performance/performance-jooa11y-plugin-form.png "Plugin-Einstellungen")
+![Plugin-Formulareinstellungen](../../../en/images/performance/performance-jooa11y-plugin-form.png)
 
 Mit der Option **Immer anzeigen** auf *Ein* erscheint das Berichtssymbol auf jeder Seite der Website. Das ist nützlich für die Entwicklung, sollte jedoch niemals auf einer Live-Website aktiviert bleiben. Stellen Sie es auf **Aus**!
 
 Wenn die Option *Immer anzeigen* auf *Ein* gesetzt ist, hat jede Seite der Website unten rechts ein Symbol mit einer Zählung der Anzahl der Probleme. Der folgende Screenshot zeigt das Symbol, das ausgewählt ist, um ein Informationsfeld anzuzeigen. Es enthält eine Seitenübersicht, Lesbarkeitshinweise und Warnungen, die nacheinander ausgewählt werden können. Das erste Problem wurde ausgewählt.
 
-![Barrierefreiheitsprüfung der Website](../../../en/images/performance/performance-jooa11y-site-display.png "Barrierefreiheitsprüfung der Website")
+![Barrierefreiheitsprüfung der Website](../../../en/images/performance/performance-jooa11y-site-display.png)
 
 Das Formular *Beiträge: Bearbeiten* hat eine **Barrierefreiheitsprüfung**-Schaltfläche in der Symbolleiste. Es zeigt die Prüfung für einen einzelnen Beitrag in einem Popup-Fenster:
 
-![Barrierefreiheitsprüfung im Editor](../../../en/images/performance/performance-jooa11y-admin-display.png "Barrierefreiheitsprüfung im Editor")
+![Barrierefreiheitsprüfung im Editor](../../../en/images/performance/performance-jooa11y-admin-display.png)
 
 ## Problemlösungen
 

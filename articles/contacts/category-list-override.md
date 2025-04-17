@@ -39,7 +39,7 @@ Die Aufzählungsliste der benutzerdefinierten Felder kann verbessert werden, ind
 }
 ```
 
-![gestaltetes Geschäftskomitee](../../../en/images/contacts/contact-business-committee-styled.png "Gestaltetes Geschäftskomitee")
+![gestaltetes Geschäftskomitee](../../../en/images/contacts/contact-business-committee-styled.png)
 
 Das ist so viel, wie mit dem Styling erreicht werden kann. Besser, aber immer noch nicht gut genug. Um weitere Elemente hinzuzufügen und das Layout zu ändern, wird ein Layout-Override erforderlich sein.
 
@@ -153,7 +153,7 @@ a:has(.contact-thumbnail) {
 
 ### Ergebnis
 
-![gegridder Geschäftsausschuss](../../../en/images/contacts/contact-business-committee-grid.png "Gegridder Geschäftsausschuss")
+![gegridder Geschäftsausschuss](../../../en/images/contacts/contact-business-committee-grid.png)
 
 *Übersetzt von openai.com*
 

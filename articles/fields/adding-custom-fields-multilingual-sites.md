@@ -11,7 +11,7 @@ Wenn Sie eine mehrsprachige Website haben, können Sie die Bezeichnungen und Bes
 
 Im folgenden Beispiel werden eine Kontaktfeldgruppe und ein Feld für die persönlichen Vorlieben eines Kontakts erstellt. Die Feldgruppe heißt Favoriten und das Beispiel-Feld heißt Auto. Natürlich können weitere Felder für andere Lieblingsdinge, wie Essen oder Filme, hinzugefügt werden.
 
-Um diesem Beispiel zu folgen, wird angenommen, dass Sie eine mehrsprachige Website eingerichtet haben, wie im [Mehrsprachige Websites](jdocmanual?article=user/languages/setup-a-multilingual-site "Mehrsprachige Websites") Tutorial beschrieben.
+Um diesem Beispiel zu folgen, wird angenommen, dass Sie eine mehrsprachige Website eingerichtet haben, wie im [Mehrsprachige Websites](jdocmanual?article=user/languages/setup-a-multilingual-site) Tutorial beschrieben.
 
 ## Sprachkonstanten
 
@@ -50,7 +50,7 @@ Vom Administratormenü:
 
 Der folgende Screenshot zeigt ein Beispiel für die Erstellung einer Überschreibung für eine deutsche Sprachkonstante.
 
-![Erstellung von Überschreibungen in Deutsch](../../../en/images/fields/fields-overrides-creation-de.png "Erstellung von Überschreibungen in Deutsch")
+![Erstellung von Überschreibungen in Deutsch](../../../en/images/fields/fields-overrides-creation-de.png)
 
 ## Definieren der Feldgruppe
 
@@ -80,11 +80,11 @@ Vom Administrator-Menü aus:
 
 Wenn Englisch ausgewählt ist, bevor Sie sich als Administrator anmelden, sollte das Kontakteingabeformular einen Tab mit dem englischen Namen Ihrer Feldgruppe und Felder in dieser Gruppe ebenfalls mit englischen Werten enthalten.
 
-![Dateneingabe auf Englisch](../../../en/images/fields/fields-overrides-entry.png "Dateneingabe auf Englisch")
+![Dateneingabe auf Englisch](../../../en/images/fields/fields-overrides-entry.png)
 
 Wenn Deutsch ausgewählt wird, bevor Sie sich als Administrator anmelden, sollten Sie die deutschen Übersetzungen Ihrer Sprachkonstanten sehen:
 
-![Dateneingabe auf Deutsch](../../../en/images/fields/fields-overrides-entry-de.png "Dateneingabe auf Deutsch")
+![Dateneingabe auf Deutsch](../../../en/images/fields/fields-overrides-entry-de.png)
 
 Hinweis: Übersetzung durch translate.google.co.uk!
 
@@ -92,11 +92,11 @@ Hinweis: Übersetzung durch translate.google.co.uk!
 
 Auf Englisch:
 
-![Datenanzeige auf Englisch](../../../en/images/fields/fields-overrides-display.png "Datenanzeige auf Englisch")
+![Datenanzeige auf Englisch](../../../en/images/fields/fields-overrides-display.png)
 
 Und auf Deutsch:
 
-![Datenanzeige auf Deutsch](../../../en/images/fields/fields-overrides-display-de.png "Datenanzeige auf Deutsch")
+![Datenanzeige auf Deutsch](../../../en/images/fields/fields-overrides-display-de.png)
 
 *Übersetzt von openai.com*
 

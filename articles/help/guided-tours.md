@@ -6,13 +6,13 @@ Geführte Touren sind dafür gedacht, absoluten Neulingen in Joomla eine sehr ku
 
 Es gibt eine Reihe integrierter Touren, und die **Willkommen bei Joomla!**-Tour startet automatisch, sobald ein Benutzer das erste Mal in die Administratoroberfläche einloggt.
 
-![Willkommen bei den Geführten Touren](../../../en/images/help/guided-tours-welcome.png "Willkommen bei den Geführten Touren")
+![Willkommen bei den Geführten Touren](../../../en/images/help/guided-tours-welcome.png)
 
 ## Liste der Touren
 
 Die Touren sind in einem Dropdown-Menü in der Titelleiste des Dashboards und der Listenseiten aufgeführt, wie in der folgenden Abbildung dargestellt:
 
-![Geführte Touren](../../../en/images/help/guided-tours.png "Geführte Touren")
+![Geführte Touren](../../../en/images/help/guided-tours.png)
 
 Die vollständige Liste umfasst Folgendes:
 

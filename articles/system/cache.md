@@ -182,7 +182,7 @@ Dies kann automatisch über die Anzeige-Funktion des Basis-Controllers erledigt 
     }
 
 Es gibt auch einige urlparams zu berücksichtigen. Schauen Sie sich dieses
-[Joomla StackExchange](http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000 "") an.
+[Joomla StackExchange](http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000) an.
 
 Beachten Sie außerdem, dass keine Aktualisierungen (wie Treffer oder Besuchszahlen) aktualisiert werden (es sei denn, Sie fügen dies außerhalb dieser Methode und damit in einem tieferen MVC-Teil hinzu).
 

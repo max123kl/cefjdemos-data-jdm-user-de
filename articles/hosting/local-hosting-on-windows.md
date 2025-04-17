@@ -7,7 +7,7 @@ In diesen Akronymen steht W für Windows und X für Cross-Platform (Linux, Mac u
 Sie können jedes dieser Softwarepakete unabhängig auf Ihrer bevorzugten Plattform installieren. Es ist jedoch oft bequemer, ein Paket zu installieren, das alle separaten Komponenten zusammenfasst. So funktioniert XAMPP auf den drei Hauptplattformen, während WAMP nur auf Windows funktioniert. Abgesehen davon erfüllen sie die gleiche Aufgabe. Sie ermöglichen es Ihnen, Ihre lokale Entwicklungsumgebung zu installieren und zu verwalten.
 
 XAMPP wird in einem separaten Beitrag behandelt:
-* [Lokales Hosting mit XAMPP](jdocmanual?article=user/hosting/local-hosting-with-xampp "Lokales Hosting mit XAMPP") für Linux, Mac und Windows.
+* [Lokales Hosting mit XAMPP](jdocmanual?article=user/hosting/local-hosting-with-xampp) für Linux, Mac und Windows.
 
 Es ist ein Vergleich verfügbar:
 * Umbrella: WAMP vs XAMPP

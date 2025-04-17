@@ -12,7 +12,7 @@ Sie können das Tool online über PageSpeed Insights auf dieser Seite nutzen.
 
 Der folgende Screenshot zeigt den ersten Teil des PageSpeed Insights-Berichts:
 
-![PageSpeed Insights-Bericht](../../../en/images/performance/performance-pagespeed-insights.png "PageSpeed Insights-Bericht")
+![PageSpeed Insights-Bericht](../../../en/images/performance/performance-pagespeed-insights.png)
 
 ## Leistungsverbesserungen
 

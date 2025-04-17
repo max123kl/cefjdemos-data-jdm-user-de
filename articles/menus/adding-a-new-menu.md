@@ -38,7 +38,7 @@ In der Liste der Menüs hat das neu erstellte Menü eine Schaltfläche mit der B
 
 In der Liste der Menüs ermöglicht die Spalte *Verknüpfte Module* die Auswahl eines bestehenden Menümoduls zu Bearbeitungszwecken. Sie können es sich ansehen und dann *Schließen*, ohne Änderungen vorzunehmen. Für Ihr neues Menü wählen Sie die Schaltfläche **Modul für dieses Menü hinzufügen**, um ein modales Fenster mit dem Dateneingabeformular für das Menümodul zu öffnen.
 
-![Dateneingabeformular für das Menümodul](../../../en/images/menus/menus-module.png "Dateneingabeformular für das Menümodul")
+![Dateneingabeformular für das Menümodul](../../../en/images/menus/menus-module.png)
 
 Auszufüllende Felder:
 
