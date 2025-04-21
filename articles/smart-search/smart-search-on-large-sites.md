@@ -28,8 +28,10 @@ Wenn dem Indexer der Speicher ausgeht, versuchen Sie, die folgenden Anpassungen 
 
 1. Verringern Sie die Batchgröße. Wenn Sie besonders große Inhalte haben, kann der Indexer selbst bei einem einzigen Inhaltselement keinen Speicherplatz mehr haben. Versuchen Sie, sie zunächst auf 5 zu reduzieren, und wenn Sie weiterhin Speicherplatzprobleme haben, reduzieren Sie sie auf 1.
 2. Wenn Sie in der Lage sind, dem Indexer mehr Speicher zuzuweisen, tun Sie dies. Sie können den dem Kommandozeilen-Indexer zugewiesenen Speicher mit einem zusätzlichen Parameter in der Kommandozeile erhöhen. Um beispielsweise das Speicherlimit auf 256 MB zu erhöhen, verwenden Sie den folgenden Befehl, wobei Sie die *256M* durch so viel Speicher ersetzen, wie Sie sicher einem Prozess auf Ihrem System zuweisen können.<br>
-    *php -d memory_limit=256M finder_indexer.php*
-5. Versuchen Sie zu identifizieren, welche Inhaltselemente dazu führen, dass der Indexer keinen Speicherplatz mehr hat. Wenn es nicht offensichtlich ist, könnten Sie versuchen, alle Smart Search-Plugins außer einem zu deaktivieren. Das Ausführen des Indexers mit jeweils nur einem aktivierten Plugin sollte aufzeigen, welche Inhaltsart(en) das Problem verursachen. Als letzten Ausweg sollten Sie in Erwägung ziehen, ein paar außergewöhnlich große Inhaltselemente in separate Elemente aufzuteilen. Wenn das Problem bei einem benutzerdefinierten Inhaltstyp liegt, schauen Sie sich den Plugin-Code an und überlegen Sie, ob Sie weniger von den verfügbaren Inhalten pro Element indizieren.
+    ```php
+    php -d memory_limit=256M joomla.php finder:index
+    ```
+3. Versuchen Sie zu identifizieren, welche Inhaltselemente dazu führen, dass der Indexer keinen Speicherplatz mehr hat. Wenn es nicht offensichtlich ist, könnten Sie versuchen, alle Smart Search-Plugins außer einem zu deaktivieren. Das Ausführen des Indexers mit jeweils nur einem aktivierten Plugin sollte aufzeigen, welche Inhaltsart(en) das Problem verursachen. Als letzten Ausweg sollten Sie in Erwägung ziehen, ein paar außergewöhnlich große Inhaltselemente in separate Elemente aufzuteilen. Wenn das Problem bei einem benutzerdefinierten Inhaltstyp liegt, schauen Sie sich den Plugin-Code an und überlegen Sie, ob Sie weniger von den verfügbaren Inhalten pro Element indizieren.
 
 ## Probleme mit unzureichendem Speicherplatz
 
