@@ -10,7 +10,7 @@ Dieser Beitrag handelt von dem *Optionen*-Tab im Formular *Beitrag: Bearbeiten*.
 
 Der *Optionen*-Tab des Formulars *Beitrag: Bearbeiten* enthält eine Reihe von Panels, meistens mit der Auswahl *Global verwenden (Ausblenden oder Anzeigen)*, *Ausblenden* oder *Anzeigen*. Der folgende Teilausschnitt zeigt das allgemeine Layout.
 
-![Beitrag Bearbeitungsoptionen Tab](../../../de/images/articles/articles-edit-options-tab.png)
+![Beitrag Bearbeitungsoptionen Tab](../../../en/images/articles/articles-edit-options-tab.png)
 
 ## Layout-Panel
 
