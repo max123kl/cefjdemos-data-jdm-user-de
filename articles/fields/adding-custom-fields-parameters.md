@@ -84,7 +84,16 @@ Der Titel wird auf der *Beiträge: Felder* Listen-Seite angezeigt, wo er ausgew�
 
 ### Berechtigungen Registerkarte
 
+Die Berechtigungen für jede Benutzergruppe sind selbsterklärend für die Aktionen *Löschen*, *Bearbeiten* und *Status bearbeiten*. Die Berechtigungen zeigen, wer was mit dem gesamten Feld tun darf – also z. B. es löschen, ändern oder dessen Veröffentlichung aufheben.
+
 ![Feldparameter allgemeinen Registerkarte](../../../en/images/fields/fields-parameters-permissions-tab.png)
+
+Die Berechtigung *Benutzerdefinierten Feldwert bearbeiten* kann verwirrend sein. Sie legt fest, wer den Inhalt des Feldes ändern darf. Standardmäßig ist sie für alle Gruppen außer den Super Benutzern auf **Nicht erlaubt (Vererbt)** gesetzt. Zwei Beispiele:
+
+* **Benutzerdefinierte Registrierungsdaten**
+  Angenommen, Sie erstellen ein Benutzerfeld für *Geschlecht*, das einem Benutzerregistrierungsformular hinzugefügt wird. Dies könnte eine Liste oder eine Radio-Button-Auswahl sein, mit der ein Benutzer *männlich* oder *weiblich* auswählen kann. In diesem Fall muss die Berechtigung für die Gruppe „Öffentlich“ auf *Erlaubt* gesetzt werden. Andernfalls kann ein Gastbenutzer kein Geschlecht auswählen. Da alle anderen Gruppen von „Öffentlich“ erben, kann ein registrierter Benutzer die Geschlechtsangabe im Profil nach dem Login ändern.
+* **Artikelkommentar**
+  Angenommen, Sie möchten einem Autor erlauben, einen Kommentar zu einem Artikel hinzuzufügen. Dies könnte ein Textfeld mit begrenzter Länge sein. In diesem Fall muss die Berechtigung für die Gruppe „Autor“ auf *Erlaubt* gesetzt werden. Die Gruppen „Redakteur“ und „Publisher“ erben diese Einstellung, wenn das Formular gespeichert wird. Die Gruppen „Manager“ und „Administrator“ haben zwar die Bearbeitungsberechtigung für Artikel, jedoch nicht für benutzerdefinierte Feldwerte – es sei denn, der Wert für „Manager“ wird ebenfalls auf *Erlaubt* gesetzt.
 
 *Übersetzt von openai.com*
 
